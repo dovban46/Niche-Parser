@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Niche Parser</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>📡 YouTube Niche Parser</h1>
+    <div class="quota-badge" id="quota-badge">Квота за сесію: <span id="quota-used">{{ quota_used }}</span> / ~{{ daily_quota }} unit/добу</div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <form id="search-form">
+        <div class="field">
+          <label for="keywords">Ключові слова / теми (кожне з нового рядка)</label>
+          <textarea id="keywords" name="keywords" rows="4" placeholder="наприклад:&#10;фінансова грамотність&#10;AI tools&#10;кулінарія без духовки" required></textarea>
+        </div>
+
+        <div class="grid-3">
+          <div class="field">
+            <label for="region_code">Гео (регіон пошуку)</label>
+            <select id="region_code" name="region_code">
+              {% for code, name in regions %}
+              <option value="{{ code }}" {% if code == 'US' %}selected{% endif %}>{{ name }} ({{ code }})</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="published_after_days">Відео за період</label>
+            <select id="published_after_days" name="published_after_days">
+              <option value="30">останні 30 днів</option>
+              <option value="90" selected>останні 90 днів</option>
+              <option value="180">останні 180 днів</option>
+              <option value="365">останній рік</option>
+              <option value="0">без обмеження</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="pages_per_keyword">Глибина пошуку</label>
+            <select id="pages_per_keyword" name="pages_per_keyword">
+              <option value="1" selected>1 сторінка (~50 відео, 100 unit/слово)</option>
+              <option value="2">2 сторінки (~100 відео, 200 unit/слово)</option>
+              <option value="3">3 сторінки (~150 відео, 300 unit/слово)</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="filters">
+          <legend>Фільтри "перспективного каналу"</legend>
+          <div class="grid-3">
+            <div class="field">
+              <label for="min_views_per_video">Мін. переглядів / відео</label>
+              <input type="number" id="min_views_per_video" name="min_views_per_video" value="50000" min="0" step="1000" />
+            </div>
+            <div class="field">
+              <label for="max_video_count">Макс. к-сть відео на каналі</label>
+              <input type="number" id="max_video_count" name="max_video_count" value="30" min="1" />
+            </div>
+            <div class="field">
+              <label for="max_channel_age_months">Макс. вік каналу (місяців)</label>
+              <input type="number" id="max_channel_age_months" name="max_channel_age_months" value="12" min="1" />
+            </div>
+            <div class="field">
+              <label for="min_subscribers">Мін. підписників (опційно)</label>
+              <input type="number" id="min_subscribers" name="min_subscribers" min="0" placeholder="—" />
+            </div>
+            <div class="field">
+              <label for="max_subscribers">Макс. підписників (опційно)</label>
+              <input type="number" id="max_subscribers" name="max_subscribers" min="0" placeholder="—" />
+            </div>
+          </div>
+          <p class="hint">Канал проходить, якщо перегляди/відео ≥ порогу, І (відео ≤ порогу АБО вік ≤ порогу).</p>
+        </fieldset>
+
+        <div class="actions">
+          <button type="submit" id="search-btn">🔍 Шукати ніші</button>
+          <button type="button" id="export-btn" disabled>⬇️ Export CSV</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="status" class="status" hidden></section>
+
+    <section class="panel results-panel">
+      <div class="results-header">
+        <h2>Результати</h2>
+        <span id="results-count" class="muted"></span>
+      </div>
+      <div class="table-wrap">
+        <table id="results-table">
+          <thead>
+            <tr>
+              <th data-key="title">Канал</th>
+              <th data-key="country">Гео</th>
+              <th data-key="age_months" class="num">Вік, міс</th>
+              <th data-key="video_count" class="num">Відео</th>
+              <th data-key="subscriber_count" class="num">Підписники</th>
+              <th data-key="total_view_count" class="num">Перегляди (всього)</th>
+              <th data-key="views_per_video" class="num">Переглядів/відео</th>
+              <th data-key="views_per_subscriber" class="num">Переглядів/підписник</th>
+              <th data-key="score" class="num">Score</th>
+              <th>Топ відео</th>
+              <th>Ключові слова</th>
+            </tr>
+          </thead>
+          <tbody id="results-body">
+            <tr><td colspan="11" class="empty">Ще немає результатів — заповни форму і натисни "Шукати ніші".</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
