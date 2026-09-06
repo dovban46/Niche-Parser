@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YouTube Niche Parser</title>
-  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" href="/static/style.css?v={{ static_version }}" />
 </head>
 <body>
   <header class="topbar">
     <h1>📡 YouTube Niche Parser</h1>
-    <div class="quota-badge" id="quota-badge">Квота за сесію: <span id="quota-used">{{ quota_used }}</span> / ~{{ daily_quota }} unit/добу</div>
+    <div class="quota-badge" id="quota-badge">
+      Залишилось квоти сьогодні: <span id="quota-remaining">{{ quota_remaining }}</span> / ~{{ daily_quota }} unit
+      <span class="muted">(використано <span id="quota-used">{{ quota_used }}</span>)</span>
+    </div>
   </header>
 
   <main>
@@ -31,13 +34,26 @@
           </div>
 
           <div class="field">
-            <label for="published_after_days">Відео за період</label>
-            <select id="published_after_days" name="published_after_days">
-              <option value="30">останні 30 днів</option>
-              <option value="90" selected>останні 90 днів</option>
-              <option value="180">останні 180 днів</option>
-              <option value="365">останній рік</option>
-              <option value="0">без обмеження</option>
+            <label for="published_after_days">Відео за останні N днів</label>
+            <input type="number" id="published_after_days" name="published_after_days" value="90" min="0" step="1" />
+            <div class="chip-row">
+              <button type="button" class="chip" data-days="1">1</button>
+              <button type="button" class="chip" data-days="2">2</button>
+              <button type="button" class="chip" data-days="7">7</button>
+              <button type="button" class="chip" data-days="30">30</button>
+              <button type="button" class="chip" data-days="90">90</button>
+              <button type="button" class="chip" data-days="180">180</button>
+              <button type="button" class="chip" data-days="365">365</button>
+              <button type="button" class="chip" data-days="0">без обмеження</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="video_type">Тип відео</label>
+            <select id="video_type" name="video_type">
+              <option value="all" selected>Всі відео</option>
+              <option value="short">Тільки Shorts (≤3 хв)</option>
+              <option value="long">Тільки довгі (&gt;3 хв, коштує 2x quota/слово)</option>
             </select>
           </div>
 
@@ -52,11 +68,15 @@
         </div>
 
         <fieldset class="filters">
-          <legend>Фільтри "перспективного каналу"</legend>
+          <legend>Фільтри</legend>
           <div class="grid-3">
             <div class="field">
-              <label for="min_views_per_video">Мін. переглядів / відео</label>
-              <input type="number" id="min_views_per_video" name="min_views_per_video" value="50000" min="0" step="1000" />
+              <label for="min_video_views">Мін. переглядів на відео (за період)</label>
+              <input type="number" id="min_video_views" name="min_video_views" min="0" step="1000" placeholder="напр. 10000" />
+            </div>
+            <div class="field">
+              <label for="min_views_per_video">Мін. середні перегляди/відео каналу (опційно)</label>
+              <input type="number" id="min_views_per_video" name="min_views_per_video" min="0" step="1000" placeholder="напр. 50000" />
             </div>
             <div class="field">
               <label for="max_video_count">Макс. к-сть відео на каналі</label>
@@ -75,7 +95,16 @@
               <input type="number" id="max_subscribers" name="max_subscribers" min="0" placeholder="—" />
             </div>
           </div>
-          <p class="hint">Канал проходить, якщо перегляди/відео ≥ порогу, І (відео ≤ порогу АБО вік ≤ порогу).</p>
+          <label class="checkbox-field">
+            <input type="checkbox" id="require_small_or_new" name="require_small_or_new" checked />
+            Застосовувати фільтр каналу: новий АБО мало відео
+          </label>
+          <p class="hint">
+            Канал проходить, якщо (середні перегляди/відео ≥ порогу — якщо поле заповнене)
+            <span id="gate-hint">, І (відео ≤ порогу АБО вік ≤ порогу)</span>.
+            Вимкни чекбокс вище, щоб шукати "гарячі" відео за період незалежно від профілю каналу
+            (наприклад: відео за останні 2 дні з 10 000+ переглядів).
+          </p>
         </fieldset>
 
         <div class="actions">
@@ -107,16 +136,72 @@
               <th data-key="score" class="num">Score</th>
               <th>Топ відео</th>
               <th>Ключові слова</th>
+              <th>Графік</th>
             </tr>
           </thead>
           <tbody id="results-body">
-            <tr><td colspan="11" class="empty">Ще немає результатів — заповни форму і натисни "Шукати ніші".</td></tr>
+            <tr><td colspan="12" class="empty">Ще немає результатів — заповни форму і натисни "Шукати ніші".</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="results-header">
+        <h2>🕘 Історія пошуків</h2>
+        <button type="button" id="history-refresh-btn" class="link-btn">оновити</button>
+      </div>
+      <div class="table-wrap">
+        <table id="history-table">
+          <thead>
+            <tr>
+              <th>Дата</th>
+              <th>Ключові слова</th>
+              <th>Гео</th>
+              <th>Період</th>
+              <th class="num">Результатів</th>
+              <th class="num">Quota</th>
+              <th>Дії</th>
+            </tr>
+          </thead>
+          <tbody id="history-body">
+            <tr><td colspan="7" class="empty">Історія порожня.</td></tr>
           </tbody>
         </table>
       </div>
     </section>
   </main>
 
-  <script src="/static/app.js"></script>
+  <div id="growth-modal" class="modal-overlay" hidden>
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="growth-title">Графік росту каналу</h3>
+        <button type="button" id="growth-close-btn" class="link-btn">✕ закрити</button>
+      </div>
+      <p class="hint">
+        Графік будується по даті публікації та сумарних переглядах кожного відео (дані YouTube Data API).
+        Це наближення "коли канал вистрілив", а не щоденна аналітика — реальну щоденну статистику
+        YouTube показує лише власнику каналу в YouTube Studio.
+      </p>
+      <div id="growth-chart-wrap" class="chart-wrap"></div>
+      <div class="table-wrap">
+        <table id="growth-table">
+          <thead>
+            <tr>
+              <th>Дата</th>
+              <th>Відео</th>
+              <th>Тип</th>
+              <th class="num">Перегляди</th>
+              <th class="num">Накопичено</th>
+              <th>Мітка</th>
+            </tr>
+          </thead>
+          <tbody id="growth-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js?v={{ static_version }}"></script>
 </body>
 </html>

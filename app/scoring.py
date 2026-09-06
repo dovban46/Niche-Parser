@@ -58,17 +58,19 @@ def build_channel_result(
         top_video_title=top_video.get("title") if top_video else None,
         top_video_views=top_video.get("views") if top_video else None,
         top_video_url=(f"https://www.youtube.com/watch?v={top_video['video_id']}" if top_video else None),
+        top_video_is_short=top_video.get("is_short") if top_video else None,
     )
 
 
 def passes_filters(channel: ChannelResult, req: SearchRequest) -> bool:
-    if channel.views_per_video < req.min_views_per_video:
+    if req.min_views_per_video is not None and channel.views_per_video < req.min_views_per_video:
         return False
 
-    is_small = channel.video_count <= req.max_video_count
-    is_new = channel.age_months is not None and channel.age_months <= req.max_channel_age_months
-    if not (is_small or is_new):
-        return False
+    if req.require_small_or_new:
+        is_small = channel.video_count <= req.max_video_count
+        is_new = channel.age_months is not None and channel.age_months <= req.max_channel_age_months
+        if not (is_small or is_new):
+            return False
 
     if req.min_subscribers is not None and channel.subscriber_count < req.min_subscribers:
         return False

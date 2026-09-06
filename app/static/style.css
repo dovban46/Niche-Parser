@@ -173,3 +173,104 @@ a:hover { text-decoration: underline; }
   margin: 2px 3px 0 0;
   font-size: 0.75rem;
 }
+
+.type-badge {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-right: 4px;
+}
+.type-badge.short { background: #2a1c40; color: #c79bff; }
+.type-badge.long { background: #10233f; color: #9fc3ff; }
+
+.chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.chip {
+  background: #1c2540;
+  color: var(--muted);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.chip:hover { color: var(--text); border-color: var(--accent); }
+.chip.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text);
+  margin: 4px 0 8px;
+  cursor: pointer;
+}
+.checkbox-field input { width: 16px; height: 16px; }
+
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.82rem;
+  padding: 2px 4px;
+}
+.link-btn:hover { text-decoration: underline; background: none; }
+
+.icon-btn {
+  background: #1c2540;
+  border: 1px solid var(--panel-border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 4px 9px;
+  font-size: 0.85rem;
+}
+.icon-btn:hover { border-color: var(--accent); }
+.icon-btn.danger:hover { border-color: var(--bad); color: var(--bad); }
+
+/* Модалка графіка росту каналу */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 16, 0.72);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 20px;
+  z-index: 100;
+  overflow-y: auto;
+}
+.modal-overlay[hidden] {
+  display: none;
+}
+.modal {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  padding: 22px 24px;
+  max-width: 900px;
+  width: 100%;
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.modal-header h3 { margin: 0; font-size: 1.1rem; }
+
+.chart-wrap {
+  background: #0f1526;
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 14px 0;
+  overflow-x: auto;
+}
+.chart-wrap svg { display: block; }
+
+.row-breakout { background: rgba(53, 193, 122, 0.08); }
+.row-peak td:first-child { border-left: 3px solid var(--good); }
