@@ -24,12 +24,41 @@
 
 ## 2. Встановлення
 
+Потрібен **Python 3.10+**.
+
 ```bash
-cd E:/YouTube/parser
+git clone https://github.com/dovban46/Niche-Parser.git
+cd Niche-Parser
+```
+
+Створи й активуй віртуальне середовище (рекомендовано, щоб не засмічувати системний Python):
+
+```bash
+python -m venv .venv
+```
+
+Активація — Windows (PowerShell):
+```powershell
+.venv\Scripts\Activate.ps1
+```
+Активація — macOS/Linux:
+```bash
+source .venv/bin/activate
+```
+
+Встанови залежності:
+
+```bash
 pip install -r requirements.txt
 ```
 
 Створи файл `.env` у корені проєкту на основі `.env.example`:
+
+```bash
+cp .env.example .env
+```
+
+і встав туди свій ключ:
 
 ```
 YOUTUBE_API_KEY=встав_сюди_свій_ключ
@@ -42,6 +71,8 @@ uvicorn app.main:app --reload
 ```
 
 Відкрий у браузері: http://127.0.0.1:8000
+
+Щоб зупинити сервер — `Ctrl+C` у терміналі, де він запущений.
 
 ## 4. Як користуватись
 
