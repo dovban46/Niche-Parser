@@ -17,7 +17,7 @@ CAST = {
 SFX_TAGS = ["x_whoosh", "x_pop", "x_ding", "x_thud", "x_sting", "x_boom", "x_riser", "x_swish", "x_tick", "x_gasp",
             "x_record_scratch", "x_magic", "distant_bell", "war_drums", "horse_gallop", "army_march", "arrow_volley",
             "battle_cry", "wall_clash", "page_turn", "quill_scratch", "stone_impact", "fire_burst", "thunder_rumble"]
-CAMS = ["push", "pull", "panl", "panr", "punch", "drift_up", "drift_down", "rack", "tilt", "snap", "hand", "crane"]   # 2026-11-10: +rack/tilt/snap/hand/crane (vary.py)
+CAMS = ["push", "pull", "panl", "panr", "punch", "drift_up", "drift_down", "rack", "tilt", "snap", "hand", "crane", "pop"]   # 2026-11-10: +rack/tilt/snap/hand/crane (vary.py)
 CHUNK_WORDS = 110
 ANIM_ENABLED = False   # рішення 2026-10-22: без мікро-анімацій (менше кадрів), лише статичні кадри
 

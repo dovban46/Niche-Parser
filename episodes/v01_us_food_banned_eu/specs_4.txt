@@ -1,0 +1,74 @@
+274 || a large mirror with chef and his reflection wearing an American flag shirt, mirror centered || chef || pop;ch=Дзеркало: що Америка заборонила у нас
+275 || an American customs officer looking at a European food crate, officer on the left, crate on the right || officer || panr
+276 || a customs table with confiscated European foods, table centered || || push
+277 || a chocolate egg opening to show a small toy inside, egg centered || || pop;mark=circle@0.5,0.5,0.2;sfx=x_pop
+278 || an old-fashioned law book with a year seal on it, book centered || || push;note=1938;noteat=0.5,0.14
+279 || a candy bar with a toy car embedded in it, candy centered, a red stop sign above || || push;mark=cross@0.5,0.5,0.18
+280 || a little toy car inside a chocolate shell, shell centered || || push;mark=circle@0.5,0.5,0.17
+281 || a toy inside chocolate with a red banned sign, centered || || punch;sfx=x_sting
+282 || customs officer crushing chocolate eggs with a stamp and a trash can, officer centered || officer || push
+283 || a two-part plastic egg with the toy in a separate compartment from the chocolate, egg centered || || pop;mark=circle@0.5,0.5,0.2;sfx=x_ding
+284 || a toy compartment side by side with a chocolate half-shell, centered || || pull
+285 || a green tick over the two-part egg, centered || || push;mark=check@0.5,0.5,0.18
+286 || chef raising one finger, chef centered || chef || punch
+287 || a wedge of soft cheese on a wooden board with a milk bottle, board centered || || pop
+288 || a calendar with sixty pages and a wheel of cheese, calendar on the left, cheese on the right || || panr;note=60 днів;noteat=0.5,0.14
+289 || a cheese cellar with shelves of cheese wheels and a big clock, cellar centered || || push
+290 || a soft camembert cheese in a box with a tired face, centered || || push
+291 || a soft cheese melting in a puddle on a ship deck, centered || || push;mark=cross@0.5,0.55,0.16
+292 || two chefs with different hats staring at each other, chefs centered || chef || push
+293 || a European person with a worried look holding a bottle labeled with a molecule icon, centered || || push
+294 || an American person with a worried look holding a germ-free sprayer and a child's toy, centered || || push
+295 || a child with a toy near its mouth and a parent hurrying toward it, centered || parents || punch;sfx=x_gasp
+296 || two walls, one labeled with a chemical symbol and one with a germ symbol, walls centered || || pull
+297 || a book of scandals with headlines drawn as scribbles, book centered || || push
+298 || a law book built around a bandaged heart, book centered || || pop;mark=circle@0.5,0.5,0.2
+299 || an American memory bubble with a germ and a hospital bed, bubble centered || || push
+300 || a European memory bubble with a calf and a worried face, bubble centered || || push
+301 || a cow with a confused face and spirals in its eyes, cow centered || || pop;sfx=x_boing
+302 || chef standing at a crossroads between the American and European flags, chef centered || chef || pull
+303 || two big thought bubbles side by side labeled with a shield and a green light, bubbles centered || || pull
+304 || a tall red stop barrier in front of a plate, plate centered || || push;mark=cross@0.5,0.5,0.17
+305 || a plate waiting with a clipboard of tests on its side, plate centered || || push
+306 || a green traffic light over a plate, plate centered || || push;mark=check@0.5,0.4,0.15
+307 || a magnifying glass over a dinner plate, plate centered || || push;mark=circle@0.5,0.5,0.2
+308 || a price tag and a scale, scale centered || || push
+309 || a gate blocking a perfectly fine apple, apple centered || || push;mark=cross@0.5,0.5,0.17
+310 || a price tag with a fat bold arrow pointing up, centered || || push
+311 || an approved chemical bottle on a shelf with a calendar creeping by, bottle centered || || pan;note=роками;noteat=0.5,0.14
+312 || a gavel hitting down on a bottle, bottle centered || || punch;sfx=x_thud
+313 || a red candy cherry with a cross, centered || || pop;mark=cross@0.5,0.5,0.17
+314 || a perfect shiny pedestal with a crack across it, pedestal centered || || punch;sfx=x_sting
+315 || a lasagna dish on a table, with a horse looking in through a window, dish centered || || pop;sfx=x_boing
+316 || a burger on a plate with a small horse head popping out from behind it, burger centered || || push
+317 || a beef cow looking offended while a horse grins, animals centered || || push;mark=circle@0.5,0.5,0.25
+318 || a broken pedestal with no winner, centered || || push
+319 || a map with Ukraine highlighted in yellow and blue, map centered || || pop;mark=circle@0.5,0.5,0.17
+320 || a blue and yellow country slowly walking toward a circle of stars, centered || || panr
+321 || a rulebook with a European star stamp, book centered || || push
+322 || a dinner plate in the future with a European flag on it, plate centered || || push
+323 || a big European rulebook above a dinner table, book centered || || push
+324 || chef holding an empty plate and tilting it toward the viewer, chef centered || chef || push
+325 || chef shrugging with a gentle smile, chef centered || chef || punch
+326 || a shopper at the supermarket with a grocery basket, shopper centered || shopper || push
+327 || a rulebook with a green tick next to a basket of groceries, centered || || push;mark=check@0.5,0.5,0.17
+328 || a rulebook tied to a kitchen with a ribbon, centered || || push
+329 || a market shelf with a local flag, shelf centered || || push
+330 || an imported box being opened by a shopper, box centered || shopper || push
+331 || a hand reading a label on a jar with a magnifying glass, jar centered || || push;mark=circle@0.5,0.5,0.17
+332 || a puzzled face looking at a long complicated word, no letters but scribbles, centered || || push
+333 || chef wagging a finger at a viral video thumbnail, thumbnail centered || chef || punch
+334 || a loud video thumbnail with exclamation marks, centered || || push;mark=cross@0.5,0.5,0.2
+335 || chef winking and pointing to himself, chef centered || chef || punch;sfx=x_ding
+336 || a magnifying glass over a book of sources, centered || || push;mark=circle@0.5,0.5,0.2;note=перевіряй;noteat=0.5,0.14;notec=green
+337 || chef raising one finger in a lecture pose, chef centered || chef || push
+338 || a border gate with a stop sign and a perfectly healthy apple, apple centered || || push
+339 || the apple with a happy face being handed over by a farmer, apple centered || || push;mark=check@0.5,0.5,0.17
+340 || two negotiators with a rulebook between them, rulebook centered || || pull
+341 || two flags with a broken handshake, centered || || push;mark=circle@0.5,0.5,0.2
+342 || chef holding a fork with a curious eyebrow, chef centered || chef || pop;sfx=x_ding
+343 || a passport booklet in a pocket with a golden star, passport centered || || push;mark=circle@0.5,0.5,0.17
+344 || a hand reaching into a pocket pulling out a passport, hand centered || || push
+345 || chef holding a fork with a chicken leg on it, chef on the left third || chef || panl
+346 || a chicken in a bubble bath with a rubber duck, bubbles, chicken centered || || pop;sfx=x_boing
+347 || a comment box with hearts and a speech bubble, box centered || || push;sfx=x_ding

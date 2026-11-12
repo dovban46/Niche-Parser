@@ -1,0 +1,84 @@
+190 || a blogger woman with a laptop and a megaphone, sitting at a desk, blogger on the left third || blogger || panl;ch=Хліб з пінопластом і барвники
+191 || the blogger holding up a phone with a food emoji, blogger centered || blogger || push
+192 || a sandwich shop counter with a petition scroll hanging on it, counter centered || || push;mark=circle@0.5,0.5,0.22
+193 || a sandwich cut in half revealing a tiny chemical flask inside, sandwich centered || || pop;mark=circle@0.5,0.5,0.18
+194 || a loaf of bread rising high out of the oven, puffy, loaf centered || || push
+195 || a foam yoga mat rolled up next to a flask, mat centered || || push
+196 || a yoga mat rolled on the floor with a big question mark, mat centered || || pop;mark=circle@0.5,0.5,0.2
+197 || a viral phone screen with hearts and shares bursting out, phone centered || || punch;sfx=x_ping_up
+198 || a sandwich chain worker removing a jar from a recipe card, worker centered || || push;mark=cross@0.5,0.5,0.15
+199 || a European flag and a bread loaf shaking hands, centered || || push
+200 || a red cross over a flask beside a bread loaf, loaf centered || || push;mark=cross@0.5,0.5,0.17
+201 || chef holding a sandwich up close, looking suspiciously at it, chef centered || chef || punch
+202 || a green clipboard approval, a thumbs up from an official, official centered || official || push;mark=check@0.7,0.4,0.14
+203 || a scale with a tiny sandwich on one side and a tiny flask on the other, scale balanced, centered || || pull
+204 || a European official stamping NO on a paper, official centered || official || punch;sfx=x_thud
+205 || chef pointing at a pattern of repeating icons on a wall, chef on the left third || chef || panl
+206 || a bread loaf sleeping in a drawer full of ingredients, loaf centered || || push
+207 || an ingredient list with a tiny flask hiding among the lines, list centered || || push;mark=circle@0.5,0.5,0.2
+208 || a person laughing at a phone screen, phone centered || || push
+209 || a giant sandwich chain building wiping an item off a board, building centered || || push
+210 || one single post bubble on a phone toppling a tall tower of papers, tower centered || || punch;sfx=x_boom
+211 || a post-it story note glowing like a spotlight, centered || || pop
+212 || a story note being passed from mouth to mouth in a crowd, notes flying, crowd centered || || push
+213 || a flour sack with a spoon of white powder beside it, sack centered || || push;note=бромат калію;noteat=0.5,0.14
+214 || a hand pouring white powder into a flour bowl, bowl centered || || push
+215 || dough rising tall in a bowl, bowl centered || || pop
+216 || three flags in a row (European star, British, Canadian) with a red cross over a flour sack, flags centered || || push;mark=cross@0.5,0.5,0.2
+217 || an American flag with a flour sack and a green tick, centered || || push;mark=check@0.5,0.5,0.17
+218 || a California map shape with a gavel hitting down, map centered || || punch;sfx=x_thud
+219 || a calendar page showing 2027, with a red cross over a flour sack beside it, calendar centered || || push;note=2027;noteat=0.5,0.14
+220 || a rainbow bowl of colorful candy, bowl centered || || pop;sfx=x_ding
+221 || a university lab with a researcher and test tubes in six colors, test tubes centered || scientist || push
+222 || six test tubes of dye in a row, each a different color, tubes centered || || push;mark=circle@0.5,0.5,0.28
+223 || a candy bag with a small warning triangle sticker on it, bag centered || || pop;mark=circle@0.5,0.4,0.15
+224 || a cartoon child with a spinning swirl above its head, child centered || child || push
+225 || the child holding a book and looking confused, child centered || child || push
+226 || a banned sign with a big green question mark over it, sign centered || || push
+227 || a shopper picking a candy bag with a warning sticker and then putting it back, shopper centered || || push;mark=cross@0.5,0.5,0.17
+228 || a factory machine pouring red juice from a beetroot into a mixer, mixer centered || || push
+229 || bright natural colored candies, beet red and yellow carrot, in two small jars, jars centered || || pull;mark=check@0.5,0.5,0.17
+230 || a jar of glowing neon candies, neon colors, jar centered || || punch
+231 || a green check mark racing to catch up with a running American flag, running figure centered || || panr
+232 || a soda can with a green check mark crossing out an oily bottle, can centered || || push
+233 || a bottle of oily liquid with a red cross over it, bottle centered || || pop;mark=cross@0.5,0.5,0.18
+234 || a bubbling soda glass with orange liquid, glass centered || || push
+235 || an American government office building with a flag, building centered || || push
+236 || a clipboard with a calendar year, clipboard centered || || push;note=Червоний №3;noteat=0.5,0.14;notec=red
+237 || a red candy cherry with a cross over it and a 2027 calendar sign, cherry centered || || pop;mark=cross@0.5,0.5,0.17
+238 || two panels: smart owl on the left with the European flag, tired owl on the right with the American flag || || push
+239 || the two owls swapping hats with each other, owls centered || || pull
+240 || a mirror with a reflection of the same owl, mirror centered || || pop;sfx=x_ding
+241 || a corn cob and a soybean pod with a big glowing symbol of DNA above them, centered || || pop;ch=ГМО, яке не так страшне
+242 || a European shopper tentatively holding a corn cob far from the body, shopper centered || shopper || push
+243 || a corn cob with a double helix sticker, cob centered || || pop;mark=circle@0.5,0.5,0.2;sfx=x_pop
+244 || a corn cob and a soybean pod standing in a field, field centered || || push
+245 || a huge American field of green crops stretching to the horizon, field centered || || pull
+246 || a small European farm plot with a fence, plot centered || || push
+247 || a stack of approval forms, one for each product, stack centered || || push;mark=circle@0.5,0.5,0.25
+248 || a corn cob with a printed label attached, label centered || || push;mark=underline@0.5,0.6,0.2
+249 || a single corn row in a small plot, plot centered || || push
+250 || a map of Spain as a simple flat shape with one green pin, map centered || || pop;mark=circle@0.5,0.5,0.15
+251 || chef leaning in with a curious grin, chef on the left third || chef || panl
+252 || a panel of scientists in lab coats sitting at a long table, table centered || scientist || push
+253 || the European food safety office building with a green check sign, building centered || || push
+254 || scientists inspecting a corn cob with a magnifying glass, cob centered || scientist || push;mark=circle@0.5,0.5,0.18
+255 || a green check mark on a corn cob with a happy face, cob centered || || pop;mark=check@0.5,0.5,0.18
+256 || a gavel next to a laboratory beaker, gavel centered || || push
+257 || a heart-shaped hand holding a corn cob, centered || || push
+258 || a European family at a table with arms crossed, family centered || family || push
+259 || a person pointing at their own chest with confidence, centered || || punch
+260 || chef tilting his head, chef centered || chef || push
+261 || chef making a calm open gesture, chef centered || chef || push
+262 || a woman reading a food label carefully, woman centered || shopper || push;mark=circle@0.6,0.5,0.15
+263 || a woman choosing between two shelves with confidence, shopper on the left, shelves on the right || shopper || panr
+264 || a warning sign without letters with a red circle, centered || || pop
+265 || a thought bubble with a no thanks gesture, centered || || push;note=ми не згодні;noteat=0.5,0.14
+266 || a sticky note stuck onto a forehead, forehead centered || || pop
+267 || a speech bubble with a European flag and a red cross, centered || || push
+268 || a magnifying glass over a speech bubble, centered || || push;mark=circle@0.5,0.5,0.18
+269 || a toxic skull sign being crossed out to show proof, centered || || push
+270 || a gavel and a closed door, centered || || push
+271 || a person holding a blank evidence folder, folder centered || || push;mark=circle@0.5,0.5,0.17
+272 || two doors side by side, one red and one green, doors centered || || pull
+273 || two different dinner plates side by side on a table, plates centered || || pull;mark=circle@0.5,0.5,0.28

@@ -7,9 +7,9 @@ from ..explainer import tts
 from ..ffutil import error_tail, probe_duration, run_ffmpeg
 from . import core, costs
 
-# Brian (premade): глибокий, теплий оповідач; інший за голос Forbidden Folio (George).
-DEFAULT_VOICE = "nPczCjzI2devNBz1zQrb"
-FALLBACK_VOICE = "JBFqnCBsd6RMkjVDRZzb"
+# Голос каналу «Хіба це можна їсти?» (вибір користувача 2026-11-12): https://elevenlabs.io/voices/ZwwNZP0QbNaQsoNgkPWr
+DEFAULT_VOICE = "ZwwNZP0QbNaQsoNgkPWr"
+FALLBACK_VOICE = DEFAULT_VOICE      # запасного голосу нема: Brian користувачу не підходить
 TAIL_S = 0.9          # пауза-фінал після останнього слова (завершений кінець, не обірваний)
 PART_CHARS = 4000     # ліміт частини; між частинами додається коротка пауза
 PART_GAP_S = 0.25

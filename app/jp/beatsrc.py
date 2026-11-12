@@ -38,6 +38,15 @@ def compile(slug: str) -> list[dict]:
             b["bars"] = True
         if "look" in o:
             b["look"] = o["look"]            # mono | sepia (2026-11-10, див. vary.py)
+        if "mark" in o:            # mark=circle@0.7,0.45,0.14  |  arrow@x,y,r,dir  (координати в кадрі-картинці, 0..1)
+            kind, _, nums = o["mark"].partition("@")
+            v = [float(x) for x in nums.split(",")] if nums else [0.5, 0.5, 0.14]
+            b["mark"] = {"kind": kind, "x": v[0], "y": v[1], "r": v[2] if len(v) > 2 else 0.14}
+            if len(v) > 3:
+                b["mark"]["dir"] = v[3]
+        if "note" in o:            # note=ХЛОР?  noteat=0.5,0.15 (екран)  notec=red|green|blue|dark
+            nx, ny = [float(x) for x in o.get("noteat", "0.5,0.15").split(",")]
+            b["note"] = {"text": o["note"], "x": nx, "y": ny, "color": o.get("notec", "red")}
         if "grid" in o:
             b["grid"] = o["grid"]            # назва серії плиток «інвентар», 2-4 біти підряд
         if "hook" in o:
@@ -48,6 +57,7 @@ def compile(slug: str) -> list[dict]:
     cast = plan.load_cast(slug)
     errs = plan.validate(beats, (d / "script.txt").read_text(encoding="utf-8"))
     errs += [f"біт {i}: невідомий cast {c}" for i, b in enumerate(beats) for c in b["cast"] if c not in cast]
+    errs += [f"біт {i}: невідомий mark {b['mark']['kind']}" for i, b in enumerate(beats) if b.get("mark") and b["mark"]["kind"] not in ("circle", "arrow", "cross", "check", "underline")]
     lib = {p.stem for p in (d.parents[1] / "sfx_library").glob("*.mp3")}
     errs += [f"біт {i}: невідомий sfx {b['sfx']}" for i, b in enumerate(beats) if b["sfx"] and b["sfx"] not in lib]
     errs += [f"біт {i}: невідома камера {b['cam']}" for i, b in enumerate(beats) if b["cam"] not in plan.CAMS]

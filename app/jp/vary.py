@@ -18,7 +18,7 @@ from collections import Counter
 
 from . import core
 
-CAMS = ["push", "pull", "panl", "panr", "drift_up", "drift_down", "rack", "tilt", "snap", "hand", "crane"]
+CAMS = ["push", "pull", "panl", "panr", "drift_up", "drift_down", "rack", "tilt", "snap", "hand", "crane", "pop"]
 FACE = re.compile(r"close-up|face|eyes|staring|grin|frown|shout|scream", re.I)
 WIDE = re.compile(r"\b(wide|aerial|overhead|high-angle|establishing|valley|field|army|armies|whole|panorama|from above)\b", re.I)
 TENSE = re.compile(r"\b(charge|charging|volley|smoke|fire|firing|aim|aiming|enemy|battle|attack|run|running|fall|falling|dead|blood)", re.I)
@@ -39,7 +39,7 @@ def pick_profile(slug: str, wish: dict | None = None, seed: int = 3) -> dict:
     hist = core.load_json(hist_f, {})
     recent = [v for k, v in hist.items() if k != slug][-4:]
     rnd = random.Random(seed)
-    cands = [p for p in PROFILES if all(p[k] == v for k, v in (wish or {}).items())]
+    cands = [p for p in PROFILES if all(p[k] == v for k, v in (wish or {}).items() if k in p)]
     rnd.shuffle(cands)
     best = max(cands, key=lambda p: min([sum(p[k] != r.get(k) for k in p) for r in recent] or [4]))
     hist[slug] = best
@@ -47,7 +47,7 @@ def pick_profile(slug: str, wish: dict | None = None, seed: int = 3) -> dict:
     return best
 
 
-HOOK_STYLES = ["caption", "seal", "flash", "stamp"]   # вигляд тексту-гачка перших секунд (render.draw_hook)
+HOOK_STYLES = ["caption", "seal", "flash", "sticker", "stamp"]   # вигляд тексту-гачка перших секунд (render.draw_hook)
 
 
 def pick_hook(slug: str, wish: str | None = None, seed: int = 3) -> str:
@@ -71,8 +71,10 @@ def apply(slug: str, grids: list[tuple[int, int]] | None = None, profile: dict |
     rnd = random.Random(seed)
     n = len(beats)
     hook_wish = (profile or {}).get("hook")
-    prof = dict(pick_profile(slug, {k: v for k, v in (profile or {}).items() if k != "hook"} or None, seed))
+    prof = dict(pick_profile(slug, {k: v for k, v in (profile or {}).items() if k in PROFILES[0]} or None, seed))
     prof["hook"] = pick_hook(slug, hook_wish, seed)
+    prof.update((profile or {}).get("force", {}))     # напр. {"toon": True, "font": "comic", "particles": "none"} (канал харчових табу)
+    toon = bool(prof.get("toon"))
     core.save_json(d / "montage.json", prof)
 
     # 1) плитки-«інвентар»
@@ -97,7 +99,7 @@ def apply(slug: str, grids: list[tuple[int, int]] | None = None, profile: dict |
                 last_mono = i
 
     # 3) переходи: розділи по черзі ink/burn/iris/dissolve; м'які моменти dissolve; вхід/вихід sepia через dissolve
-    ch_tr = ["ink", "burn", "iris", "dissolve"]
+    ch_tr = ["slide", "iris", "dissolve", "zoom"] if toon else ["ink", "burn", "iris", "dissolve"]
     rnd.shuffle(ch_tr)
     k = 0
     for i, b in enumerate(beats):
@@ -140,7 +142,7 @@ def apply(slug: str, grids: list[tuple[int, int]] | None = None, profile: dict |
             b["cam"] = rnd.choice(opts)
 
     # 5) гачок: кожен план інший прийом
-    hook_mix = [("hand", "cut"), ("snap", "whip"), ("punch", "flash"), ("tilt", "cut"), ("crane", "burn"),
+    hook_mix = [("hand", "cut"), ("snap", "whip"), ("punch", "flash"), ("tilt", "cut"), ("crane", "slide" if toon else "burn"),
                 ("pull", "whip"), ("punch", "cut"), ("rack", "dissolve")]
     for i in range(min(hook_n, n)):
         if i in in_grid:

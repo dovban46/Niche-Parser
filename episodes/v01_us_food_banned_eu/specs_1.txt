@@ -1,0 +1,100 @@
+001 || a big chocolate egg with a red label, a surprised chef pointing at it, egg large in the center, chef on the left third || chef || punch keep=1;sfx=x_pop
+002 || the chocolate egg on a customs counter, a red forbidden circle with a slash drawn over it, egg centered || || push keep=1;mark=cross@0.5,0.5,0.2
+003 || a stern customs officer in a blue cap stamping a huge crate, crate in the center, officer on the right third || officer || panl keep=1;sfx=x_thud
+004 || a mountain of confiscated chocolate eggs piled in a heap in the center, officer on the left looking proud || officer || pull keep=1;mark=circle@0.5,0.55,0.25;note=60 000;noteat=0.5,0.14
+005 || a map of Europe in simple flat shapes, a big blue star in the center || || push keep=1
+006 || a whole raw chicken on a supermarket shelf behind a red barrier gate, chicken centered, gate in front || || punch keep=1;mark=cross@0.5,0.5,0.2;sfx=x_sting
+007 || the raw chicken with a price tag reading nothing, a big gift ribbon, a barrier stops it, chicken in the center || || push keep=1;note=ЗАДАРМА?;noteat=0.5,0.14
+008 || chef raising one eyebrow with a skeptical face, chef large in the center || chef || punch keep=1
+009 || a globe with two big cartoon hands on the left and right edges pulling a fork and knife toward each other, globe in the center || || push
+010 || a dinner plate in the center with a question mark floating above it, chef on the right third shrugging || chef || panr;mark=circle@0.5,0.55,0.16
+011 || a calendar with many pages flying off, big clock beside it, calendar in the center || || push;note=30+ років;noteat=0.5,0.14
+012 || a courtroom of the world trade organisation: a judge with a gavel behind a desk, gavel hitting, judge in the center || || punch;sfx=x_thud
+013 || a wedge of blue cheese with a red price tag shooting up, cheese centered || || push;mark=circle@0.5,0.5,0.18
+014 || a French shepherd with a big mustache and a flat cap holding a wooden staff, sheep behind him, shepherd in the center || shepherd || pull
+015 || a fast-food restaurant building made of blocks being taken apart by many hands, big yellow arch on the building, building centered || || punch;sfx=x_boom
+016 || chef pointing a finger at the viewer with a confident smile, chef on the left third, blank space on the right || chef || panl
+017 || an American flag pattern burger on a plate, a plate of food with a European star flag on the other side, split composition || || push
+018 || a dining table with a bouncer-style stop sign in front of a plate, plate in the center || || push;mark=cross@0.5,0.5,0.18
+019 || a big why question mark made of cream on a plain background, centered || || pop
+020 || two scales balancing with one pan holding a chicken and the other holding a gavel, scale in the center || || pull;mark=circle@0.5,0.5,0.25
+021 || a computer screen with a loud clickbait style post full of exclamation marks, screen centered, tiny chef frowning in the corner || chef || push
+022 || chef holding a magnifying glass up close to the camera with one huge eye, chef centered || chef || punch;sfx=x_ding
+023 || a chicken swimming in a bathtub with a rubber duck, bubbles, a shower cap on its head, chicken centered || || pop;sfx=x_boing
+024 || a chicken processing factory with a conveyor belt of whole raw chickens, belt in the center, flat simple factory || || push;ch=Курка у хлорній ванні
+025 || a conveyor belt of whole raw chickens moving left to right, chickens in a long line, belt centered || || panr
+026 || a hand-drawn line of raw chickens dropping into a huge tub at the end of the belt, tub on the right third || || panr
+027 || a giant bathtub filled with ice cold water and chickens floating in it, tub centered || || push
+028 || a bottle with a chemical symbol pouring blue liquid into the water, bottle on the left third, tub on the right || || pull;mark=arrow@0.3,0.45,0.12,135
+029 || two bottles labeled with a droplet and a flask symbol side by side, bottles centered || || push;mark=circle@0.5,0.5,0.2
+030 || chef scratching his head with a big question mark above, chef centered || chef || punch
+031 || a tiny cartoon germ monster with angry eyes being squashed under a boot, germ in the center || || punch;sfx=x_pop;mark=circle@0.5,0.55,0.15
+032 || a clean wrapped chicken in a shop fridge with a green clean sparkle, chicken centered || || push
+033 || an American shop with a green tick mark on the clean chicken, chicken on the left third, thumbs up || || panl;mark=check@0.35,0.5,0.17
+034 || chef turning toward a European flag with an arrow, chef on the left third, flag on the right third || chef || panr
+035 || a stop sign standing in front of a chicken tub, sign centered || || push;mark=cross@0.5,0.5,0.2
+036 || a glass of clean drinking water pouring onto a chicken, glass on the left, chicken on the right || || panr;mark=circle@0.3,0.4,0.14
+037 || a European meeting room with a table, a thick paper marked yes on a screen at the head of the table, table centered || || push
+038 || many hands raising red cards at a round table, red cards centered || || pull;mark=circle@0.5,0.5,0.28
+039 || a chicken in a plastic bag, wearing a worried face, chicken centered || || pop
+040 || the same chicken locked behind a barrier at a border checkpoint, chicken centered, barrier in front || || push;mark=cross@0.5,0.5,0.2;sfx=x_sting
+041 || a scary forum post on a laptop screen with a skull emoji, laptop centered || || push
+042 || chicken in a bubble labeled with a droplet drawn on top, bubble centered || || pop;note=хлорна курка;noteat=0.5,0.14
+043 || a stack of negotiation papers with a coffee stain, tipping over, papers centered || || push
+044 || two suited negotiators on opposite sides of a long table, flags on the table, table centered || || pull
+045 || a British politician in a suit pointing at a giant chicken poster during a speech, politician on the left third, poster on the right third || politician || panl
+046 || a crowd of voters looking at the chicken poster, voters small in the foreground, chicken poster centered || || push;sfx=x_gasp
+047 || an American farmer in overalls and a hat crossing his arms with a suspicious frown, farmer centered || farmer || punch
+048 || a market wall made of bricks around a green field with a European star, wall centered || || push;mark=circle@0.5,0.55,0.25
+049 || two people looking at the same chicken, one with a happy face, one with a sad face, chicken between them in the center || || push
+050 || the same chicken with a thought bubble showing a green shield on the left and a dollar sign on the right, chicken centered || || pull
+051 || a big green shield with a tick, centered || || pop;mark=check@0.5,0.5,0.2
+052 || a dollar sign wearing a shield costume, centered || || pop;note=торгівля?;noteat=0.5,0.14
+053 || chef with a very curious expression leaning toward the camera, chef centered || chef || punch
+054 || chef holding his nose with a question mark above his head and a chlorine bottle in the other hand, chef centered || chef || push;mark=circle@0.7,0.5,0.14
+055 || chef making a hesitant gesture with open palms, chef centered || chef || push
+056 || a bathtub with a lot of dirty footprints around it and a clean chicken inside, tub centered || || pull;mark=circle@0.5,0.5,0.25
+057 || a hand wiping a window with a cloth, wiping away dirty stains, window centered || || push
+058 || a messy cramped chicken farm with a crowded coop, coop in the center, a mop leaning on it || || push
+059 || a cleaning crew spraying water over the messy farm, crew on the left third, farm on the right || || panl
+060 || a clean white clipboard report with a large green tick, report centered || || pop;mark=check@0.5,0.5,0.2
+061 || a farm gate, a conveyor belt and a plate all in a line, with a clean tick mark above each one, line centered || || panr
+062 || three tick marks in a row: farm, factory, kitchen, each icon in a circle, centered || || push;mark=check@0.5,0.5,0.14
+063 || a farm to fork path drawn as a dotted road from a farm to a fork, centered || || pan
+064 || a tiny finish line flag at the end of the road, flag on the right third, road on the left || || panl;mark=circle@0.75,0.5,0.14
+065 || an American cook shrugging with an open smile, cook centered || || punch
+066 || a second protective helmet being placed on top of a chicken, chicken centered || || push;sfx=x_pop
+067 || chef raising an eyebrow while holding two helmets, chef centered || chef || push
+068 || a scientist in a lab coat standing between two flags, scientist centered || scientist || pull
+069 || a scientist writing with a pen on a clipboard, clipboard centered || scientist || push
+070 || the European Food Safety Authority building drawn as a simple office with a flag and a year 2014 sign, building centered || || push;mark=underline@0.5,0.75,0.2
+071 || a bottle of peracetic acid with a clear label and a chicken beside it, bottle on the left third || || panl
+072 || a scientist giving a calm thumbs up, a green check beside him, scientist centered || scientist || push;mark=check@0.7,0.4,0.15
+073 || a question mark hanging over a chicken tub, tub centered || || pull
+074 || a tub in the center with a magnifying glass over it, tub centered || || push;mark=circle@0.5,0.5,0.2
+075 || the word WHY drawn in speech balloon style but without letters, just a large question mark, centered || || pop
+076 || a magnifying glass revealing hidden dirty footprints under a rug, rug centered || || push;mark=circle@0.5,0.5,0.2;sfx=x_ding
+077 || chef thinking with a finger on his chin, chef centered || chef || push
+078 || two suited leaders shaking hands in front of a big ship loaded with frozen chicken, handshake centered || || pull;sfx=x_tada
+079 || a Soviet-style cargo ship and an American cargo ship, simple flat ships sailing toward each other, ships centered || || panr
+080 || a cargo ship loaded with crates of frozen chicken legs, ship centered || || push
+081 || a white chicken breast on a golden plate, being admired, plate centered || || push
+082 || a pile of brown chicken legs left alone next to a sad plate, legs centered || || push;mark=circle@0.5,0.5,0.2
+083 || a delivery truck carrying chicken legs along a snowy road, truck centered || || panr
+084 || a pair of chicken legs wearing little leather boots with a name tag, centered || || pop;note=ніжки Буша;noteat=0.5,0.14;notec=blue
+085 || a market stall piled high with chicken legs, many customers, stall centered || || push
+086 || a family at a kitchen table eating chicken legs, family centered || family || push
+087 || a mother cooking at a stove, kitchen simple, mother centered || family || push
+088 || a huge washing tub with a question mark above it, tub centered || || pull;mark=circle@0.5,0.5,0.22
+089 || a map of Russia drawn as a simple flat shape with a red STOP hand on top, map centered || || push;mark=cross@0.5,0.5,0.22
+090 || a chlorine bottle with a red circle on it, bottle centered || || push;mark=circle@0.5,0.5,0.17
+091 || a factory changing its machine, workers installing a new gadget, factory centered || || push
+092 || a truck driving through a gate that is opening, truck centered || || panr;sfx=x_ding
+093 || chef with a small thoughtful smile, chef on the left third || chef || panl
+094 || two lawyers arguing endlessly with a pile of papers between them, pile centered || || push
+095 || a single chicken sitting patiently on a shelf, chicken centered || || pull
+096 || a chicken waiting with a clock above it, chicken centered || || push;mark=circle@0.5,0.2,0.1
+097 || a politician with a pen standing next to the chicken, shaking hands in the background, chicken centered || || push
+098 || a warm up gym scene: a chicken doing small stretches, chicken centered || || pop;sfx=x_boing
+099 || a big red war flag planted on a steak, steak centered || || punch;sfx=x_sting
+100 || a fast food restaurant torn apart into pieces, pieces flying, building centered || || punch;sfx=x_boom

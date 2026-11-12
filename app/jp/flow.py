@@ -10,11 +10,12 @@ from . import core, plan
 
 ROOT = Path(r"E:\YouTube\Antigravity generator img")
 FLOW_STYLE = (
-    "Flat 2D cartoon in a simple woodblock-print comic style with subtle washi paper grain: thick dark brown outlines, flat color fills, "
-    "limited palette of indigo, vermilion red, cream and mustard yellow; very simple characters with plain round faces (two dot eyes, tiny mouth), "
-    "simple limbs and rounded mitten hands without individual fingers; calm clear composition with large simple shapes, medium or wide shot, "
-    "at most three main characters; set in {era} Japan with a background that fits the scene; clean hand-drawn illustration; "
-    "no text, no letters, no numbers, no signature, no border."
+    "Bright flat 2D vector cartoon for a food-explainer channel: thick dark outlines, flat color fills, clean shapes, no gradients, no paper texture; "
+    "cheerful limited palette of tomato red, mustard yellow, mint green, sky blue and cream on a simple flat pastel or white background; "
+    "very simple characters with plain round faces (two dot eyes, tiny mouth), round heads, tube-like limbs and rounded mitten hands without individual fingers; "
+    "ONE clear main subject (a food item, an object or one character) drawn large in the center or on one third of the frame, plenty of empty space around it, "
+    "medium shot, at most three main elements, simple background that fits the scene; {era}"
+    "no text, no letters, no numbers, no logos, no signature, no border, no frame."
 )
 EDIT_PREFIX = ("Use the reference image exactly. Keep the character, clothes, colors, background, camera and style identical. "
                "Change only this: ")
@@ -29,7 +30,7 @@ def build_items(slug: str) -> list[dict]:
     beats = core.load_json(core.job_dir(slug) / "beats.json")
     cast = plan.load_cast(slug)
     era_f = core.job_dir(slug) / "era.txt"     # епоха відео (необов'язково), напр. "early 18th century (Edo period)"
-    style = FLOW_STYLE.format(era=era_f.read_text(encoding="utf-8").strip() if era_f.exists() else "16th century")
+    style = FLOW_STYLE.format(era=(era_f.read_text(encoding="utf-8").strip() + "; ") if era_f.exists() else "")
     faces_f = core.job_dir(slug) / "faces.txt"   # необов'язково: інший опис облич (з v18: велика міміка, як у хітів ніші)
     if faces_f.exists():
         style = style.replace("very simple characters with plain round faces (two dot eyes, tiny mouth)", faces_f.read_text(encoding="utf-8").strip())

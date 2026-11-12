@@ -13,14 +13,16 @@ from PIL import Image, ImageDraw, ImageFont
 from .. import audio_mix, sfx
 from ..config import SFX_ACCENT_GAIN_DB
 from ..ffutil import error_tail, run_ffmpeg
-from . import core, music
+from . import core, marks, music
 
 W, H, FPS = 1280, 720, 30
 IMPACT = "C:/Windows/Fonts/impact.ttf"
+COMIC = "C:/Windows/Fonts/comicbd.ttf"      # шрифт каналу «Хіба це можна їсти?» (montage.json font=comic)
+_FONT = [IMPACT]
 YELLOW = (255, 212, 40)
 VERMILION_BGR = (40, 60, 235)       # cv2 BGR
 TR_DUR = {"whip": 0.22, "flash": 0.20, "zoom": 0.22, "ink": 0.55,   # ink: перехід «мазок туші» (v05)
-          "dissolve": 0.45, "burn": 0.60, "iris": 0.45}              # 2026-11-10: з survival-каналу, розставляє vary.py
+          "dissolve": 0.45, "burn": 0.60, "iris": 0.45, "slide": 0.28}              # 2026-11-10: з survival-каналу, розставляє vary.py
 BARS_H = 0.085                      # висота кінорамки (частка кадру) для бітів з "bars": true
 MUSIC_GAIN_DB = -17.0
 AMB_GAIN_DB, AMB_LEN_S = -14.0, 7.0 # фони amb_* (20 с вітру/табору) — широкосмуговий шум: тихіше й коротше (v08 звучало як шипіння)
@@ -53,7 +55,7 @@ def lerp(a, b, p):
 
 @lru_cache(maxsize=None)
 def font(size: int) -> ImageFont.FreeTypeFont:
-    return ImageFont.truetype(IMPACT, size)
+    return ImageFont.truetype(_FONT[0], size)
 
 
 def ink_wipe(prev: np.ndarray, new: np.ndarray, p: float, seed: int) -> np.ndarray:
@@ -131,6 +133,22 @@ def chapter_sprite(text: str) -> np.ndarray:
     dr.rectangle((10, 8, 30, ht + 6), fill=(214, 60, 40, 255))
     dr.text((46, 16), text.upper(), font=f, fill=(250, 238, 212, 255))
     return np.asarray(im)
+
+
+@lru_cache(maxsize=None)
+def sticker_sprite(text: str) -> np.ndarray:
+    """Гачок «наліпка»: біла пігулка з товстим чорним контуром, жирний рукописний текст, кожна наліпка іншого кольору."""
+    f = font(54)
+    tw = f.getlength(text)
+    pad = 24
+    wd, ht = int(tw + pad * 2), 54 + pad * 2
+    col = [(214, 64, 46), (36, 98, 200), (36, 150, 60), (34, 26, 24)][sum(map(ord, text)) % 4]
+    im = Image.new("RGBA", (wd + 50, ht + 50), (0, 0, 0, 0))
+    dr = ImageDraw.Draw(im)
+    dr.rounded_rectangle((30, 32, 30 + wd, 32 + ht), 26, fill=(0, 0, 0, 80))
+    dr.rounded_rectangle((22, 22, 22 + wd, 22 + ht), 26, fill=(255, 255, 255, 255), outline=(34, 26, 24, 255), width=7)
+    dr.text((22 + pad, 22 + pad - 10), text, font=f, fill=col + (255,))
+    return np.asarray(im.rotate(-3 if sum(map(ord, text)) % 2 else 3, resample=Image.BICUBIC, expand=True))
 
 
 # --- стилі тексту-гачка (montage.json "hook", 2026-11-11: у кожному відео був однаковий рядок штампів угорі) ---
@@ -231,6 +249,12 @@ class Scene:
         self.chunks = self._subtitle_chunks()
         self.hook = self.beats[0].get("hook", "")
         self.mont = {**DEFAULT_MONTAGE, **core.load_json(d / "montage.json", {})}
+        if self.mont.get("font") == "comic":
+            _FONT[0] = COMIC
+            font.cache_clear()
+        if self.mont.get("toon"):                   # яскравий мультфільм: без віньєтки, темного низу й зерна (вони були для гравюри Japan)
+            self.vig = self.band = np.float32(1.0)
+            self.noise = np.float32(0.0)
         g = GRADES.get(self.mont["grade"])
         self.grade = np.float32(g).reshape(1, 1, 3) if g and self.mont["grade"] != "ink" else None
         # серії бітів-плиток (поле grid = назва серії, підряд): біт -> список бітів серії (2-4), «інвентар»
@@ -344,6 +368,9 @@ class Scene:
             cx, cy = lerp(0.5, fx, q1 * 0.7), lerp(0.5, fy, q1 * 0.5)
         elif kind == "hand":       # «з рук»: легке дихання камери без напрямку (тремтіння в cam_extra)
             z, cx, cy = 1.16 + 0.015 * math.sin(lt * 1.3), 0.5, 0.5
+        elif kind == "pop":        # «поп»: кадр вискакує з перельотом і м'яко осідає (мультяшний акцент на предметі)
+            q = min(lt / 0.30, 1.0)
+            z, cx, cy = 1.12 + 0.20 * (1 - ease_out_back(q, 2.2)) + 0.05 * p, lerp(0.5, fx, 0.5), 0.5
         elif kind == "crane":      # «кран»: великий план зверху вниз із відкриттям (від деталі до загального)
             z, cx, cy = lerp(1.38, BASE_ZOOM + 0.02, e), lerp(fx, 0.5, e), lerp(0.36, 0.5, e)
         else:  # drift_down
@@ -492,6 +519,8 @@ class Scene:
 
     def draw_particles(self, frame, bi, t):
         """Пил у повітрі на всіх кадрах; іскри — на кадрах із вогнем."""
+        if self.mont.get("particles") == "none":
+            return
         ov = frame.copy()
         for x0, y0, vx, vy, r in self.dust:
             kind = self.mont["particles"]
@@ -602,7 +631,8 @@ class Scene:
         if t > end + 0.3:
             return
         sc, gap = 0.8, 16
-        sprites = [stamp_sprite(p) for p, _ in items]
+        style = self.mont.get("hook", "stamp")
+        sprites = [(sticker_sprite if style == "sticker" else stamp_sprite)(p) for p, _ in items]
         widths = [s.shape[1] * sc for s in sprites]
         x = (W - sum(widths) - gap * (len(widths) - 1)) / 2
         fade = 1.0 if t < end else max(0.0, 1 - (t - end) / 0.3)
@@ -644,6 +674,8 @@ class Scene:
             return
         words, active, lt = s
         sp = sub_sprite(words, active, SUB_ACTIVE.get(self.mont["subs"], YELLOW))
+        if sp.shape[1] > W - 60:                    # довгі слова (comic ширший за Impact): стискаємо спрайт до ширини кадру
+            sp = cv2.resize(sp, (W - 60, int(sp.shape[0] * (W - 60) / sp.shape[1])), interpolation=cv2.INTER_AREA)
         pop = 1 + 0.10 * max(0.0, 1 - lt / 0.12) if lt < 0.12 else 1.0
         blit(frame, sp, W / 2, H * 0.885, scale=pop)
 
@@ -672,6 +704,9 @@ class Scene:
                 r = ease(p) * math.hypot(W, H) / 2
                 mask = (((self.gx - W / 2) ** 2 + (self.gy - H / 2) ** 2) < r * r)[..., None]
                 img = np.where(mask, img, (prev * 0.5).astype(np.uint8))
+            elif tr == "slide":                      # новий кадр виштовхує попередній ліворуч (мультяшна «сторінка»)
+                sh = int(W * ease(p))
+                img = np.concatenate([prev, img], axis=1)[:, sh:sh + W]
             elif tr == "whip":
                 sh = int(W * ease(p))
                 both = np.concatenate([prev, img], axis=1)[:, sh:sh + W]
@@ -704,6 +739,7 @@ class Scene:
         self.draw_fx(frame, bi, lt)
         self.draw_bars(frame, t)
         self.draw_ring(frame, bi, lt, M, size)
+        marks.draw(frame, self.beats[bi], lt, M, size, blit, ease_out_back, W, H, seed=bi)
         self.draw_label(frame, bi, lt)
         self.draw_chapter(frame, bi, lt)
         self.draw_day(frame, bi, lt)

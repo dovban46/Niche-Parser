@@ -1,0 +1,89 @@
+101 || a big juicy beef steak on a plate with a dramatic spotlight, steak centered || || pop;ch=Гормони, рокфор і вівчар;sfx=x_pop
+102 || a young bull in a pasture getting a small syringe on a tray beside it, bull centered || || push
+103 || a bull growing bigger and bigger across three panels, small to huge, panels in a row || || panr;mark=arrow@0.8,0.45,0.12,225
+104 || a price tag with a small number and a big pile of meat beside it, pile centered || || push;mark=circle@0.5,0.5,0.2
+105 || a happy cowboy with a wide grin tipping his hat, cowboy centered || cowboy || punch
+106 || a happy shopper holding a steak and a thumbs up, shopper centered || || punch
+107 || chef shaking his head with a European star badge on his jacket, chef on the left third || chef || panl
+108 || a calendar page showing the late eighties, and a syringe crossed out, calendar centered || || push;mark=cross@0.65,0.5,0.15
+109 || a bull with a red crossed-out syringe sign above its head, bull centered || || push;mark=cross@0.5,0.3,0.14
+110 || a calendar page for 1989, with a border barrier closing in front of a steak, centered || || push;note=1989;noteat=0.5,0.14
+111 || a cargo box of beef bouncing off a border barrier, box centered || || punch;mark=cross@0.5,0.5,0.18;sfx=x_thud
+112 || worried European parents looking at a baby food jar, jar centered, parents behind it || parents || push
+113 || a simple map of Italy with a pin on it, map centered || || push;mark=circle@0.5,0.5,0.14
+114 || a jar of baby food with a little cartoon calf on the label, jar centered, a warning triangle above || || pop;mark=circle@0.5,0.5,0.2
+115 || a crumbling trust: a heart-shaped bridge breaking into two pieces, centered || || punch;sfx=x_sting
+116 || an American official slamming a fist on a desk, official centered || official || punch;sfx=x_thud
+117 || a formal letter being stamped COMPLAINT with a world trade symbol seal, letter centered || || push
+118 || a judge in a wig holding the year 1998 on a card, judge centered || || push;note=1998;noteat=0.5,0.14
+119 || a thought bubble over a steak showing a magnifying glass with no result, steak centered || || push;mark=circle@0.5,0.5,0.2
+120 || a paper risk-assessment form with a big blank section, form centered || || push;mark=underline@0.5,0.65,0.25
+121 || a European official shaking his head, arms crossed, official centered || official || punch;sfx=x_sting
+122 || a poker table with cards and two players eyeing each other, table centered || || push
+123 || a boxing ring with two gloves, centered || || pull
+124 || a gloved fist punching a wallet, wallet centered || || punch;sfx=x_thud
+125 || a calendar page for 1999 and a pile of coins, centered || || push;note=1999;noteat=0.5,0.14
+126 || a price tag with a big percent sign 100, centered || || pop;mark=circle@0.5,0.5,0.2
+127 || the same price tag doubling in size like a balloon, centered || || punch;sfx=x_boing
+128 || a table of fancy European delicacies in baskets, table centered || || push
+129 || a wedge of blue cheese with a bright spotlight on it, cheese centered || || pop;mark=circle@0.5,0.5,0.2;sfx=x_ding
+130 || a wedge of blue cheese very close up, filling the frame, centered || || punch
+131 || a farmhouse in a green French hillside with sheep, simple flat hills, farmhouse centered || || push
+132 || a rocky high plateau with sheep grazing, plateau centered || || pan;mark=circle@0.5,0.5,0.25
+133 || a spotlight on the middle of an empty stage, a curtain behind, centered || || pop
+134 || a shepherd with a big mustache and a flat cap proudly crossing his arms, shepherd centered || shepherd || punch
+135 || the shepherd cutting a wheel of blue cheese in a small cellar, shepherd centered || shepherd || push
+136 || the shepherd looking shocked at a price tag on his cheese that doubled, tag centered, shepherd on the left || shepherd || punch;mark=circle@0.65,0.5,0.17
+137 || a ship leaving a harbor with crates and no customers waving, harbor centered || || panr
+138 || the shepherd with a determined face, fist raised, shepherd centered || shepherd || punch;sfx=x_sting
+139 || a calendar page showing 12 August, summer sun, centered || || push;note=12.08.1999;noteat=0.5,0.14
+140 || a handful of farmers walking up a road with a tractor behind them, walkers on the left third || shepherd || panr
+141 || a half-built fast-food restaurant with a crane, building centered || || push;mark=circle@0.5,0.5,0.25
+142 || a big cheering crowd of villagers waving flags, crowd centered || || push
+143 || the half-built building being taken apart by workers, panels piled on a trailer, building centered || || punch;sfx=x_boom
+144 || the big yellow arch symbol standing alone in the center like a trophy, centered || || pop;mark=circle@0.5,0.5,0.2
+145 || huge factory trays of identical burgers moving on a conveyor, belt centered || || push
+146 || endless identical burgers in rows, rows centered || || pull
+147 || a speech bubble with a small bad-food sign, without letters, a frowning burger, burger centered || || pop;note=мальбуф;noteat=0.5,0.14
+148 || a rotten-looking sad burger with a frown, burger centered || || push
+149 || a courtroom with a judge looking at the shepherd, shepherd on the left, judge on the right || shepherd || pull
+150 || a calendar page for the year 2000, centered || || push;note=2000;noteat=0.5,0.14
+151 || a prison door with a little window and a tiny calendar showing three months, door centered || || push;mark=circle@0.5,0.5,0.2
+152 || a crowd carrying the shepherd on their shoulders, shepherd above the crowd, centered || shepherd || punch
+153 || a farmer pointing proudly at a European map, farmer on the left third || farmer || panl
+154 || a village table with a big loaf and a cheese, table centered || || push
+155 || a rolled-out map of the whole world with the shepherd's fist raised above it, centered || shepherd || pull
+156 || chef rubbing his chin, thoughtful, chef centered || chef || push
+157 || an arrow hitting a small sheep, sheep centered || || punch;mark=circle@0.5,0.5,0.16
+158 || chef laughing loudly with his mouth open, chef centered || chef || punch;sfx=x_boing
+159 || chef nodding with a short firm smile, chef centered || chef || punch
+160 || chef pointing to a heavy anvil labeled with a skull-free warning triangle, anvil on the right third || chef || panr
+161 || a lunch plate with coins and a gavel next to it, plate centered || || push
+162 || a stack of coins, a law book and a gavel on a table, table centered || || push;mark=circle@0.5,0.5,0.25
+163 || farmers holding hands in a circle around a national flag, circle centered || farmer || pull
+164 || chef leaning in with a big serious face, chef centered || chef || punch
+165 || a juicy steak next to a worried face and a syringe, steak centered || || push;mark=circle@0.5,0.5,0.2
+166 || chef holding up both palms to say not sure, chef centered || chef || push
+167 || a European committee in a meeting room pointing at a chart, committee at a table, table centered || || push
+168 || a molecule drawn as a simple ball and stick shape with a red warning triangle, molecule centered || || pop;mark=circle@0.5,0.5,0.2
+169 || a thermometer-style safety scale with no safe zone marked, scale centered || || push;mark=cross@0.5,0.5,0.2
+170 || a second regulator office with a green check and an American flag, office centered || || panl;mark=check@0.5,0.5,0.18
+171 || a world trade judge raising one finger, judge centered || || push
+172 || a judge holding a small card with a blank evidence tag, judge centered || || push;mark=circle@0.5,0.55,0.15
+173 || two cards: one labeled with a question mark and one with a green tick, cards side by side in the center || || pull;note=не доведено ≠ безпечно;noteat=0.5,0.14
+174 || two diplomats shaking hands over a table with a steak, handshake centered || || push;sfx=x_ding
+175 || a quota gate opening with a few beef cuts passing through, gate centered || || push
+176 || a price tag shrinking from a big balloon to a small one, tag centered || || push;mark=check@0.5,0.5,0.17
+177 || a pig in a barn wearing a muscle costume, pig centered || || pop;sfx=x_boing
+178 || a feed bag with a pig face on it, bag centered || || push
+179 || a pig with a big flexed arm, muscles showing, centered || || punch
+180 || an American flag and a green tick above a pig, pig centered || || push;mark=check@0.5,0.3,0.14
+181 || three flags in a row: European star, Chinese and Russian, with a red cross over a pig, flags centered || || push;mark=cross@0.5,0.5,0.2
+182 || chef pausing with a finger raised, chef centered || chef || punch
+183 || chef peeking inside his own fridge with a surprised face, fridge on the right third || chef || panr
+184 || chef looking at the camera wide-eyed, as if caught, chef centered || chef || punch
+185 || a table with chicken legs, a pork chop, a fast food bun and bright colored candy, centered || || push
+186 || a supermarket shelf full of those same products, shelf centered || || pan
+187 || chef pointing right at the viewer, chef centered || chef || punch
+188 || a big steak surrounded by question marks, steak centered || || push
+189 || a plain loaf of bread in a spotlight on a table, loaf centered || || pop;sfx=x_ding
