@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job #{{ job_id }} — Video Factory</title>
+  <link rel="stylesheet" href="/static/style.css?v={{ static_version }}" />
+</head>
+<body>
+  <header class="topbar">
+    <h1><a href="/" class="back-link">🎬 Video Factory</a> / Job #{{ job_id }}</h1>
+    <div class="header-actions">
+      <button type="button" id="retry-btn" class="icon-btn" hidden>🔁 Retry</button>
+      <button type="button" id="delete-btn" class="icon-btn danger-btn">🗑 Видалити</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel" id="job-header"></section>
+
+    <section class="panel" id="dossier-panel" hidden>
+      <div class="section-header">
+        <h2>🔎 Досьє теми</h2>
+        <span id="dossier-hint" class="muted"></span>
+      </div>
+      <textarea id="dossier-text" class="dossier-text" rows="20" spellcheck="false"></textarea>
+      <div id="dossier-controls" hidden>
+        <div class="actions">
+          <button type="button" id="dossier-save-btn" class="icon-btn">💾 Зберегти правки</button>
+          <button type="button" id="dossier-approve-btn" class="primary-btn">✅ Досьє влаштовує → писати сценарій</button>
+        </div>
+        <p id="dossier-status" class="hint" hidden></p>
+      </div>
+    </section>
+
+    <section class="panel" id="script-panel" hidden>
+      <div class="section-header">
+        <h2>📝 Сценарій</h2>
+        <span id="script-status-hint" class="muted"></span>
+      </div>
+      <pre id="script-text" class="script-text"></pre>
+      <div id="script-review-controls" hidden>
+        <div class="field">
+          <label for="script-feedback">Правки (опиши конкретно, що змінити — модель внесе лише це, решту не чіпатиме)</label>
+          <textarea id="script-feedback" rows="3" placeholder="напр. Прибери другий абзац про клімат, додай більше деталей про битву під Грюнвальдом"></textarea>
+        </div>
+        <div class="actions">
+          <button type="button" id="revise-btn" class="icon-btn">✏️ Внести правки</button>
+          <button type="button" id="approve-btn" class="primary-btn">✅ Все влаштовує → Далі</button>
+        </div>
+        <p id="script-review-status" class="hint" hidden></p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Пайплайн</h2>
+      <div id="stage-stepper"></div>
+    </section>
+
+    <section class="panel" id="segments-panel" hidden>
+      <h2>Сегменти сценарію</h2>
+      <div class="table-wrap">
+        <table id="segments-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Текст</th>
+              <th>Тип / ефекти</th>
+              <th>Аудіо</th>
+              <th>Візуал</th>
+              <th>Тривалість</th>
+              <th>Статус</th>
+            </tr>
+          </thead>
+          <tbody id="segments-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="qa-panel" hidden>
+      <h2>QA-звіт</h2>
+      <div class="table-wrap">
+        <table id="qa-table">
+          <thead>
+            <tr>
+              <th>Тип</th>
+              <th>Серйозність</th>
+              <th>Вирішення</th>
+              <th>Нотатки</th>
+            </tr>
+          </thead>
+          <tbody id="qa-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="metadata-panel" hidden>
+      <h2>Метадані й превью</h2>
+      <div id="metadata-content"></div>
+    </section>
+  </main>
+
+  <script src="/static/app.js?v={{ static_version }}"></script>
+  <script>VideoFactory.initJobDetailPage({{ job_id }});</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Factory</title>
+  <link rel="stylesheet" href="/static/style.css?v={{ static_version }}" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>🎬 Video Factory</h1>
+    <span class="muted">
+      LLM: <strong>{{ llm_provider }}</strong> ·
+      TTS: <strong>{{ tts_provider }}</strong> ·
+      Кадри: <strong>{{ image_provider }}</strong> ·
+      Відео: <strong>{{ video_provider }}</strong>
+    </span>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Нове відео-завдання</h2>
+      <form id="create-form">
+        <div class="field">
+          <label for="topic">Тема / бриф</label>
+          <textarea id="topic" name="topic" rows="2" placeholder="напр. Парадокс Фермі: чому космос мовчить?" required></textarea>
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="niche">Ніша</label>
+            <input type="text" id="niche" name="niche" value="space_science" />
+          </div>
+          <div class="field">
+            <label for="target_duration_minutes">Цільова тривалість (хв)</label>
+            <input type="number" id="target_duration_minutes" name="target_duration_minutes" value="20" min="1" max="120" />
+          </div>
+          <div class="field">
+            <label for="language">Мова сценарію й озвучки</label>
+            <select id="language" name="language">
+              {% for code, name in languages %}
+              <option value="{{ code }}" {% if code == 'uk' %}selected{% endif %}>{{ name }} ({{ code }})</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="field">
+            <label for="style_id">Візуальний стиль</label>
+            <select id="style_id" name="style_id">
+              {% for sid, label, desc in styles %}
+              <option value="{{ sid }}" title="{{ desc }}" {% if sid == default_style %}selected{% endif %}>{{ label }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="field">
+            <label for="preview_seconds">Тест-режим, сек (озвучити й анімувати лише початок)</label>
+            <input type="number" id="preview_seconds" name="preview_seconds" min="10" max="600" placeholder="порожньо = повне відео" />
+          </div>
+          <div class="field" id="voice-field">
+            <label for="voice">Голос озвучки</label>
+            <div class="voice-row">
+              <select id="voice" name="voice"></select>
+              <button type="button" id="voice-preview-btn" class="icon-btn">🔊 Прослухати</button>
+            </div>
+            <input type="text" id="voice-custom" placeholder="Свій ID голосу (ElevenLabs Voice Library)" maxlength="64" hidden />
+            <audio id="voice-preview-audio" controls hidden></audio>
+            <p id="voice-hint" class="hint" hidden></p>
+          </div>
+        </div>
+        <div class="field">
+          <label><input type="checkbox" id="auto_dossier" name="auto_dossier" /> Схвалити досьє автоматично (без паузи на перевірку)</label>
+        </div>
+        <button type="submit" id="create-btn">🚀 Створити відео-завдання</button>
+      </form>
+      <p id="create-status" class="hint" hidden></p>
+    </section>
+
+    <section class="panel">
+      <div class="section-header">
+        <h2>Завдання</h2>
+        <button type="button" id="refresh-btn" class="link-btn">оновити</button>
+      </div>
+      <div class="table-wrap">
+        <table id="jobs-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Тема</th>
+              <th>Ніша</th>
+              <th>Мова</th>
+              <th>Голос</th>
+              <th>Тривалість</th>
+              <th>Статус</th>
+              <th>Прогрес</th>
+              <th>Оновлено</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="jobs-body">
+            <tr><td colspan="10" class="empty">Завдань ще немає.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js?v={{ static_version }}"></script>
+  <script>VideoFactory.initIndexPage();</script>
+</body>
+</html>

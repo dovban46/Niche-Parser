@@ -1,0 +1,399 @@
+"""Процедурний аватар. Один "риг" малює мудреця-старця й будь-яких інших дійових осіб (змінюються лише параметри
+CharacterSpec): вигляд завжди однаковий, пози/вирази/стани рота безкоштовні, рот рухається за реальною гучністю
+озвучки. Малюється в одиницях висоти 1000 (ноги на y=1000), з суперсемплінгом для гладких ліній.
+
+API: render(spec, pose, expr, mouth, phase, facing, height_px) -> RGBA-зображення; якір (ноги по центру)
+повертається як (img, (anchor_x, anchor_y)) у пікселях спрайта."""
+
+import math
+from dataclasses import dataclass, field
+from functools import lru_cache
+
+from PIL import Image, ImageDraw
+
+OUT = (30, 25, 22, 255)
+LW = 13  # товщина контуру, од.
+SS = 2   # суперсемплінг
+# Полотно в одиницях: x -250..1250, y -260..1060 (руки вгору, жести, штаб)
+X0, Y0, CW, CH = -250, -260, 1500, 1320
+
+
+@dataclass(frozen=True)
+class CharacterSpec:
+    skin: tuple = (236, 190, 150)
+    hair: tuple | None = (245, 242, 235)      # None — лисий без бокового волосся
+    beard: tuple | None = (248, 246, 240)     # None — без бороди
+    beard_len: float = 260
+    robe: tuple = (62, 96, 170)
+    trim: tuple = (232, 186, 70)
+    style: str = "robe"                         # robe | kilt
+    hat: str = "none"                           # none|turban|nemes|red_crown|white_crown|persian_cap|laurel|hood|headband
+    head_r: float = 1.0                         # масштаб голови (діти — більша голова відносно тіла)
+    brows: tuple = (250, 248, 244)
+    hat_color: tuple = (240, 235, 220)
+    glow: bool = False                          # легке світіння навколо (містичні сцени)
+
+
+SAGE = CharacterSpec()
+
+
+# ---------- пози: (upper, fore) кутів руки від "вниз" (0), 90 = горизонтально назовні, 180 = вгору ----------
+# l/r — з погляду глядача; front=True — руки малюються поверх голови/бороди
+POSES = {
+    "stand":      dict(l=(12, 8), r=(12, 8)),
+    "talk_a":     dict(l=(14, 10), r=(70, 150), front=False),
+    "talk_b":     dict(l=(60, 120), r=(60, 120)),
+    "point_right": dict(l=(12, 8), r=(98, 100)),
+    "point_up":   dict(l=(12, 8), r=(150, 175)),
+    "shrug":      dict(l=(55, 140), r=(55, 140), shoulders=-18),
+    "think":      dict(l=(12, 8), r=(40, 200), front=True),
+    "cheer":      dict(l=(150, 175), r=(150, 175)),
+    "scared":     dict(l=(35, 195), r=(35, 195), front=True),
+    "hold_scroll": dict(l=(40, 175), r=(40, 175), front=True, item="scroll"),
+    "hold_staff": dict(l=(12, 8), r=(30, 40), item="staff"),
+    "walk":       dict(l=(25, 15), r=(25, 15), walk=True),
+    "run":        dict(l=(55, 110), r=(55, 110), walk=True, lean=8, speed=2.0),
+    "bow":        dict(l=(10, 6), r=(10, 6), lean=22),
+    "wave":       dict(l=(12, 8), r=(150, 118)),
+    "arms_wide":  dict(l=(100, 85), r=(100, 85)),
+    "facepalm":   dict(l=(12, 8), r=(30, 205), front=True, lean=5),
+    "cross_arms": dict(l=(22, -105), r=(22, -105), front=True),
+    "hands_hips": dict(l=(52, -40), r=(52, -40)),
+    "idea":       dict(l=(12, 8), r=(62, 168)),
+    "whisper":    dict(l=(12, 8), r=(34, -150), front=True, lean=4),
+    "laugh":      dict(l=(22, -85), r=(22, -85), front=True, shake=True, lean=-4),
+    "point_left": dict(l=(98, 100), r=(12, 8), facing_flip=True),
+    "present":    dict(l=(70, 120), r=(30, 40)),
+    "lean_in":    dict(l=(30, 80), r=(26, 24), lean=9),
+    "sneak":      dict(l=(20, 30), r=(20, 30), walk=True, lean=-6, speed=0.8),
+}
+
+EXPRS = {
+    #            eyes     brows      mouth_idle (коли не говорить)
+    "neutral":   ("dot",   "neutral", "closed"),
+    "happy":     ("happy", "raised",  "smile"),
+    "surprised": ("wide",  "raised",  "o"),
+    "worried":   ("dot",   "worried", "frown"),
+    "angry":     ("dot",   "angry",   "frown"),
+    "smug":      ("half",  "neutral", "smile"),
+    "sleepy":    ("closed", "sad",    "closed"),
+    "scared":    ("wide",  "worried", "o"),
+    "thinking":  ("dot",   "raised",  "closed"),
+}
+
+
+def _t(x, y, k):
+    return ((x - X0) * k, (y - Y0) * k)
+
+
+class _Canvas:
+    def __init__(self, k: float):
+        self.k = k
+        self.img = Image.new("RGBA", (int(CW * k), int(CH * k)), (0, 0, 0, 0))
+        self.d = ImageDraw.Draw(self.img)
+
+    def pt(self, x, y):
+        return _t(x, y, self.k)
+
+    def poly(self, pts, fill, outline=True, width=LW):
+        p = [self.pt(x, y) for x, y in pts]
+        if outline:
+            self.d.line(p + [p[0]], fill=OUT, width=int(width * self.k), joint="curve")
+            for q in p:
+                self.d.ellipse((q[0] - width * self.k / 2, q[1] - width * self.k / 2, q[0] + width * self.k / 2, q[1] + width * self.k / 2), fill=OUT)
+        self.d.polygon(p, fill=fill)
+
+    def ellipse(self, cx, cy, rx, ry, fill, outline=True, width=LW):
+        if outline:
+            self.d.ellipse((*self.pt(cx - rx - width / 2, cy - ry - width / 2), *self.pt(cx + rx + width / 2, cy + ry + width / 2)), fill=OUT)
+        self.d.ellipse((*self.pt(cx - rx, cy - ry), *self.pt(cx + rx, cy + ry)), fill=fill)
+
+    def line(self, pts, width, fill, outline=True, ow=LW):
+        p = [self.pt(x, y) for x, y in pts]
+        if outline:
+            w = int((width + 2 * ow) * self.k)
+            self.d.line(p, fill=OUT, width=w, joint="curve")
+            for q in (p[0], p[-1]):
+                r = w / 2
+                self.d.ellipse((q[0] - r, q[1] - r, q[0] + r, q[1] + r), fill=OUT)
+        w2 = int(width * self.k)
+        self.d.line(p, fill=fill, width=w2, joint="curve")
+        for q in (p[0], p[-1]):
+            r = w2 / 2
+            self.d.ellipse((q[0] - r, q[1] - r, q[0] + r, q[1] + r), fill=fill)
+
+    def arc(self, box, a0, a1, width, fill=OUT):
+        (x0, y0), (x1, y1) = self.pt(box[0], box[1]), self.pt(box[2], box[3])
+        self.d.arc((x0, y0, x1, y1), a0, a1, fill=fill, width=int(width * self.k))
+
+
+def _limb(S, side, u, f, lu=175, lf=165):
+    sgn = -1 if side == "l" else 1
+    ex = S[0] + sgn * lu * math.sin(math.radians(u))
+    ey = S[1] + lu * math.cos(math.radians(u))
+    wx = ex + sgn * lf * math.sin(math.radians(f))
+    wy = ey + lf * math.cos(math.radians(f))
+    return (ex, ey), (wx, wy)
+
+
+def _shade(c, f):
+    return tuple(max(0, min(255, int(v * f))) for v in c[:3]) + (255,)
+
+
+def _draw_arm(cv: _Canvas, spec: CharacterSpec, S, side, u, f):
+    robe = (*spec.robe, 255) if spec.style == "robe" else (*spec.skin, 255)
+    sleeve_w = 58 if spec.style == "robe" else 46
+    e, w = _limb(S, side, u, f)
+    cv.line([S, e], sleeve_w, robe)
+    cv.line([e, w], sleeve_w - 8, robe)
+    if spec.style == "robe":
+        cv.line([(e[0] * .35 + w[0] * .65, e[1] * .35 + w[1] * .65), w], sleeve_w - 8, (*spec.trim, 255), outline=False)
+    cv.ellipse(w[0], w[1], 30, 30, (*spec.skin, 255))
+    return w
+
+
+def _draw_head(cv: _Canvas, spec: CharacterSpec, expr: str, mouth: int, blink: bool, bob: float):
+    skin = (*spec.skin, 255)
+    hr = spec.head_r
+    cx, cy = 500, 175 + bob
+    eyes, brows, idle = EXPRS.get(expr, EXPRS["neutral"])
+    if blink and eyes in ("dot", "wide", "half"):
+        eyes = "closed"
+    # вуха й голова
+    cv.ellipse(cx - 142 * hr, cy + 12, 22, 30, skin)
+    cv.ellipse(cx + 142 * hr, cy + 12, 22, 30, skin)
+    if spec.hair:
+        hair = (*spec.hair, 255)
+        cv.ellipse(cx - 130 * hr, cy + 6, 42, 70, hair)
+        cv.ellipse(cx + 130 * hr, cy + 6, 42, 70, hair)
+    cv.ellipse(cx, cy, 140 * hr, 150 * hr, skin)
+    # борода (позаду носа й вусів)
+    if spec.beard:
+        bc = (*spec.beard, 255)
+        L = spec.beard_len + (26 if mouth >= 2 else (12 if mouth == 1 else 0))
+        pts = []
+        steps = 18
+        for i in range(steps + 1):
+            t = i / steps
+            w = 148 * hr * (1 - t) ** 0.62
+            pts.append((cx - w, cy + 58 + t * L))
+        for i in range(steps, -1, -1):
+            t = i / steps
+            w = 148 * hr * (1 - t) ** 0.62
+            pts.append((cx + w, cy + 58 + t * L))
+        cv.poly(pts, bc)
+        shade = _shade(spec.beard, 0.78)
+        for off in (-55, 0, 55):
+            cv.line([(cx + off * .7, cy + 135), (cx + off * .35, cy + 58 + L * .72)], 7, shade, outline=False)
+    # рот
+    my = cy + 112 + (4 if mouth >= 2 else 0)
+    if spec.beard:
+        shapes = {0: None, 1: (30, 14), 2: (40, 26), 3: (46, 38)}
+    else:
+        shapes = {0: None, 1: (28, 12), 2: (36, 24), 3: (42, 34)}
+    st = shapes.get(mouth)
+    if mouth == 0:
+        if idle in ("smile",):
+            cv.arc((cx - 46, my - 40, cx + 46, my + 22), 20, 160, 9, OUT)
+        elif idle == "frown":
+            cv.arc((cx - 40, my - 6, cx + 40, my + 50), 200, 340, 9, OUT)
+        elif idle == "o":
+            cv.ellipse(cx, my + 8, 17, 21, (110, 40, 44, 255), width=9)
+        else:
+            cv.line([(cx - 34, my + 2), (cx + 34, my + 2)], 8, OUT, outline=False)
+    else:
+        rx, ry = st
+        cv.ellipse(cx, my + ry * .35, rx, ry, (96, 34, 40, 255), width=9)
+        if mouth >= 3:
+            cv.ellipse(cx, my + ry * .85, rx * .6, ry * .4, (214, 96, 104, 255), outline=False)
+    # ніс
+    cv.ellipse(cx, cy + 30 * hr, 32, 29, _shade(spec.skin, 0.93))
+    # вуса
+    if spec.beard:
+        bc = (*spec.beard, 255)
+        for s in (-1, 1):
+            cv.poly([(cx + s * 4, cy + 70), (cx + s * 50, cy + 66), (cx + s * 100, cy + 88), (cx + s * 84, cy + 116),
+                     (cx + s * 36, cy + 100)], bc, width=11)
+    # очі
+    ey = cy - 30 * hr
+    for s in (-1, 1):
+        ex = cx + s * 54 * hr
+        if eyes == "dot":
+            cv.ellipse(ex, ey, 14, 18, OUT, outline=False)
+            cv.ellipse(ex + 4, ey - 6, 4.5, 5.5, (255, 255, 255, 255), outline=False)
+        elif eyes == "wide":
+            cv.ellipse(ex, ey, 25, 28, (255, 255, 255, 255), width=9)
+            cv.ellipse(ex, ey, 9, 11, OUT, outline=False)
+        elif eyes == "half":
+            cv.ellipse(ex, ey + 4, 14, 10, OUT, outline=False)
+            cv.line([(ex - 22, ey - 6), (ex + 22, ey - 6)], 9, OUT, outline=False)
+        elif eyes == "happy":
+            cv.arc((ex - 22, ey - 18, ex + 22, ey + 22), 200, 340, 9, OUT)
+        else:  # closed
+            cv.line([(ex - 20, ey + 4), (ex + 20, ey + 4)], 8, OUT, outline=False)
+    # брови (густі, білі)
+    bcol = (*spec.brows, 255)
+    by = cy - 78 * hr
+    cfg = {"neutral": (0, 0), "raised": (-16, 0), "worried": (-6, -18), "angry": (8, 20), "sad": (0, -12)}
+    dy, tilt = cfg.get(brows, (0, 0))
+    for s in (-1, 1):
+        x_in, x_out = cx + s * 22 * hr, cx + s * 96 * hr
+        y_in = by + dy + (tilt if tilt > 0 else 0) * 0.9 - (tilt if tilt < 0 else 0) * 0.0
+        y_out = by + dy - (tilt if tilt > 0 else 0) * 0.6 + (-tilt if tilt < 0 else 0) * 0.7
+        cv.line([(x_in, y_in), (x_out, y_out)], 16, bcol, ow=7)
+    # зморшки на лобі
+    if spec.beard:
+        for i, w in enumerate((70, 52)):
+            cv.arc((cx - w, cy - 140 + i * 18, cx + w, cy - 108 + i * 18), 205, 335, 5, _shade(spec.skin, 0.8))
+
+
+def _draw_hat(cv: _Canvas, spec: CharacterSpec, bob: float):
+    cx, cy = 500, 175 + bob
+    hc = (*spec.hat_color, 255)
+    gold, blue = (*spec.trim, 255), (40, 70, 150, 255)
+    h = spec.hat
+    if h == "turban":
+        cv.ellipse(cx, cy - 92, 150, 86, hc)
+        cv.ellipse(cx - 30, cy - 130, 84, 52, _shade(spec.hat_color, 0.93))
+        cv.line([(cx - 120, cy - 88), (cx + 110, cy - 112)], 8, _shade(spec.hat_color, 0.82), outline=False)
+    elif h == "nemes":
+        pts = [(cx - 150, cy - 70), (cx - 100, cy - 150), (cx + 100, cy - 150), (cx + 150, cy - 70), (cx + 190, cy + 140),
+               (cx + 120, cy + 150), (cx + 118, cy - 10), (cx - 118, cy - 10), (cx - 120, cy + 150), (cx - 190, cy + 140)]
+        cv.poly(pts, blue)
+        for i in range(5):
+            y = cy - 120 + i * 30
+            cv.line([(cx - 128, y), (cx + 128, y)], 9, gold, outline=False)
+        cv.poly([(cx - 20, cy - 150), (cx + 20, cy - 150), (cx + 14, cy - 215), (cx - 14, cy - 215)], gold, width=9)
+    elif h == "red_crown":
+        cv.poly([(cx - 100, cy - 90), (cx + 100, cy - 90), (cx + 80, cy - 170), (cx + 20, cy - 175), (cx + 22, cy - 280),
+                 (cx - 22, cy - 280), (cx - 30, cy - 170)], (200, 58, 52, 255))
+    elif h == "white_crown":
+        cv.poly([(cx - 105, cy - 92), (cx + 105, cy - 92), (cx + 78, cy - 220), (cx, cy - 290), (cx - 78, cy - 220)], (244, 240, 228, 255))
+    elif h == "persian_cap":
+        cv.poly([(cx - 116, cy - 70), (cx + 116, cy - 70), (cx + 96, cy - 250), (cx + 30, cy - 270), (cx - 30, cy - 270),
+                 (cx - 96, cy - 250)], (150, 60, 70, 255))
+        cv.line([(cx - 114, cy - 82), (cx + 114, cy - 82)], 18, gold, outline=False)
+    elif h == "laurel":
+        for s in (-1, 1):
+            for i in range(5):
+                a = math.radians(200 + s * (i * 16))
+                px, py = cx + s * (95 + i * 12), cy - 84 + i * 14
+                cv.ellipse(px, py, 30, 14, (96, 150, 70, 255), width=7)
+    elif h == "hood":
+        cv.poly([(cx - 170, cy + 130), (cx - 160, cy - 80), (cx - 80, cy - 190), (cx + 80, cy - 190), (cx + 160, cy - 80),
+                 (cx + 170, cy + 130), (cx + 112, cy + 40), (cx + 112, cy - 40), (cx - 112, cy - 40), (cx - 112, cy + 40)],
+                (*spec.robe, 255))
+    elif h == "wig":
+        cv.poly([(cx - 150, cy + 70), (cx - 146, cy - 60), (cx - 80, cy - 150), (cx + 80, cy - 150), (cx + 146, cy - 60),
+                 (cx + 150, cy + 70), (cx + 112, cy + 70), (cx + 108, cy - 52), (cx, cy - 92), (cx - 108, cy - 52), (cx - 112, cy + 70)],
+                (34, 30, 36, 255))
+    elif h == "headband":
+        cv.line([(cx - 138, cy - 56), (cx + 138, cy - 62)], 28, (210, 52, 52, 255), ow=8)
+
+
+def _staff(cv: _Canvas, hand):
+    x, y = hand
+    cv.line([(x, y - 470), (x + 4, y + 560)], 18, (140, 92, 56, 255))
+    cv.ellipse(x, y - 480, 34, 34, (232, 186, 70, 255))
+
+
+def _scroll(cv: _Canvas, wl, wr):
+    cx, cy = (wl[0] + wr[0]) / 2, (wl[1] + wr[1]) / 2 - 8
+    half = max(abs(wr[0] - wl[0]) / 2 + 20, 90)
+    cv.poly([(cx - half, cy - 42), (cx + half, cy - 42), (cx + half, cy + 42), (cx - half, cy + 42)], (246, 232, 196, 255))
+    for i in range(3):
+        cv.line([(cx - half * .7, cy - 20 + i * 20), (cx + half * .7, cy - 20 + i * 20)], 6, (120, 92, 60, 255), outline=False)
+    cv.ellipse(cx - half, cy, 14, 46, (216, 190, 140, 255), width=9)
+    cv.ellipse(cx + half, cy, 14, 46, (216, 190, 140, 255), width=9)
+
+
+def _draw(spec: CharacterSpec, pose: str, expr: str, mouth: int, phase: float, blink: bool, height_px: float) -> Image.Image:
+    p = POSES.get(pose, POSES["stand"])
+    k = (height_px / 1000.0) * SS
+    cv = _Canvas(k)
+    walking = p.get("walk", False)
+    spd = p.get("speed", 1.0)
+    swing = math.sin(phase * spd) if walking else 0.0
+    bob = (abs(math.sin(phase * spd)) * -14 * spd) if walking else math.sin(phase * 0.7) * 3
+    if p.get("shake"):
+        bob = math.sin(phase * 6.0) * 9
+    lean = p.get("lean", 0)
+    sh_up = p.get("shoulders", 0)
+
+    robe_c = (*spec.robe, 255)
+    skin_c = (*spec.skin, 255)
+    trim_c = (*spec.trim, 255)
+    # ноги / ступні (під одягом)
+    for s in (-1, 1):
+        fx = 500 + s * 72 + (s * swing * 46 if walking else 0)
+        lift = max(0.0, s * swing) * 34 if walking else 0
+        if spec.style == "robe":
+            cv.ellipse(fx, 918 - lift, 52, 26, (150, 100, 60, 255))
+        else:
+            cv.line([(500 + s * 48, 780), (fx, 925 - lift)], 40, skin_c)
+            cv.ellipse(fx + s * 8, 940 - lift, 52, 24, (150, 100, 60, 255))
+    # тулуб
+    sway = swing * 18
+    top_y = 335 + bob + sh_up * 0.4
+    if spec.style == "robe":
+        body = [(392, top_y + 14), (500, top_y), (608, top_y + 14), (700 + sway, 905), (300 + sway, 905)]
+        cv.poly(body, robe_c)
+        cv.poly([(300 + sway, 862), (700 + sway, 862), (704 + sway, 905), (296 + sway, 905)], trim_c, width=9)
+        cv.line([(380 + sway * .3, 548), (620 + sway * .3, 548)], 20, (190, 140, 60, 255))
+        cv.poly([(470, top_y + 8), (500, top_y + 70), (530, top_y + 8)], (240, 236, 224, 255), width=9)
+    else:  # kilt: голий торс + спідниця
+        cv.poly([(405, top_y + 14), (500, top_y), (595, top_y + 14), (606, 560), (394, 560)], skin_c)
+        cv.poly([(386, 540), (614, 540), (650 + sway, 800), (350 + sway, 800)], (244, 240, 228, 255))
+        cv.line([(386, 548), (614, 548)], 18, trim_c, outline=False)
+        cv.poly([(350 + sway, 786), (650 + sway, 786), (654 + sway, 806), (346 + sway, 806)], trim_c, width=9)
+    S_l, S_r = (402, top_y + 34), (598, top_y + 34)
+    arm_l = p["l"]
+    arm_r = p["r"]
+    wl = _limb(S_l, "l", *arm_l)[1]
+    wr = _limb(S_r, "r", *arm_r)[1]
+    if walking:
+        a = 22 * swing
+        arm_l, arm_r = (arm_l[0] + a, arm_l[1] + a * .6), (arm_r[0] - a, arm_r[1] - a * .6)
+    front = p.get("front", False)
+
+    def arms():
+        if p.get("item") == "staff":
+            hand = _limb(S_r, "r", *arm_r)[1]
+            _staff(cv, hand)
+        _draw_arm(cv, spec, S_l, "l", *arm_l)
+        _draw_arm(cv, spec, S_r, "r", *arm_r)
+        if p.get("item") == "scroll":
+            _scroll(cv, _limb(S_l, "l", *arm_l)[1], _limb(S_r, "r", *arm_r)[1])
+            for side, S, arm in (("l", S_l, arm_l), ("r", S_r, arm_r)):
+                w = _limb(S, side, *arm)[1]
+                cv.ellipse(w[0], w[1], 30, 30, skin_c)
+
+    if not front:
+        arms()
+    _draw_head(cv, spec, expr, mouth, blink, bob)
+    _draw_hat(cv, spec, bob)
+    if front:
+        arms()
+
+    img = cv.img.resize((int(CW * k / SS), int(CH * k / SS)), Image.LANCZOS)
+    if lean:
+        img = img.rotate(-lean, resample=Image.BICUBIC, center=((500 - X0) * k / SS, (940 - Y0) * k / SS))
+    return img
+
+
+@lru_cache(maxsize=160)
+def render(spec: CharacterSpec, pose: str = "stand", expr: str = "neutral", mouth: int = 0, phase: float = 0.0,
+           facing: int = 1, height_px: int = 520, blink: bool = False):
+    """(RGBA-спрайт, (anchor_x, anchor_y)) — якір = центр стоп. facing=-1 віддзеркалює."""
+    phase_q = round(phase * 4) / 4  # квантуємо фазу ходьби: менше унікальних спрайтів у кеші
+    img = _draw(spec, pose, expr, mouth, phase_q, blink, height_px)
+    k = height_px / 1000.0
+    ax, ay = (500 - X0) * k, (1000 - Y0) * k
+    bbox = img.getbbox()  # обрізаємо порожнє поле: кеш спрайтів займає в рази менше пам'яті
+    if bbox:
+        img = img.crop(bbox)
+        ax, ay = ax - bbox[0], ay - bbox[1]
+    if facing < 0:
+        img = img.transpose(Image.FLIP_LEFT_RIGHT)
+        ax = img.width - ax
+    return img, (ax, ay)

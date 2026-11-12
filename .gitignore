@@ -1,0 +1,36 @@
+# Секрети
+.env
+
+# Важкі артефакти й локальна БД
+storage/
+app/data/
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Логи
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+
+# Готові відео (проміжні файли job-ів — у storage/)
+videos/
+
+secrets/
+
+# taboo
+storage/jp_jobs/
+channel_brand/_work/
+*.mp3
+*.mp4
