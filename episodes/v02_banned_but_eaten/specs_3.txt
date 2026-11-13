@@ -1,0 +1,75 @@
+124 || a map with Scotland and the USA connected by a dotted line, both highlighted, map centered || || pop;ch=Хаггіс;sfx=x_pop
+125 || a Scottish haggis shaped like a plump sack character with a smug face on a big white plate, bagpipes behind it, haggis centered, green hills || || push
+126 || a heart, a liver and a pair of lungs drawn as cute organs floating above a bowl of oatmeal, organs centered || || pop
+127 || a sheep stomach sewn up like a sack bubbling in a big pot, pot centered, warm kitchen || || push
+128 || an American flag with a red forbidden stamp next to a haggis sack, split composition || || pull;mark=cross@0.3,0.5,0.18
+129 || a USDA-style government building with a flag and a gavel, building centered || || push
+130 || a calendar page showing 1971 and a pair of cartoon lungs with a red cross, calendar centered || || push;note=1971;noteat=0.5,0.14;mark=cross@0.75,0.5,0.14
+131 || a pair of cartoon lungs with a sloshing green liquid inside and a worried face, lungs centered || || push;mark=circle@0.5,0.5,0.2
+132 || a red warning triangle on a pair of lungs, lungs centered || || push
+133 || a pie chart showing lungs taking a small slice of haggis ingredients, centered || || push;note=10-15%;noteat=0.5,0.14
+134 || a Scottish haggis sack with a red forbidden stamp on a customs counter, officer behind it, haggis centered || officer || push
+135 || a map of the USA with a forbidden sign on a haggis sack and an ocean between, map centered || || panr
+136 || a Scottish man in a kilt shrugging with a wry smile holding a plate, man centered || scot || punch
+137 || a lung-free haggis on a plate with a thumbs up from a man in a kilt, plate centered || scot || push;mark=check@0.5,0.5,0.15
+138 || a haggis with a different slightly pale color next to the original, two plates side by side, haggis centered || || pull
+139 || a man in a kilt playing bagpipes with a cheerful face, man centered, tartan background || scot || punch;sfx=x_ding
+140 || a candle-lit Scottish dinner with a man in a kilt reading a poem from an open book with a haggis on the table, scene centered || scot || push
+141 || a man in a kilt raising a big knife over a haggis, ceremony, man and haggis centered || scot || punch;sfx=x_ding
+142 || an American dinner with a man in a kilt raising a knife over an empty plate by mistake, plate centered || scot || push
+143 || a haggis plate with a big question mark and a missing center, plate centered || || push;mark=circle@0.5,0.5,0.2
+144 || an open book of poems with a haggis drawing on its cover, book centered || || push
+145 || a poet bowing with a hand over his chest, poet centered || scot || push
+146 || an empty plate with a polite folded napkin, plate centered, dark table || || push
+147 || a map with Jamaica highlighted in green, yellow and black and a palm tree, map centered, turquoise sea || || pop;ch=Акі;sfx=x_pop;mark=circle@0.5,0.5,0.15
+148 || a ripe red-yellow ackee fruit split open showing three black seeds and creamy yellow flesh, fruit centered, jungle background || || push
+149 || a breakfast plate with creamy ackee and salted fish, a Jamaican grandmother serving it, plate centered || granny || push
+150 || a national dish plate with a little Jamaican flag stuck into the food, plate centered || || pop;sfx=x_ding
+151 || a green unripe ackee fruit closed tight and glowing with a sickly green aura, fruit centered, dark background || || push;mark=circle@0.5,0.5,0.2
+152 || a molecule drawn as balls and sticks with a skull sticker, molecule centered || || pop
+153 || a blood sugar meter falling from high to very low with a dizzy face, meter centered || || push;mark=arrow@0.8,0.4,0.12,135
+154 || a sick man with a green face holding his stomach next to a bucket, man centered || chef || push
+155 || a calendar page showing 1973 and a fruit with a red forbidden stamp, calendar centered || || push;note=1973;noteat=0.5,0.14
+156 || a calendar page showing 2000 and a tin can of ackee with a green check mark, calendar centered || || push;note=2000;noteat=0.5,0.14;mark=check@0.7,0.5,0.14
+157 || a tin can of ackee with a green seal of approval, can centered, warehouse || || pop;sfx=x_ding
+158 || a fresh ackee fruit stopped at a border barrier with a red stop sign, fruit centered || || push;mark=cross@0.5,0.5,0.18
+159 || a worried face and a clipboard of numbers, face centered || || push
+160 || a winter calendar from December to February with a hospital cross, calendar centered || || push
+161 || a bar chart showing 194 cases with a tiny hospital bed icon, chart centered || || push;note=194;noteat=0.5,0.14
+162 || a candle with a black ribbon next to twenty-three small candles, candles centered || || push;note=23;noteat=0.5,0.14;sfx=x_sting
+163 || a Jamaican grandmother holding up a ripe ackee fruit wide open, grandmother centered, tropical garden || granny || push
+164 || an ackee tree with a fruit opened wide by itself on a branch, tree centered || || pop;mark=circle@0.5,0.4,0.15
+165 || a fully opened ackee fruit with a green check mark, fruit centered || || push;mark=check@0.5,0.4,0.15
+166 || a tightly closed green ackee fruit with a red cross, fruit centered || || push;mark=cross@0.5,0.5,0.17
+167 || a Jamaican grandmother wagging a finger kindly at the viewer, grandmother centered || granny || punch
+168 || a lifebuoy floating on water with an ackee fruit on it, lifebuoy centered || || push;sfx=x_ding
+169 || a government clerk behind a thick stack of papers far away, clerk centered, gray office || official || pull
+170 || a Jamaican grandmother with arms crossed and a proud smile, grandmother centered || granny || punch;sfx=x_tada
+171 || a glowing green bottle of absinthe standing on a Parisian cafe table, bottle centered, evening street || || pop;ch=Абсент;sfx=x_pop
+172 || a tall green bottle with a tiny green fairy flying out of it, bottle centered || || pop;sfx=x_ping_up
+173 || a green drink in a glass on a table in a belle-epoque Paris cafe with the Eiffel Tower behind it, glass centered || || push
+174 || a painter with a beret and a poet with a notebook toasting green glasses, two characters centered || painter || push
+175 || people whispering with speech bubbles showing colorful swirls, people centered || || push
+176 || a man with swirls in his eyes seeing a green fairy dancing, man centered || painter || push;mark=circle@0.5,0.2,0.15
+177 || a calendar page showing 1905 and a dark empty farm house at night, calendar centered || || push;note=1905;noteat=0.5,0.14
+178 || a dark farm house window at night with a sad feeling, house centered || || push
+179 || a green glass of absinthe next to a glass of wine and a glass of brandy on a table, three glasses centered || || pull;mark=circle@0.5,0.5,0.28
+180 || a table with a huge number of brandy glasses and wine bottles, a green glass among them, table centered || || push
+181 || a newsboy shouting with a newspaper that has a giant green bottle on the front page, newsboy centered || newsboy || punch;sfx=x_gasp
+182 || a Swiss ballot box with a hand dropping a vote, ballot box centered, alpine background || || push;note=1908;noteat=0.5,0.14
+183 || a calendar page showing 1910 with a green bottle in a cage, calendar centered || || push;note=1910;noteat=0.5,0.14
+184 || a map of the USA with a red banned stamp on a green bottle, map centered || || push;note=1912;noteat=0.5,0.14
+185 || a French flag with a big green forbidden sign on a bottle, flag centered || || push
+186 || a calendar page showing 1915 with a green bottle crossed out, calendar centered || || push;note=1915;noteat=0.5,0.14;mark=cross@0.5,0.6,0.15
+187 || a calendar flipping fast with a chain being broken, centered || || push;sfx=x_ding
+188 || an alpine Swiss flag and a bottle freed from a cage, centered || || push;note=2005;noteat=0.5,0.14
+189 || an American flag and a green bottle with a green check, centered || || push;note=2007;noteat=0.5,0.14;mark=check@0.7,0.5,0.14
+190 || a French law book being closed with a stamp and a green bottle on top, book centered || || push;note=2011;noteat=0.5,0.14
+191 || a molecule drawn with a cute worried face shaped like a wormwood leaf, molecule centered || || pop
+192 || a man with swirls in his eyes next to a green fairy and a big red question mark, man centered || painter || push
+193 || a measuring cup with a small amount of green liquid and a small ruler, cup centered || || push;mark=circle@0.5,0.5,0.18
+194 || a European Union flag next to a lab measuring scale, split composition || || pull
+195 || a measuring cylinder with a tiny green line, cylinder centered || || push;note=35 мг/кг;noteat=0.5,0.14
+196 || a green bottle shown calm and relaxed with a halo on top, bottle centered || || pop
+197 || a stack of newspapers with a giant green bottle on the top and a headline scribble, stack centered || newsboy || push
+198 || chef with a mysterious smile holding up one finger, chef centered || chef || punch;ch=Сурстремінг;sfx=x_ding

@@ -30,7 +30,9 @@ def build_items(slug: str) -> list[dict]:
     beats = core.load_json(core.job_dir(slug) / "beats.json")
     cast = plan.load_cast(slug)
     era_f = core.job_dir(slug) / "era.txt"     # епоха відео (необов'язково), напр. "early 18th century (Edo period)"
-    style = FLOW_STYLE.format(era=(era_f.read_text(encoding="utf-8").strip() + "; ") if era_f.exists() else "")
+    style_f = core.job_dir(slug) / "style.txt"   # необов'язково (2026-11-13): свій стиль відео замість FLOW_STYLE (v02: насичений, як у конкурента Why Not Eat)
+    base_style = style_f.read_text(encoding="utf-8").strip() if style_f.exists() else FLOW_STYLE
+    style = base_style.format(era=(era_f.read_text(encoding="utf-8").strip() + "; ") if era_f.exists() else "")
     faces_f = core.job_dir(slug) / "faces.txt"   # необов'язково: інший опис облич (з v18: велика міміка, як у хітів ніші)
     if faces_f.exists():
         style = style.replace("very simple characters with plain round faces (two dot eyes, tiny mouth)", faces_f.read_text(encoding="utf-8").strip())

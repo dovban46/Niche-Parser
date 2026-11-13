@@ -1,0 +1,64 @@
+060 || a map of Japan with a cherry blossom and a fish pin, map centered, soft pink background || || pop;ch=Фугу;sfx=x_pop;mark=circle@0.5,0.5,0.2
+061 || a puffed-up pufferfish character with huge cartoon eyes floating in an aquarium, fish centered || || pop
+062 || thin transparent slices of fugu sashimi arranged in a flower on a big white plate, plate centered, elegant restaurant || || push
+063 || a pufferfish with a glowing green toxic aura inside its body shown like an x-ray, fish centered, dark background || || push;mark=circle@0.5,0.55,0.2
+064 || a little green skull symbol floating above a tiny vial with no antidote bottle beside it crossed out, vial centered || || push;mark=cross@0.7,0.5,0.14
+065 || a pufferfish strongly beating a small cyanide bottle in an arm wrestle, fish on the right, bottle on the left || || pull;sfx=x_boing
+066 || a Japanese restaurant kitchen with a hungry customer waiting at the counter, counter centered || || push
+067 || a Japanese chef in a white uniform and headband holding a long thin knife over a pufferfish, chef centered, wooden counter || jchef || punch
+068 || a golden license card with a stamp and a pufferfish icon, card centered || || pop;sfx=x_ding;mark=circle@0.5,0.5,0.2
+069 || a calendar page showing 1958 with a pufferfish on it, calendar centered || || push;note=1958;noteat=0.5,0.14
+070 || a young apprentice chef bending over a cutting board practicing for years, a calendar with many pages flying off, apprentice centered || jchef || push
+071 || an exam desk with three papers: written, practical, fish identification, a pufferfish on a tray, desk centered || || pull
+072 || three examiners with clipboards and only one of them smiling, the rest crossing their papers, examiners centered || jchef || push
+073 || a pie chart showing one third green and two thirds red, centered, simple bright background || || push;note=≈ 1/3 здають;noteat=0.5,0.14
+074 || a small red pufferfish liver with a skull icon in the middle of a white plate, liver centered || || pop
+075 || a pufferfish liver glowing with a skull symbol and a stop sign on it, liver centered || || push;mark=circle@0.5,0.5,0.18
+076 || a Japanese restaurant menu with a crossed-out liver drawing, menu centered || || push;mark=cross@0.5,0.5,0.18
+077 || a restaurant table with a red forbidden sign standing on a plate with a liver, table centered || || push
+078 || chef slicing a pufferfish into very thin slices with a long knife, knife centered, slices flying || jchef || punch
+079 || the thin slices so transparent that a floral plate pattern shows through them, close-up of slices on the plate || || push;mark=circle@0.5,0.5,0.2
+080 || a chef with a determined face holding a knife in the air above a pufferfish, chef centered || jchef || push
+081 || a razor-thin line between a plate and a hospital bed drawn as a tightrope, balance pole in the middle || || pull
+082 || a pufferfish with a big banned stamp and a question mark above, fish centered || || pop
+083 || a pufferfish wearing a seatbelt and a safety helmet looking smug, fish centered || || push;mark=check@0.5,0.4,0.15
+084 || a strict rulebook with a ribbon tied around a pufferfish like a leash, fish centered || || push
+085 || a clean Japanese restaurant with a green check mark above the door, restaurant centered || || push;mark=check@0.5,0.35,0.15
+086 || a small kitchen at home with a messy scene of a man holding a pufferfish and a cutting board, man centered || chef || push
+087 || a man at a market buying a whole pufferfish with a wide smile, market stall behind him, man centered || chef || push
+088 || a man in his kitchen cutting a pufferfish with a worried sweat and a thought bubble with a question mark, man centered || chef || punch;sfx=x_gasp
+089 || an emperor in a golden robe and a fan sitting on a throne looking at a plate with a pufferfish and shaking his head, emperor centered || || push
+090 || an official scroll with a blank space and a question mark, scroll centered || || push
+091 || two people whispering a rumor behind a hand with speech bubbles above them, people centered || || push;sfx=x_ping_up
+092 || chef pointing a finger up with a thoughtful face, chef centered || chef || punch
+093 || an ancient tradition lantern with a gentle glow standing next to a modern warning sign, lantern on the left, sign on the right || || panr
+094 || a heart-shaped tradition tied with a careful ribbon, centered || || push;sfx=x_ding
+095 || a map of France with the Eiffel Tower and a small bird pin, map centered, warm light || || pop;ch=Ортолан;sfx=x_pop
+096 || a tiny ortolan bunting bird smaller than a cartoon palm with big glossy eyes standing in an open hand, hand and bird centered || || push
+097 || a small bird in a dark cage covered with a cloth and glowing eyes inside, cage centered, dark room || || push
+098 || a tiny bird floating in a glass of armagnac with a golden drink around it, glass centered || || pop
+099 || a fancy plate with a single roasted tiny bird on it, plate centered, elegant restaurant || || push
+100 || a roasted tiny bird whole with bones on a white plate, close-up, plate centered || || punch
+101 || a diner with a white napkin completely covering his head leaning over a plate, diner centered, candle-lit table || french || punch;mark=circle@0.5,0.3,0.2
+102 || three thought bubbles over a napkin-covered head, each showing a different reason: a fragrance cloud, a halo, a bone || french || pull
+103 || a diner sniffing a fragrance cloud under a napkin, a cloud above the napkin, diner centered || french || push
+104 || a diner under a napkin looking up toward a halo in the sky, diner centered || french || push
+105 || a diner under a napkin turning his head away from the camera, diner centered || french || push
+106 || a diner quietly spitting small bones onto a plate under a napkin, plate centered || french || push
+107 || a calendar page showing 1999 with a red banned stamp and a bird icon, calendar centered || || push;note=1999;noteat=0.5,0.14
+108 || a French law book lying forgotten under a table covered with dust, book centered || || push
+109 || a calendar page showing 2007 with a magnifying glass and a police officer stepping in, calendar centered || || push;note=2007;noteat=0.5,0.14
+110 || a red banknote stack and a gavel next to a bird, scale in the center || || push
+111 || a police officer pointing at a bird cage and a prison door behind him with a half-year calendar, officer centered || officer || punch
+112 || a line chart going down steeply with a tiny bird at the end, chart centered || || push;mark=arrow@0.8,0.7,0.12,135
+113 || a pie of a bird population with one third missing and cut out, pie centered || || push;note=−30%;noteat=0.5,0.14
+114 || a famous president's portrait frame with a tiny bird on the frame, frame centered || president || pop
+115 || a French president at a candle-lit table with a plate, a smiling waiter behind him, president centered || president || push
+116 || a calendar page for the last night of 1995 with fireworks and a plate, calendar centered || || pop;note=31.12.1995;noteat=0.5,0.14;sfx=x_tada
+117 || a French president under a white napkin eating a small bird at a long table, president centered || president || push
+118 || a calendar page of 8 January 1996 with a small black ribbon, calendar centered || || push;note=8.01.1996;noteat=0.5,0.14
+119 || an empty chair at a candle-lit table with a napkin on the plate, chair centered || || push
+120 || a plate with a single golden spotlight on it, plate centered, dark background || || pop
+121 || a black market alley with a man in a hat showing a bird under his coat, man centered || || push
+122 || a price tag with hundreds of euro signs and a tiny bird, tag centered || || push;mark=circle@0.5,0.5,0.18
+123 || a forbidden fruit glowing with golden light inside a cage, centered, dark background || || punch;sfx=x_sting

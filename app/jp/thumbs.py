@@ -187,3 +187,34 @@ def add_arrow(src: Path, out: Path, x0: float = 0.40, x1: float = 0.62, y: float
     im.paste(layer, (0, 0), layer)
     im.save(out, quality=93)
     return out
+
+
+def overlay_wne(base: Path, text: str, out: Path, size: int = 150, y: int = 6, font_path: str = "C:/Windows/Fonts/ariblk.ttf") -> None:
+    """Заголовок у стилі «Why Not Eat» (2026-11-13): по центру зверху на всю ширину, жовто-помаранчевий градієнт, товста чорна обводка, тінь.
+    Кирилиця: Arial Black. Розмір зменшується, доки текст не вміститься у W-60."""
+    im = Image.open(base).convert("RGB")
+    s = max(W / im.width, H / im.height)
+    im = im.resize((int(im.width * s) + 1, int(im.height * s) + 1), Image.LANCZOS)
+    x0, y0 = (im.width - W) // 2, (im.height - H) // 2
+    im = im.crop((x0, y0, x0 + W, y0 + H))
+    f = ImageFont.truetype(font_path, size)
+    while f.getlength(text) > W - 60:
+        size -= 4
+        f = ImageFont.truetype(font_path, size)
+    tw = f.getlength(text)
+    px = (W - tw) / 2
+    mask = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(mask).text((px, y), text, font=f, fill=255)
+    grad = Image.new("RGB", (W, H))
+    gd = ImageDraw.Draw(grad)
+    top, bot = y + int(size * 0.12), y + int(size * 1.05)
+    for yy in range(H):
+        t = min(max((yy - top) / max(bot - top, 1), 0), 1)
+        gd.line([(0, yy), (W, yy)], fill=(255, int(236 - 86 * t), int(48 - 48 * t)))
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ld = ImageDraw.Draw(layer)
+    ld.text((px + 7, y + 9), text, font=f, fill=(0, 0, 0, 140), stroke_width=16, stroke_fill=(0, 0, 0, 140))
+    ld.text((px, y), text, font=f, fill=(15, 10, 8, 255), stroke_width=15, stroke_fill=(15, 10, 8, 255))
+    im = Image.alpha_composite(im.convert("RGBA"), layer)
+    im.paste(grad, (0, 0), mask)
+    im.convert("RGB").save(out, quality=93)

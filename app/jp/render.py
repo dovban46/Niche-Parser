@@ -669,6 +669,8 @@ class Scene:
             x += w + gap
 
     def draw_subs(self, frame, t):
+        if self.mont.get("subs") == "off":      # без вшитих субтитрів
+            return
         s = self.subtitle(t)
         if not s:
             return

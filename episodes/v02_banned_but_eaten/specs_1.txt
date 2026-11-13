@@ -1,0 +1,59 @@
+001 || a wedge of casu marzu cheese character with a gooey surface and tiny white larvae wiggling on it, a big round white plate, dramatic close-up, cheese centered, dark moody cellar background || || punch keep=1;sfx=x_sting
+002 || the same cheese character looking alive and creepy with dozens of tiny white wormlike larvae crawling on it, extreme close-up, cheese filling the frame || || push keep=1;mark=circle@0.5,0.5,0.22
+003 || a plate of cheese with many tiny white larvae jumping up into the air like popcorn, cheese centered, larvae above it || || pop keep=1;sfx=x_boing
+004 || a plate of cheese with one tiny larva jumping up to a ruler labeled with a red line, plate centered, ruler on the right side || || push keep=1;note=15 см;noteat=0.5,0.14
+005 || a diner with a hand covering his plate and the other hand covering his eyes, a larva flying toward him, diner centered, bright rustic kitchen || chef || punch keep=1
+006 || a diner shielding his cheese plate with a palm while squinting, cheese plate in the foreground, diner behind it || chef || push keep=1
+007 || an Italian flag with a giant red forbidden sign slashing a wedge of cheese on a plate, split composition left flag right cheese || || pull keep=1;mark=cross@0.75,0.5,0.2
+008 || a dark Sardinian stone cellar with shelves of cheese wheels and a lantern, a shepherd in a black flat cap sitting proudly on a barrel, shepherd centered || sard || push keep=1
+009 || a shepherd in a black flat cap with a mustache grinning and offering a plate of cheese to the viewer, shepherd centered, cellar behind him || sard || punch
+010 || a forbidden sign hanging over a cheese plate like a warning, plate centered, sign above || || push;mark=check@0.5,0.55,0.15
+011 || a crowd of hands reaching for the same plate of banned cheese, plate centered, many hands from all sides || || pull
+012 || a dangerous glowing blue pufferfish on a plate with a skull warning sign next to it, fish centered, dark teal background || || pop;sfx=x_sting
+013 || a cute but scary pufferfish character with huge eyes and inflated body lying on a white plate with a tiny red skull sign, fish centered || || push;mark=circle@0.5,0.5,0.2
+014 || a small brown bird with closed eyes sitting on a white plate on a fancy table under candlelight, bird centered || || pop
+015 || a French president in a dark suit with a ribbon pin sitting at a candle-lit dinner table, plate in front of him, president centered || president || push
+016 || a calendar page of a few days with a small bird sitting on it and a cross over the last day, calendar centered || || push;note=8.01.1996;noteat=0.5,0.14
+017 || a green bottle of absinthe with a smug face standing on an old Paris street table next to a black forbidden sign, bottle centered || || pop;sfx=x_ding
+018 || an old newspaper front page with a huge shocked headline drawn as scribbles, a green bottle in the center of the page || || push
+019 || a map with banned countries painted red and a green bottle in the middle, map centered || || panr;mark=circle@0.5,0.5,0.2
+020 || chef holding up seven fingers with a determined smile, chef centered, bright plain kitchen background || chef || punch;sfx=x_ding
+021 || a row of seven dishes on a long table: cheese, fish, small bird, sausage, fruit, a green bottle and a tin can, table in the center, all dishes smug || || panr
+022 || a tiny Italian restaurant waiter running away holding a cheese plate with a scared face, waiter on the left third || || panl
+023 || a map of Italy with the island of Sardinia highlighted in green and a cheese wheel pin on it, map centered, sunny sea || || pop;ch=Касу марцу;sfx=x_pop;mark=circle@0.4,0.78,0.12
+024 || a shepherd with a black cap and thick mustache milking a sheep in a green hill pasture, sheep and shepherd centered || sard || push
+025 || a wheel of sheep cheese sitting uncovered on a rustic table in a sunny cellar, a fly circling above it, cheese centered || || push;mark=circle@0.5,0.2,0.1
+026 || a tiny cheese fly with a mischievous face laying small white eggs on a cheese wheel, fly above, cheese centered || || pop
+027 || tiny white larvae hatching from eggs on a cheese surface, extreme close-up, larvae with cute dot eyes || || push
+028 || cheese cutaway showing larvae with little mouths eating tunnels inside a cheese wheel, wheel centered || || pull
+029 || a soft glowing runny cheese dripping from a wheel with larvae wiggling in it, cheese centered || || push
+030 || a wedge of casu marzu cheese character with a proud smile on a plate, cheese centered, warm light || || pop;sfx=x_ding
+031 || an old book page with a translation bubble showing a rotten cheese drawn with a green stink cloud, book centered || || push;note=гнилий сир;noteat=0.5,0.14
+032 || chef with a raised eyebrow leaning toward the camera, chef centered || chef || punch
+033 || a plate of cheese with larvae wiggling alive, a green check mark above it, plate centered || || push;mark=check@0.5,0.3,0.15
+034 || a cheese plate with limp dead larvae lying still and a red cross over it, plate centered || || push;mark=cross@0.5,0.5,0.18
+035 || a Sardinian shepherd pushing away a plate with a disgusted face, plate on the left third, shepherd on the right third || sard || panl
+036 || a cheese plate where larvae suddenly jump up in alarm with exclamation marks, plate centered || || pop;sfx=x_boing
+037 || a larva jumping high with a tiny ruler beside it, larva centered, simple bright background || || pop;note=15 см;noteat=0.5,0.14
+038 || diners at a rustic table all covering their plates with hands like umbrellas, table centered || chef || pull
+039 || a big red question mark above a wedge of cheese on a white plate, cheese centered || || pop
+040 || an old Italian law book with a red ribbon opening on a desk, book centered, warm office || || push
+041 || a calendar page showing 1962 beside a cheese wedge with a gavel above it, calendar centered || || push;note=1962;noteat=0.5,0.14
+042 || a cheese covered with a swarm of tiny larvae and a red stamp saying nothing but a forbidden icon on it, cheese centered || || punch;sfx=x_thud;mark=cross@0.5,0.5,0.2
+043 || a European Union flag with a stack of hygiene rule papers and a cheese plate with a red stop sign, split composition || || pull
+044 || a sad red warning triangle with an exclamation mark beside a cheese plate, triangle centered || || push
+045 || a cheese larva sliding through a cartoon stomach full of green acid and surviving with a smirk, stomach centered || || push;mark=circle@0.5,0.5,0.2
+046 || a cartoon stomach with a sad face and a sick green cloud, stomach centered || || push
+047 || a golden world record book with a cheese wedge on its cover and a crown, book centered || || pop;sfx=x_tada
+048 || a wedge of cheese wearing a skull-and-crossbones bandana looking smug, cheese centered || || push
+049 || a thin crispy flatbread on a wooden board with a spoon of runny cheese on top, flatbread centered || || push
+050 || a glass of red wine next to a flatbread with cheese, glass on the left, board on the right || || panr
+051 || a host gesturing at the table with both hands and a half-smile, host centered, rustic table || sard || push
+052 || a small island shaped like Sardinia with a defiant fist raised on top, island centered, sea background || || punch
+053 || a document with a red seal and a list of traditional products being signed, document centered || || push;mark=circle@0.5,0.5,0.22
+054 || a calendar page showing 2005 and a cheese wheel on a shelf with a ribbon, calendar centered || || push;note=2005;noteat=0.5,0.14
+055 || a hidden cellar with a secret door half open and barrels of cheese in the dark, door centered || || push
+056 || a big truck-sized pile of cheese wheels with a scale showing a hundred tons, pile centered || || pull;note=≈100 т/рік;noteat=0.5,0.14
+057 || a red forbidden sign standing in front of a cellar door that is open anyway, sign centered || || push;mark=cross@0.5,0.5,0.18
+058 || a shepherd with a black cap pointing at the ground with pride, shepherd centered, green hills || sard || punch
+059 || the shepherd crossing his arms firmly with the cellar behind him, shepherd centered || sard || push

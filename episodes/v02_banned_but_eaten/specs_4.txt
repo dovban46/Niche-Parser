@@ -1,0 +1,62 @@
+199 || a herring fish character in a open can with a smug sly face, a dark moody Swedish harbor behind, can centered || || push
+200 || a herring can being thrown out of every door of a row of houses, a red forbidden sign above, houses centered || || pull;mark=cross@0.5,0.4,0.15
+201 || a map of Sweden with a blue and yellow flag and a herring can pin, map centered || || pop;mark=circle@0.5,0.5,0.15
+202 || a bulging tin can with a smug herring face on the label and green stink lines coming out of it, can centered, white plate underneath || || pop;sfx=x_boing
+203 || a wooden barrel of herring in the Baltic sea by a Swedish fishing village, barrel centered || || push
+204 || a herring can sitting in a cellar with a calendar showing many months and bubbles of fermentation, can centered || || push
+205 || a big green stink cloud rising from a can and people holding their noses, can centered || swede || punch;sfx=x_gasp
+206 || a rotten egg and a herring can fighting in a stink contest, the can wins, the two items centered || || pull
+207 || an egg with a green smelly aura looking defeated, egg centered || || push
+208 || a green check mark next to a legal document and a can of herring, centered || || push;mark=check@0.5,0.5,0.17
+209 || four airplanes with different airline tails flying in a row with a red forbidden sign on the herring can in the sky || || panr
+210 || an airport check-in counter with a sad man holding a herring can and the clerk shaking his head, counter centered || officer || push
+211 || an airplane cabin with a herring can in a basket and a red cross above it, cabin centered || || push;mark=cross@0.5,0.5,0.17
+212 || an airplane window with a can floating outside and a red stop sign, window centered || || push
+213 || a pressure gauge swelling beside a bulging can, gauge centered || || push;mark=circle@0.5,0.5,0.17
+214 || a herring can exploding with confetti-like herring bits and a big boom bubble, can centered || || punch;sfx=x_boom
+215 || a stern airport officer stamping a herring can with a red banned stamp, officer centered || officer || punch;sfx=x_thud
+216 || a calendar page showing 1984 beside a German court gavel with a cathedral behind it, calendar centered || || push;note=1984;noteat=0.5,0.14
+217 || a courtroom in Cologne with a judge reading and a tenant packing his bags, judge centered || || push
+218 || a balcony of an apartment building with brine dripping from the upstairs balcony onto a neighbor's balcony, balconies centered || swede || push;mark=arrow@0.7,0.4,0.12,135
+219 || a calendar page of the third Thursday of August with a herring can party hat, calendar centered || || pop;note=3-й четвер серпня;noteat=0.5,0.14
+220 || a Swedish family opening a herring can outdoors with excitement, a table with flatbread and potatoes, family centered || swede || push
+221 || a cheerful feast with people in blue and yellow hats gathered around a can, scene centered || swede || pull;sfx=x_ding
+222 || a plate of food with a tiny heart-shaped stink cloud above it, plate centered || || push
+223 || a dreamy thought bubble with a herring can inside, a person gazing up, thought bubble centered || swede || push
+224 || chef standing in front of seven small dishes in a row with a big smile, chef centered, dishes on a table || chef || push
+225 || a cheese plate with larvae and a Sardinian flag toothpick, plate centered || || push
+226 || a pufferfish on a plate with a small Japanese flag, plate centered || || push
+227 || a little roasted bird on a plate with a tiny French flag, plate centered || || push
+228 || a haggis on a plate with a small Scottish flag, plate centered || || push
+229 || an ackee fruit on a plate with a small Jamaican flag, plate centered || || push
+230 || a green glass of absinthe with a tiny Swiss flag, glass centered || || push
+231 || a herring can with a tiny Swedish flag, can centered || || push
+232 || seven dishes all wearing a red banned stamp in a row, dishes centered || || pull;mark=cross@0.5,0.5,0.28
+233 || seven dishes still sitting happily on a family table, table centered || family || push;mark=check@0.5,0.5,0.28
+234 || chef scratching his head with a question mark above, chef centered || chef || punch
+235 || a tasty-looking plate with a glowing aura, plate centered || || pop
+236 || a growling stomach with a loud sound bubble, stomach centered || || push
+237 || a brave knight with a spoon and a shield shaking his head no, knight centered || || push
+238 || a big wooden sign with a sticker saying a dangerous icon and a question mark, sign centered || || push
+239 || a person looking at a mirror and the mirror shows a question mark, person centered || chef || push
+240 || a mirror reflecting the same person but wearing a traditional costume, mirror centered || chef || pop;sfx=x_ding
+241 || a Sardinian shepherd in a black cap standing before a cheese wheel with proud eyes, shepherd centered || sard || push
+242 || a cheese wheel with larvae shown on a plate and a gentle golden glow behind it, plate centered || || push
+243 || a family tree on a cave wall with a cheese wheel at the root, tree centered || || push;mark=circle@0.5,0.8,0.15
+244 || a Japanese chef holding a license certificate with a proud smile, chef centered || jchef || push
+245 || a framed license certificate with a golden seal on a wall, frame centered || || push;mark=check@0.7,0.4,0.14
+246 || a Jamaican grandmother opening the door of a cozy house with a basket of ackee, grandmother centered || granny || push
+247 || two paths split in a road, one with a sign of rules and one with a wild forest, road centered || || pull
+248 || a fugu fish and an ackee fruit standing together holding hands with a green check mark above, centered || || push;mark=check@0.5,0.2,0.14
+249 || a license card and a ripe fruit side by side with a golden glow, centered || || push
+250 || a tiny ortolan bird fading away into a pale outline, bird centered || || push
+251 || a law book with a lock gathering dust and a tiny bird escaping through a window, centered || || push
+252 || a balance scale with a ban on one pan and a guide on the other, the guide heavier, scale centered || || pull
+253 || a teacher chef pointing at a board that shows a safe way to cut and eat, teacher centered || chef || push
+254 || a plate with a green check mark and a happy face, plate centered || || pop;mark=check@0.5,0.4,0.15
+255 || chef pointing toward the viewer with a big friendly smile, chef centered || chef || punch;sfx=x_ding
+256 || seven dishes in a row, chef choosing one with a curious finger, dishes centered || chef || push
+257 || chef waving both hands refusing a plate with a worried face, plate on the right, chef on the left || chef || panl
+258 || a comment bubble with a heart and a thumbs up, bubble centered || || pop;sfx=x_ding
+259 || an old library shelf with a glowing forbidden book standing out, shelf centered || || push
+260 || a golden spotlight on a plate on a table with a family smiling around it, plate centered, warm light || family || pull
