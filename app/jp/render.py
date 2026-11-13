@@ -660,6 +660,7 @@ class Scene:
                 q = (t - t0) / 0.18
                 nxt = [t1 for _, t1 in items if t1 > t0]
                 a = fade if not nxt else max(0.0, min(1.0, (nxt[0] - t) / 0.12))
+                a = min(a, max(0.0, min(1.0, (t0 + 3.0 - t) / 0.15)))   # слово видно максимум 3 с (2026-11-13)
                 blit(frame, flash_sprite(p), W / 2, H * 0.70, scale=lerp(1.35, 1.0, ease_out_back(min(q, 1.0))), alpha=min(q * 3, 1.0) * a)
             return
         for sp, (_, t0), w in zip(sprites, items, widths):

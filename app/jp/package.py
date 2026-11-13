@@ -29,6 +29,6 @@ def ship(slug: str, log=print) -> Path:
             shutil.copy2(src, dst)
         elif dst.exists():
             dst.unlink()
-    (out / "metadata.txt").write_text(metadata_text(meta, thumbs.versions_for(slug)), encoding="utf-8")
+    (out / "metadata.txt").write_text(metadata_text(meta, thumbs.versions_for(slug)), encoding="utf-8-sig")
     log(f"видано: {out}")
     return out
