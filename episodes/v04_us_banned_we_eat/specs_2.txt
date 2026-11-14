@@ -1,0 +1,74 @@
+078 || the chef host presenting a wooden cheese board with a few cheese wedges, centered, cream background, one raised eyebrow || chef || push keep=1
+079 || overhead view of a creamy brie wheel and a camembert wheel side by side on a wooden board, a cheese knife beside them || || punch keep=1
+080 || extreme close-up of a cheese rind covered in soft white mold, fuzzy texture, centered || || drift_down keep=1
+081 || wide view of a supermarket dairy aisle with refrigerated shelves full of cheese packs, low angle, shopper silhouettes || || panr keep=1
+082 || inside view of a big steel pasteurizer vat with warm milk being heated, steam rising, pipes around || || pull keep=1
+083 || a lone cheese wedge with a question mark shaped hole in it, centered on a plain plate, close-up || || pop keep=1
+084 || an old stately government building with columns and a tall flag, low angle, a stack of legal papers floating in front || || crane keep=1
+085 || a farm bucket of fresh raw milk being poured into a cheese vat, close-up from above, drops splashing || || tilt keep=1
+086 || a round wheel of cheese resting on a wooden shelf in a dark cellar next to a big wall calendar of torn-off pages, centered close-up, no legible numbers || || push keep=1;note=60 днів;noteat=0.5,0.12;mark=circle@0.5,0.5,0.15
+087 || a wooden crate with a cheese wheel being loaded onto a truck at a state border barrier, wide shot, flat landscape || || panl keep=1
+088 || a customs table with a cheese wheel being weighed on a scale and a stamp hovering over a paper, hands only, overhead || || snap keep=1
+089 || an old typewritten document with a ribbon stamp and a yellowed paper edge, close-up, desk lamp light, 1940s feel without legible text || || hand keep=1
+090 || a hard wheel of parmesan cut open on a marble counter showing crumbly golden interior, close-up, a small knife beside it || || rack keep=1
+091 || a heap of aged gouda wheels and parmesan wheels stacked in a tall storage cellar, wide shot, wooden shelves || || drift_up keep=1
+092 || a soft camembert oozing out of its rind on a plate, low angle close-up, a dripping knife beside it || || pop keep=1
+093 || two small cheese rounds on a wooden tray next to a pocket watch showing a short time span, centered, overhead || || punch keep=1
+094 || a sturdy French wooden cheese crate with a ribbon being turned away at a harbor dock by an officer, wide shot || officer || panl keep=1
+095 || a Paris-style street cheese shop window with soft cheeses displayed, seen from the pavement, warm light || || push keep=1
+096 || an empty airplane luggage tray with a single cheese-shaped shadow on it, overhead, long soft shadow || || pull keep=1
+097 || the chef host with raised hands and wide eyes standing in front of a stack of lab papers and a microscope, surprised, centered || chef || pop keep=1;sfx=x_sting
+098 || a government laboratory bench with rows of petri dishes and a microscope, wide shot, scientists silhouette at the far end || scientist || panr keep=1
+099 || a close-up of a wedge of cheese under a magnifying glass with a few tiny round bacteria drawn on the surface, centered || || push keep=1
+100 || a round of cheese on a lab scale next to a stopwatch and a calendar page with no legible numbers, centered close-up, tiny microbes crawling over the rind || || punch keep=1;mark=circle@0.5,0.5,0.15
+101 || microscopic view of bacteria cells swimming calmly inside a cheese slab, cross-section, inside view || || drift_down keep=1
+102 || a row of scientists in white coats standing around a big cheese wheel, scratching their heads, wide low angle || scientist || pull keep=1
+103 || a big cheese wheel with a tiny question mark balloon floating above it, centered on a pedestal || || pop keep=1
+104 || a warning sign shape with a rural road sign and a hint of a small farm in the distance, wide, golden hour light || || panl keep=1
+105 || an overhead map of the USA with state borders drawn in thin lines and a cheese wheel placed on one state, parchment style || || crane keep=1
+106 || a roadside farm stand with a hand-drawn cheese sign symbol and a farmer smiling beside wheels of cheese, wide shot || farmer || panr keep=1
+107 || two different state gates side by side, one open and one closed, a cheese wheel between them, centered || || rack keep=1
+108 || a lawyer-style heavy stack of law books on a desk with a cheese wedge resting on top, close-up, dust || || hand keep=1
+109 || a lavish festive table with a golden platter of black caviar canapes, wide shot, candles and champagne glasses || || pull keep=1
+110 || a small open glass jar of shiny black caviar with a mother-of-pearl spoon, extreme close-up, centered || || push keep=1
+111 || overhead view of a bread slice with butter and a spoonful of black caviar on top, on a festive wooden board || || punch keep=1
+112 || a frustrated wealthy American diner at a table looking at an empty plate, wide shot, chandelier above, small figure || || drift_up keep=1
+113 || a large official rubber stamp pressing down on a paper beside a small sturgeon figurine, close-up, centered, federal desk, wildlife-style emblem without text || officer || tilt keep=1;sfx=x_sting;note=2005;noteat=0.5,0.12;mark=circle@0.5,0.5,0.15
+114 || a giant beluga sturgeon swimming in a dark sea, side view, a seafood crate dissolving behind it || || panr keep=1
+115 || a wide map of the Black Sea region with coastlines, sturgeon icons and tiny ships on the water, overhead, parchment || || crane keep=1
+116 || a blue-yellow flat landscape of the Ukrainian Black Sea coast with beach, lighthouse and fishing boats, wide shot || || panl keep=1
+117 || the chef host with a big question mark in the air above his hat, looking at the viewer, centered || chef || pop keep=1
+118 || an empty blank paper folder lying on a desk with a pen next to it, overhead, nothing inside || || snap keep=1
+119 || a fisherman shrugging beside a pile of nets with a sturgeon, medium shot, empty-handed gesture || fisherman || rack keep=1
+120 || a dying fish tank-like scene with a big sturgeon looking tired in murky water, dim light, inside view || || drift_down keep=1
+121 || a beluga sturgeon growing slowly shown as three stacked sizes, small young, medium, and giant old fish in a river, side view, centered || || push keep=1;mark=circle@0.5,0.5,0.15
+122 || a dense fishing net full of sturgeon pulled from the sea, low angle, fishermen silhouettes on a boat || fisherman || pull keep=1
+123 || a closed barrier gate blocking a dock with crates of caviar jars behind it, wide shot || || panr keep=1
+124 || an officer's hand pulling a small jar from a traveler's open suitcase, close-up, clothing and jars in the case || officer,traveler || hand keep=1
+125 || a row of small jars of ordinary black caviar on a shelf, one big jar missing from the row, centered close-up || || punch keep=1
+126 || a question-mark shape made of fish roe pearls on a dark plate, overhead, centered || || tilt keep=1
+127 || the chef host with both hands up in an honest shrug, centered, cream background || chef || pull keep=1
+128 || two diverging paths in a misty landscape, one marked with a crate of caviar and one empty, wide shot, no signs || || crane keep=1
+129 || a golden luxury caviar tin sitting beside a tiny hidden contraband package wrapped in brown paper, centered close-up || || push keep=1
+130 || a single glittering jar of caviar on a velvet cushion locked behind bars, centered, dramatic light || || pop keep=1;sfx=x_ding
+131 || a dark old tavern interior with bottles on shelves, spooky green candle glow, wide shot || bartender || panl keep=1
+132 || a tall glass of glowing green absinthe with a slotted spoon holding a sugar cube across the top, close-up, centered || || push keep=1
+133 || a fantasy cartoon person with swirly eyes seeing tiny green fairies and floating shapes around a glass, humorous, medium shot || || pop keep=1
+134 || a barred door of a tavern with dusty empty shelves, only an old absinthe-shaped bottle silhouette on the shelf, wide low angle || || drift_up keep=1
+135 || a wall calendar flipping its pages through many years with the pages fluttering away, centered close-up, no legible numbers || || punch keep=1;note=1912;noteat=0.5,0.12
+136 || a long sequence of identical calendar pages stacked into a big tower, low angle, towering upward || || tilt keep=1
+137 || a history scholar silhouette in a library arguing with an open old book, two shadowy figures pointing at pages, wide shot || || panr keep=1
+138 || an empty bar counter with polished wood and a single bartender shrugging, medium shot || bartender || rack keep=1
+139 || a wormwood herb plant with grey-green feathery leaves growing in a field, close-up, centered || || push keep=1
+140 || a chemistry diagram-like molecule bubble floating out of a wormwood leaf, close-up, no letters || || drift_down keep=1
+141 || a cartoon person staring at a glass with wavy distorted air around it, humorous, medium shot || || pull keep=1
+142 || the chef host waving away a cloud of green smoke with one hand and a skeptical look, centered || chef || snap keep=1;sfx=x_sting
+143 || a scientist at a lab bench with a test tube holding only a few tiny drops of green liquid, centered close-up, microscope beside || scientist || push keep=1;mark=circle@0.5,0.5,0.15
+144 || a strong bottle of absinthe next to a glass with a thin flame flicker above it, centered, dark background || || punch keep=1
+145 || a thermometer-like gauge needle bent into the high zone beside an absinthe bottle, centered || || tilt keep=1
+146 || a tipsy cartoon bar patron leaning with dizzy spiral eyes at a bar with a wobbly room around him, wide shot || bartender || pull keep=1
+147 || a federal alcohol bureau office with a big stamp pressing on a paper, hands only, overhead, calendar page nearby with no legible numbers || || hand keep=1;note=2007;noteat=0.5,0.12
+148 || a shiny new bottle of green absinthe on a shelf with a ribbon cut in front, centered, soft spotlight || || push keep=1;sfx=x_ding
+149 || a precise measuring pipette dropping a tiny drop into a glass beaker beside a green bottle, close-up, centered || scientist || rack keep=1;note=<10 ppm;noteat=0.5,0.12;mark=circle@0.5,0.5,0.15
+150 || a green absinthe glass with a sugar cube dissolving, now friendly with a small smile in the foam, centered close-up || || pop keep=1
+151 || a cheerful tavern scene with friends clinking glasses of green drink, wide shot, warm light, no scary shadows || bartender || crane keep=1

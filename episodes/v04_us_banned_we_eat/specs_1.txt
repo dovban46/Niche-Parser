@@ -1,0 +1,77 @@
+001 || a battered suitcase open on a customs desk, wide shot from low angle, a plain chocolate egg sitting on top of folded clothes, airport hall blurred behind || traveler,officer || push keep=1;sfx=x_sting
+002 || over-the-shoulder view of a customs officer lifting the lid of a big sticker-covered suitcase on a metal inspection table, flashlight beam inside, queue of travelers behind || officer,traveler || pull keep=1
+003 || close-up of a hand pulling a plain chocolate egg wrapped in foil out of a suitcase full of Ukrainian snacks, centered, bright foil shine || officer || punch keep=1;sfx=x_ding
+004 || traveler with open mouth and raised hands facing the officer across the desk, medium shot, stamp and fine form lying between them || traveler,officer || snap keep=1
+005 || overhead view of a customs fine form on a desk with a rubber stamp coming down and a pen beside it, empty lines only, no writing visible || officer || drift_down keep=1
+006 || a huge question mark shaped cloud of dust above a confused tourist standing alone in an airport hall, wide shot, suitcases passing by || traveler || pop keep=1
+007 || cross-section view of a chocolate egg cut in half showing a small plastic toy inside, centered, soft studio light || || push keep=1
+008 || Kinder-style chocolate egg with a toy peeking out of its crack, centered close-up on a wooden table, bright colors, a ukrainian coin beside it || || punch keep=1;mark=circle@0.5,0.5,0.17
+009 || a smiling child at a village kiosk handing a coin to a vendor and receiving a chocolate egg, medium shot, sunny street || child || panl keep=1
+010 || a tiny number one on a small chalkboard leaning against a chocolate egg, close-up, centered, chalk dust || || pop keep=1
+011 || seven food items lined up on a long market counter - an egg, a jug, a cheese wheel, a caviar jar, a green bottle, a meat pie, a home still - wide shot, ukrainian bazaar || || panr keep=1;note=7 продуктів;noteat=0.5,0.12
+012 || a busy Ukrainian farmers market with crates, stalls and shoppers, wide high angle, awnings in many colors || || crane keep=1
+013 || a cozy supermarket aisle with shelves full of products and one shopping cart, low angle, bright lighting || || tilt keep=1
+014 || a large map of the United States with a stern red border line around the coast, overhead, parchment style, small ship icons || || pull keep=1
+015 || a stop barrier half lowered over a plate of food on a table, close-up, striped pole across the picture || || snap keep=1
+016 || seven small paper tags with different drawings (a toy, a bacterium, a fish, a coin, a bottle, a scroll, a cow) arranged in a fan, overhead || || drift_up keep=1
+017 || the chef host pointing a wooden spoon toward the viewer with a confident smile, standing beside a chocolate egg bigger than himself, cream background || chef || push keep=1
+018 || a heavy old law book with a worn leather cover lying open on a desk, close-up from above, aged pages, dust motes || || punch keep=1;note=1938;noteat=0.5,0.12
+019 || the white building of the American Congress seen from a low angle, columns and dome, vintage sepia tint, wide shot || || crane keep=1
+020 || a pile of bottles of medicine, a tube of lipstick and a loaf of bread on a table, close-up, a vintage newspaper beneath them || || panl keep=1
+021 || a legal document with one paragraph highlighted by a bracket, overhead, a fountain pen beside it, old paper || || tilt keep=1
+022 || a cupcake with a small metal gear baked inside its cut-open sponge, close-up, centered, crumbs around it || || pop keep=1
+023 || a plain chocolate bar with a button embedded in it, inside view cross-section on a plate, soft light || || punch keep=1
+024 || a vintage 1930s chocolate shop window with eggs and bars on display, wide shot, no letters on the signs, evening glow || || pull keep=1
+025 || an empty shop shelf with a dust outline of a chocolate egg and a calendar on the wall showing only blank pages || || drift_down keep=1
+026 || a European street in the 1970s with a child running to a kiosk holding a coin, wide shot, old cars and trams || child || panr keep=1
+027 || an old stamped paper decree unrolling toward a toy hidden inside a chocolate egg, close-up, centered, dramatic light || || push keep=1
+028 || the chef host reading a huge scroll with a worried frown, standing on a stack of books, cream background || chef || pop keep=1
+029 || a small plastic toy part lying on a child's palm, extreme close-up, centered, a chocolate smear around it || child || punch keep=1;mark=circle@0.5,0.5,0.16
+030 || a government building with a flag and a food inspector figure on the steps, wide low angle shot, a sign with a plain fork and knife || inspector || tilt keep=1
+031 || a stack of rule folders with a hand stamping the top one, close-up, wooden desk, a lamp glowing || inspector || drift_up keep=1
+032 || a Kinder-style chocolate egg trapped in a wire cage on a warehouse table, centered close-up, dim light || || push keep=1
+033 || a closed warehouse door with a heavy lock and a chocolate egg label tag hanging from the handle, close-up || || snap keep=1
+034 || an airport baggage hall with a row of suitcases and an officer opening one, wide shot, many hands on bags || officer,traveler || panl keep=1
+035 || a huge pile of confiscated chocolate eggs heaped on a customs table, overhead view, an officer's hand shoveling more in || officer || crane keep=1;note=3000+;noteat=0.5,0.12
+036 || a calendar page with years flipping rapidly, many small chocolate eggs falling like rain across it, wide shot || || drift_down keep=1
+037 || a parcel box torn open on a counter with chocolate eggs spilling out, close-up, packing tape and wrapping around || officer || pop keep=1
+038 || a tourist with a big backpack and a family at a border control desk, medium shot, an officer scanning their bag with a flashlight || traveler,officer || pull keep=1
+039 || the chef host raising one finger as if getting an idea, with a lightbulb above his chef hat, cream background || chef || punch keep=1
+040 || a bright chocolate egg treat made of two separate halves, one half holding cream, the other holding a toy, centered close-up, playful colors || || rack keep=1;sfx=x_ding
+041 || a plain chocolate egg split apart, both halves side by side, overhead, soft studio light || || drift_up keep=1
+042 || a small plastic toy lying in its own plastic half shell next to a spoon of cream, close-up, centered || || push keep=1
+043 || a transparent wall dividing a toy from the chocolate, close-up of a half egg cross-section, centered, the toy clearly apart || || punch keep=1;mark=circle@0.5,0.5,0.17
+044 || a green checkmark shaped gate opening on a store shelf with a half egg treat in front, wide shot || || snap keep=1
+045 || an official paper letter with a blank approval box, held by two hands, close-up, window light || inspector || tilt keep=1
+046 || a supermarket shelf with the same two-part chocolate treat on sale in neat rows, low angle, shoppers' hands reaching in || || panr keep=1
+047 || the chef host holding a chocolate egg in one hand and a toy in the other, balancing like scales, cream background || chef || pop keep=1
+048 || a chocolate bar alone on a plate, centered close-up, calm soft light || || push keep=1
+049 || a small plastic toy alone on a wooden table, close-up, centered, simple background || || pull keep=1
+050 || a single capsule shaped container tightly holding a toy inside chocolate, extreme close-up, centered, dramatic light || || punch keep=1
+051 || a Ukrainian home fridge door open, light spilling out, a chocolate egg on the middle shelf glowing like treasure, wide shot || || crane keep=1
+052 || a glass of cold milk splashing on a table, close-up, droplets in the air, bright morning light || || punch keep=1
+053 || a village house yard in summer with a granny carrying a clay jug toward the viewer, wide shot, sunflowers and a fence || granny || panl keep=1
+054 || a cow standing in a green meadow with a wooden bucket under it, low angle, morning mist || farmer || push keep=1
+055 || a warm clay mug of milk with a thin foam on top, close-up, centered, steam rising, wooden table || granny || drift_up keep=1
+056 || a map of the United States with state borders, a tiny milk bottle in the middle, overhead, soft colors || || pull keep=1
+057 || a milk truck stopped at a state border barrier with a closed gate, wide shot, milk churns on the back, road sign with no letters || || panr keep=1;note=1987;noteat=0.5,0.12
+058 || a glass jar of milk with a bold red X sketched on a white card behind it, centered, close-up || || punch keep=1
+059 || a state border line on a road with a truck on one side, an empty road on the other, high angle, crane view || || crane keep=1
+060 || a grocery shelf full of milk cartons with one empty spot between them, close-up, centered || || pop keep=1
+061 || the chef host shrugging with a funny smirk, a wedge of cheese in his hand, cream background || chef || push keep=1
+062 || a courtroom with a judge's bench and a gavel hitting a block, close-up, dust flying, wooden textures || || snap keep=1;sfx=x_ding
+063 || a group of people with signs gathering in front of a courthouse, wide shot, a clipboard and a pen, daytime || || pull keep=1
+064 || a stack of lawsuit papers on a judge's desk, overhead view, a pair of glasses beside them || || drift_down keep=1
+065 || a food safety inspector listening to a judge's order, medium shot, stern faces, courtroom background || inspector || panl keep=1
+066 || a gavel and a milk bottle side by side, close-up, centered, wooden desk || || punch keep=1
+067 || a freshly printed rulebook lying on a table with a cow figurine on the cover, centered close-up || || tilt keep=1
+068 || a glass of milk with a little barrier sign in front of it, then a hand taking the glass away, close-up || || pop keep=1
+069 || a map of the US with a few states shaded with small farm icons, overhead, parchment style || || drift_up keep=1
+070 || a rustic farm shop with fresh milk jugs on a wooden table, wide shot, a cow outside the window, warm light || farmer || panr keep=1
+071 || the chef host looking at a big crossroads sign with one arrow to a farm and one to nowhere, cream background || chef || pull keep=1
+072 || a long dirt road leading to a farm in the countryside, wide shot, a car driving toward a barn, golden hour || farmer || push keep=1
+073 || a microscope view of tiny round bacteria glowing in a milk droplet, centered, eerie green tint, dark edges || || punch keep=1;mark=circle@0.5,0.5,0.16
+074 || a test tube with a milk sample and an inspector's gloved hand holding it up, close-up || inspector || tilt keep=1
+075 || a granny pouring milk for a laughing child in a village kitchen, medium shot, bread on the table, warm light || granny,child || panl keep=1
+076 || a calendar page of old decades with a faded photo of a village family drinking milk, close-up, sepia || || drift_down keep=1
+077 || a pot of milk boiling on a stove with bubbles rising, close-up, centered, kitchen steam || granny || pop keep=1

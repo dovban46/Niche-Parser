@@ -1,0 +1,66 @@
+152 || the chef stands at the edge of a busy old market, one finger raised, a hint of a surprise on his face, wide shot, stalls with hanging meat behind him || chef || pull keep=1
+153 || close-up of a golden baked pie broken open with steaming filling beside a wobbling jar of aspic on a wooden table, overhead, lace tablecloth || || drift_down keep=1
+154 || a Ukrainian market stall with a counter of offal, trays of organ meat and a hanging scale, medium shot, cabbages and a cat below the counter || || panr keep=1
+155 || a customs officer's hand slamming a big rubber stamp down onto a blank paper form, extreme close-up, stamp ink splatters || officer || punch keep=1;sfx=x_sting
+156 || a stately American government building with columns and a flag, low angle, a rolled decree with a wax seal floating in the foreground || || crane keep=1;note=1971;noteat=0.5,0.12
+157 || a cow standing in a meadow with a translucent view of its pair of lungs inside the body, side view, simple anatomy sketch || || push keep=1
+158 || an empty dinner plate on a table with a big cross-shaped gap, the plate alone, overhead, fork and knife set neatly beside it || || tilt keep=1
+159 || a trough filled with animal feed and a happy dog and cat eating beside it, cheerful farmyard, medium shot || || panl keep=1
+160 || a plate with a neat dinner setting seen from the diner's eyes, empty and untouched, a napkin folded, low angle across the table || || rack keep=1
+161 || a slaughterhouse interior sketch, inspector figures far back, hooks and long steel tables, wide establishing shot with depth || inspector || pull keep=1
+162 || a cutaway sketch of a cow's torso showing a stomach and a pair of lungs next to each other with a few droplets between them, side view || || hand keep=1
+163 || a large close-up of a pair of lungs on a steel tray with tiny drops of liquid slowly dripping toward them from above, centered || || push keep=1;mark=circle@0.5,0.5,0.17
+164 || a finished meat product on a conveyor belt moving toward a package, a single droplet falling onto it, close-up, shallow depth || || snap keep=1
+165 || a round Scottish haggis on a platter with a dagger beside it, a Scottish piper in a kilt playing bagpipes behind, hills in the distance, wide shot || || crane keep=1
+166 || a pot of sheep organ meats simmering, a sheep standing and watching through a window, cozy rustic Scottish kitchen, medium shot || || drift_up keep=1
+167 || a transatlantic ship's gangway at a harbor, a barred gate with a closed barrier across it, haggis crate left behind on the pier, low angle || officer || panl keep=1
+168 || an overhead view of a table with a small stack of papers and a rubber stamp, a map of the Atlantic Ocean pinned on the wall edge || || tilt keep=1
+169 || a thick rulebook open on a desk with a ribbon bookmark, a pair of sheep and cows drawn as small figures on its page, close-up || || punch keep=1
+170 || a dusty archive room, a clerk figure looking at conflicting files, a shrug, documents flying around, wide shot || || hand keep=1
+171 || a single large question mark shaped steam cloud rising from a covered pot on a stove, medium close-up, no text || || pop keep=1
+172 || the chef smiling confidently at a kitchen table in front of a bowl of pie and aspic, spoon raised, medium shot || chef || push keep=1
+173 || a bustling Ukrainian outdoor market, meat counter with a vendor and rows of customers, wide street scene, sunny day || || panr keep=1
+174 || a crowd of ordinary shoppers casually buying food, a woman putting a pie into a basket, a boy walking by calmly, medium shot || granny || drift_down keep=1
+175 || a traveler standing in a foreign shop with wide worried eyes holding a pie, cartoon sweat drops, foreign shop shelves behind, close-up || traveler || rack keep=1
+176 || the chef holds up a final finger beside a big dramatic curtain of steam in a dark kitchen, a spotlight above, medium shot || chef || push keep=1;sfx=x_sting
+177 || a glass jar of clear homemade moonshine on a rustic village kitchen table, close-up, a wheat stalk and a shot glass beside it || || punch keep=1
+178 || a map of the United States with a prohibition scene in a quiet kitchen: copper still on a stove with a small padlock hanging on it, wide shot || || pull keep=1
+179 || a pair of hands lifting a copper still lid, steam rising, close-up, small hanging garlic and herbs in a village kitchen || granny || hand keep=1
+180 || a small prison cell with a barred window and a lonely chair, wide shot, a faint ray of sunlight on the floor || || crane keep=1;note=5 років;noteat=0.5,0.12;mark=circle@0.5,0.5,0.15
+181 || a heavy sack overflowing with coins and banknotes on a scale, low angle, dark background || || tilt keep=1;note=10 000 $;noteat=0.5,0.12
+182 || a home brewer pouring a foamy beer from a barrel and a bottle of homemade wine next to it, a cheerful American garage scene, medium shot || bartender || panl keep=1
+183 || a government tax office desk with a giant ledger book and a stamp, tiny coins dropping into a bag, overhead || || drift_down keep=1
+184 || a state treasury figure counting coins at a counter with a copper barrel of alcohol beside him, wide shot || officer || panr keep=1
+185 || a side cutaway of a still showing coils and bubbles inside, a cross-section view with vapor rising, close-up || || push keep=1
+186 || a poisoned glass bottle with a skull-free warning sign shape of a sad face droplet, a worried scientist inspecting it, medium shot || scientist || snap keep=1
+187 || a pair of scales balancing a steaming copper still against a pile of coins, centered, studio background || || rack keep=1
+188 || a stack of legal journals and newspapers piled on a lawyer's desk, an open page, desk lamp, close-up from above || || tilt keep=1
+189 || a grand courthouse with columns and a statue of justice holding scales of justice, low angle, April cherry blossoms around the steps, centered || || crane keep=1;mark=circle@0.5,0.4,0.18;sfx=x_ding;note=2026;noteat=0.5,0.12
+190 || a heavy wooden gavel above a sound block, extreme close-up, a ripple of dust lifting off the block || || punch keep=1
+191 || a crossroad signpost with several arrows pointing in different directions on a misty road, wide shot, a question mark shaped cloud above || || drift_up keep=1
+192 || a law book wide open on a lectern with a pair of glasses resting on it, a closed door with a keyhole in the background || || pull keep=1
+193 || a shrugging chef with open palms standing in front of the courthouse steps, medium shot || chef || hand keep=1
+194 || a newspaper stand with fluttering papers and a boy handing a paper to a bartender, street scene, medium shot || bartender || panr keep=1
+195 || the seven items of the video in a neat row on a long table: a chocolate egg, a milk jug, a cheese wheel, a caviar jar, an absinthe glass, a plate of lungs, a copper still, wide shot || || pull keep=1
+196 || a chocolate egg cracked open with a small toy emerging from it, overhead close-up on a plaid cloth || child || push keep=1
+197 || a clay jug of fresh milk with foam spilling over, a cow looking through the barn window behind, medium shot || granny || panl keep=1
+198 || a round cheese wheel with white mold and a wedge cut out, close-up from a low angle, a knife beside it || || punch keep=1
+199 || an open jar of dark caviar with a small spoon, overhead view, ice shards around it, lightly lit || || tilt keep=1
+200 || a glass of green absinthe with a slotted spoon and a sugar cube, close-up, a wisp of vapor rising, tabletop || bartender || rack keep=1
+201 || a plate of pie and aspic with a fork, overhead view, parsley garnish on a checkered cloth || || drift_down keep=1
+202 || a copper still with a coil and a few glass jars next to it on a wooden table, medium shot, village kitchen window light behind || || push keep=1;sfx=x_ding
+203 || the chef gesturing with both hands at the row of seven items, shaking his head with a wondering smile, wide shot || chef || pull keep=1
+204 || a collage of four small vignettes: a child with a toy, bacteria under a microscope, a sturgeon in water, a coin stack, drawn in a four-panel grid || child,scientist,fisherman || panr keep=1
+205 || a dusty old-fashioned ghost story illustration: a tiny frightened figure under a blanket with a flashlight, medium close-up, a scary shadow on the wall || || snap keep=1
+206 || a single glowing lightbulb hanging over the empty table, dramatic close-up, dark room || || punch keep=1;sfx=x_sting
+207 || a sepia old typewriter and a stack of yellowed twentieth century rule papers with a seal, centered close-up, dust in the light || || push keep=1;mark=circle@0.5,0.5,0.16
+208 || a 1900s office with men in suits around a big table discussing papers, wide shot, a clock on the wall || officer,inspector || panl keep=1
+209 || a small old rule book moving on its own through a modern city street like a tradition parade, flags and crowds, wide shot || || crane keep=1
+210 || a smiling inspector with a question mark above his head holding a clipboard and glancing at it, medium shot || inspector || hand keep=1
+211 || the chef looking directly at the viewer and pointing with a spoon, in front of a chalkboard with seven blank squares, medium shot || chef || push keep=1
+212 || seven bright cartoon icons in a row on a table, an egg, a jug, a cheese wheel, a caviar jar, an absinthe glass, a plate, a still, one glowing slightly, close-up || || rack keep=1
+213 || a traveler hugging a suitcase tightly with eyes closed protecting a pie and a bottle inside, comic panic, medium shot || traveler || pop keep=1
+214 || an open suitcase on a bed full of different foods from home, a heap of jars and a cheese wheel, overhead || traveler || drift_down keep=1
+215 || a hand writing a comment on a glowing smartphone screen, over-the-shoulder view, a cozy room, no readable text || || tilt keep=1
+216 || two customs officers in a stand-off with a granny holding a basket of pies at an airport gate, wide shot, a friendly face || officer,granny || panr keep=1
+217 || the chef, the granny, and the traveler sitting at a warm candlelit dinner table sharing pie and cheese and tea, a window with snow, wide shot, cozy || chef,granny,traveler || pull keep=1

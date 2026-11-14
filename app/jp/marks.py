@@ -19,8 +19,11 @@ COMIC = "C:/Windows/Fonts/comicbd.ttf"
 INK_BGR = (24, 26, 34)
 RED_BGR = (46, 64, 230)
 GREEN_BGR = (90, 190, 60)
-T0 = 0.22              # коли починається малювання в біті, с
-TDRAW = 0.34           # скільки малюється, с
+T0 = 0.30              # коли починається малювання в біті, с
+TDRAW = 1.0            # скільки малюється, с (2026-11-15: повільне, видно як малюється фломастером)
+NOTE_HOLD = 1.3        # скільки видно наліпку-примітку, с
+HOLD = 1.5             # скільки обведення видно після початку малювання, потім тане, с
+_LAST = [None]         # кінець останнього штриха (де малює «фломастер»)
 NOTE_COLORS = {"red": (214, 64, 46), "green": (36, 150, 60), "blue": (36, 98, 200), "dark": (34, 26, 24)}
 
 
@@ -32,6 +35,7 @@ def _stroke(frame, pts, color, w):
     """Товстий штрих фломастера: темний контур під кольоровою лінією, круглі кінці."""
     if len(pts) < 2:
         return
+    _LAST[0] = pts[-1]
     arr = np.array(pts, np.int32).reshape(-1, 1, 2)
     cv2.polylines(frame, [arr], False, INK_BGR, int(w + 8), cv2.LINE_AA)
     cv2.polylines(frame, [arr], False, color, int(w), cv2.LINE_AA)
@@ -64,6 +68,12 @@ def draw_mark(frame, b, lt, M, size, seed=0):
     if q <= 0:
         return
     q = min(q, 1.0)
+    q = q * q * (3 - 2 * q) * 0.35 + q * 0.65          # майже рівна швидкість руки з м'яким стартом і гальмом
+    fade = 1.0 if lt < T0 + TDRAW + HOLD else max(0.0, 1 - (lt - T0 - TDRAW - HOLD) / 0.3)
+    if fade <= 0:
+        return
+    snap = frame.copy() if fade < 1.0 else None
+    _LAST[0] = None
     iw, ih = size
     cx, cy = _pt(M, iw, ih, m["x"], m["y"])
     rad = m.get("r", 0.12) * iw * M[0, 0]
@@ -79,12 +89,13 @@ def draw_mark(frame, b, lt, M, size, seed=0):
         gap = rad * 0.55
         tx, ty = cx + math.cos(ang) * gap, cy - math.sin(ang) * gap          # кінчик не лізе в об'єкт
         mx, my = (sx + tx) / 2 + (ty - sy) * 0.22, (sy + ty) / 2 - (tx - sx) * 0.22
-        pts = _bez((sx, sy), (mx, my), (tx, ty), q)
+        pts = _bez((sx, sy), (mx, my), (tx, ty), min(q / 0.72, 1.0))
         _stroke(frame, pts, RED_BGR, w)
-        if q >= 0.95:
+        if q >= 0.72:                                  # наконечник домальовується після древка
+            hk = min((q - 0.72) / 0.28, 1.0)
             d = math.atan2(ty - my, tx - mx)
             for da in (2.55, -2.55):
-                _stroke(frame, [(tx, ty), (tx + math.cos(d + da) * rad * 0.62, ty + math.sin(d + da) * rad * 0.62)], RED_BGR, w)
+                _stroke(frame, [(tx, ty), (tx + math.cos(d + da) * rad * 0.62 * hk, ty + math.sin(d + da) * rad * 0.62 * hk)], RED_BGR, w)
     elif kind == "cross":
         s = rad * 0.9
         _stroke(frame, [(cx - s, cy - s), (cx - s + 2 * s * min(q * 2, 1), cy - s + 2 * s * min(q * 2, 1))], RED_BGR, w + 3)
@@ -104,6 +115,12 @@ def draw_mark(frame, b, lt, M, size, seed=0):
         n = 40
         pts = [(cx - rad + 2 * rad * (i / n), cy + 5 * math.sin(i / n * 9 + seed)) for i in range(int(n * q) + 1)]
         _stroke(frame, pts, RED_BGR, w)
+    if q < 1.0 and _LAST[0] is not None:               # кінчик фломастера
+        tx_, ty_ = int(_LAST[0][0]), int(_LAST[0][1])
+        cv2.circle(frame, (tx_, ty_), 13, INK_BGR, -1, cv2.LINE_AA)
+        cv2.circle(frame, (tx_, ty_), 7, RED_BGR, -1, cv2.LINE_AA)
+    if snap is not None:                               # плавне танення
+        cv2.addWeighted(frame, fade, snap, 1 - fade, 0, dst=frame)
 
 
 @lru_cache(maxsize=None)
@@ -130,7 +147,10 @@ def draw_note(frame, b, lt, blit, ease_out_back, W, H):
         return
     sp = note_sprite(n["text"], n.get("color", "red"))
     sc = max(0.3, 0.6 + 0.4 * ease_out_back(min(q, 1.0)))
-    blit(frame, sp, n.get("x", 0.5) * W, n.get("y", 0.15) * H, scale=sc, alpha=min(q * 3, 1.0))
+    out = max(0.0, min(1.0, (NOTE_HOLD + 0.25 - lt) / 0.25))          # текст видно ~1,3 с і тане (2026-11-15)
+    if out <= 0:
+        return
+    blit(frame, sp, n.get("x", 0.5) * W, n.get("y", 0.15) * H, scale=sc, alpha=min(q * 3, 1.0) * out)
 
 
 def draw(frame, b, lt, M, size, blit, ease_out_back, W, H, seed=0):

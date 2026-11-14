@@ -27,7 +27,7 @@ BARS_H = 0.085                      # висота кінорамки (част�
 MUSIC_GAIN_DB = -17.0
 AMB_GAIN_DB, AMB_LEN_S = -14.0, 7.0 # фони amb_* (20 с вітру/табору) — широкосмуговий шум: тихіше й коротше (v08 звучало як шипіння)
 PARALLAX_PX = 15                    # зсув ближніх шарів при паралаксі 2.5D (пікселі кінцевого кадру)
-HOOK_HOLD = 1.4                     # скільки тримати рядок штампів-гачка після останнього, с
+HOOK_HOLD = 1.0                     # скільки тримати рядок штампів-гачка після останнього, с
 ANIM_DT = 0.45                      # тривалість пози в кадровій анімації, с
 BASE_ZOOM = 1.10                    # мінімальний наїзд: ховає краї кадру й підписи/штампи в кутках
 # ПРОФІЛЬ МОНТАЖУ відео (2026-11-10): <робота>/montage.json, щоб кожне відео виглядало інакше (пише vary.apply).
@@ -590,12 +590,12 @@ class Scene:
 
     def draw_chapter(self, frame, bi, lt):
         ch = self.beats[bi].get("chapter")
-        if not ch or lt > 2.6 or (bi == 0 and self.hook):
+        if not ch or lt > 1.9 or (bi == 0 and self.hook):
             return
         sp = chapter_sprite(ch)
         if self.mont["chapter"] == "card":          # картка по центру: вискакує, тримається, тане
             q = min(lt / 0.3, 1.0)
-            a = 1.0 if lt < 2.0 else max(0.0, 1 - (lt - 2.0) / 0.4)
+            a = 1.0 if lt < 1.4 else max(0.0, 1 - (lt - 1.4) / 0.4)
             blit(frame, sp, W / 2, H * 0.42, scale=1.35 * lerp(1.5, 1.0, ease_out_back(q)), alpha=min(q * 3, 1.0) * a)
             return
         q = lt / 0.35
@@ -609,11 +609,14 @@ class Scene:
         q = (lt - 0.12) / 0.26
         if q <= 0:
             return
+        out = max(0.0, min(1.0, (1.5 - lt) / 0.25))          # штамп видно ~1,3 с і тане (2026-11-15)
+        if out <= 0:
+            return
         sp = stamp_sprite(lab["text"].upper())
         left_side = self.beats[bi].get("focus", "C") == "R"
         cx = W * (0.24 if left_side else 0.76) if self.beats[bi].get("focus", "C") != "C" else W * 0.76
         cy = H * 0.17
-        blit(frame, sp, cx, cy, scale=lerp(1.7, 1.0, ease_out_back(q)), alpha=min(q * 3, 1))
+        blit(frame, sp, cx, cy, scale=lerp(1.7, 1.0, ease_out_back(q)), alpha=min(q * 3, 1) * out)
 
     def hook_items(self) -> list[tuple[str, float]]:
         """Гачок = рядок штампів угорі (рішення 2026-10-24: гігантський текст на весь кадр закривав картинку).
@@ -660,7 +663,7 @@ class Scene:
                 q = (t - t0) / 0.18
                 nxt = [t1 for _, t1 in items if t1 > t0]
                 a = fade if not nxt else max(0.0, min(1.0, (nxt[0] - t) / 0.12))
-                a = min(a, max(0.0, min(1.0, (t0 + 3.0 - t) / 0.15)))   # слово видно максимум 3 с (2026-11-13)
+                a = min(a, max(0.0, min(1.0, (t0 + 1.8 - t) / 0.15)))   # слово видно максимум 1,8 с (2026-11-15; було 3 с)
                 blit(frame, flash_sprite(p), W / 2, H * 0.70, scale=lerp(1.35, 1.0, ease_out_back(min(q, 1.0))), alpha=min(q * 3, 1.0) * a)
             return
         for sp, (_, t0), w in zip(sprites, items, widths):
