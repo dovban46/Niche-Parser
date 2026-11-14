@@ -1,0 +1,80 @@
+165 || King Adolf Frederick sitting at a long candlelit banquet table in a Stockholm palace dining hall 1771, a boiled lobster and a dish of caviar in front of him, king centered || adolf || push
+166 || close-up of a rich 18th-century feast table: a bowl of sauerkraut, a plate of pickled herring and a glass of champagne, dishes arranged left to right || || panr;mark=circle@0.7,0.55,0.15
+167 || a tall tower of cream buns stacked on a silver platter, the tower centered, candlelit room behind it || || pull;note=14;noteat=0.5,0.14;sfx=x_pop
+168 || a cut-open semla bun in close-up showing almond paste and whipped cream inside, bun centered on a small plate on a wooden table || || push;mark=circle@0.5,0.5,0.18
+169 || a deep bowl of hot steaming milk with a semla bun floating in it, bowl centered, a spoon on the right, warm kitchen light || || drift_up
+170 || a plump king in a powdered wig happily holding a cream bun with both hands, bun held up to the face, king centered, ornate palace room behind || adolf || punch
+171 || the chef host holding a big magnifying glass up to the viewer with one eyebrow raised, chef on the right, cream bun on a table on the left || chef || push;sfx=x_ding
+172 || an old physician in a long robe writing with a quill at a desk in a dim Stockholm room, a small window and a candle, doctor on the left || doctor || panl
+173 || a rolled paper menu scroll unrolled on a table with a big question mark floating above it, scroll centered, dark wood background || || pop;mark=underline@0.5,0.6,0.18
+174 || an old yellowed document with faint fading handwriting under a magnifying glass, document centered, magnifier on the right || || push;mark=circle@0.55,0.5,0.17
+175 || a growing staircase of cream buns going upward from small to huge, steps rising to the right, soft background || || drift_up
+176 || a satirical pamphlet being printed on a wooden press in an 18th-century Stockholm print shop, press centered, sheets hanging on a rope behind || || panr;sfx=page_turn
+177 || the chef host raising one finger with a serious wise face, chef centered, a sparkle of a lightbulb above him || chef || push
+178 || a calendar page lying on a table with a single date circled in red, a cream bun placed beside it, calendar centered || || punch;note=12.02.1771;noteat=0.5,0.14;mark=circle@0.5,0.45,0.16
+179 || a single cream bun on a silver plate on a festive Shrove Tuesday table, plate centered, candles on both sides || || push
+180 || a king's empty chair at the head of a candlelit table, a half-eaten bun on the plate in front of the chair, chair centered || || pull;sfx=x_sting
+181 || a bun on one side of a balance scale and a large question mark on the other side, scale centered, plain background || || push;mark=check@0.3,0.6,0.15
+182 || the chef host shrugging with open palms and a puzzled face, chef centered, tiny question marks floating around || chef || pop;sfx=x_boing
+183 || a snowy modern Swedish street with a cozy bakery window full of cream buns, bakery on the left, people passing || || panr
+184 || a modern cafe table with a cup of coffee and a semla bun, table centered, cheerful winter window behind || || pull;mark=circle@0.5,0.55,0.15
+185 || a framed portrait of the plump king in a powdered wig winking, a cream bun floating on a plate under the portrait, portrait centered || adolf || push;sfx=x_tada
+186 || Washington 1850 Independence Day celebration, a big crowd with flags in front of a stage, President Zachary Taylor on the stage on the left, bright sun || taylor || panl;ch=Тейлор
+187 || a calendar page with a firework drawn on it, a date circled, page centered, flags in the corners || || punch;note=4.07.1850;noteat=0.5,0.14
+188 || President Taylor standing on a podium under a blazing sun wiping his forehead, flags behind him, Taylor centered || taylor || push;mark=circle@0.5,0.12,0.15
+189 || a blazing hot sun over the unfinished Washington Monument stump and a crowd of tiny people in 1850, sun top right, monument stump on the left || || drift_up
+190 || a sweaty President Taylor fanning himself with his hat in a shaded tent, taylor centered, glass of water on a table || taylor || push
+191 || a bowl full of fresh red cherries next to a tall glass of cold milk on a white tablecloth, both centered, summer window behind || || pop;mark=circle@0.35,0.55,0.16
+192 || close-up of hands holding a cherry above a glass of milk, glass centered, a cherry stem hanging || || push
+193 || President Taylor lying in a bed in a dim White House bedroom at night, a candle on the nightstand, a doctor sitting beside the bed, scene seen from the doorway || taylor, doctor || pull;sfx=x_sting
+194 || a calendar page with a candle burning down next to it, five days crossed out, page centered || || punch;note=9.07.1850;noteat=0.5,0.14;mark=cross@0.3,0.5,0.15
+195 || an empty armchair in a presidential office with a black ribbon draped over it, chair centered, window with rain || || pull
+196 || an old physician writing on a paper with a quill, a small glass bottle of medicine next to his hand, doctor centered || doctor || push
+197 || a stomach drawn in an old medical textbook open on a desk, a magnifier lying on the page, book centered || || drift_down;mark=circle@0.5,0.45,0.17
+198 || a large hourglass standing in front of an old cemetery with leafless trees, hourglass centered, sand running || || push;note=1991;noteat=0.5,0.14
+199 || a determined woman writer at a desk full of books and papers, pointing at a map, woman centered, lamp on the left || || punch
+200 || a quiet cemetery crypt entrance with workers in protective suits and a cart, open stone door in the middle, soft morning light || || pull;sfx=x_thud
+201 || a small old glass vial with a skull sign on it, vial centered on a lab table, soft light || || push;mark=circle@0.5,0.5,0.15
+202 || a modern forensic lab with a microscope and small sample bags with strands of hair, a scientist bending over the microscope, microscope centered || scientist || panr
+203 || a scientist holding a test tube up to the light and examining it, scientist centered, lab shelves behind || scientist || push;mark=circle@0.55,0.4,0.15
+204 || a beaker with a tiny dot at the bottom beside a measuring chart, beaker centered, magnifier on the right || || push;mark=circle@0.5,0.7,0.14
+205 || a scientist stamping a folder with a big green check mark, folder on the desk centered, lab behind || scientist || punch;mark=check@0.5,0.6,0.15;sfx=wax_seal
+206 || the chef host holding his chin with a puzzled face in front of a blackboard with a big question mark, chef on the left || chef || pop
+207 || a petri dish with tiny colonies of bacteria seen under a magnifier, dish centered, lab bench || || push
+208 || a muddy unpaved Washington street in 1850 with puddles, a cart and a few people, street centered, low houses on both sides || || panl
+209 || the White House in 1850 seen from a distance with a muddy ditch running along the lawn, house on the left, ditch in the foreground || || panr;mark=arrow@0.65,0.8,0.15,200
+210 || a balance scale with a bowl of cherries on one side and a bucket of dirty water on the other, the water side heavier, scale centered || || push;mark=circle@0.7,0.6,0.16
+211 || a calendar with many pages flipping, one page circled and a presidential hat resting on top, calendar centered || || punch;note=16 місяців;noteat=0.5,0.14
+212 || a row of presidential portraits in frames on a wall with one tiny frame next to a nearly empty hourglass, row centered || || panl
+213 || a long open ditch of dirty water running next to a white stately building, ditch leading into the distance, building on the right || || drift_up;mark=arrow@0.4,0.75,0.15,200
+214 || close-up of murky water in a canal with flies hovering over it, a rusty bucket on the bank, water centered || || push;sfx=x_gulp
+215 || seven small portraits in ornate frames in a row on a wall, wall centered, soft light from the left || claudius, attila, henry, paul, charles, adolf, taylor || pull;ch=Правда
+216 || a portrait of Emperor Claudius in a gold frame, portrait centered, a tiny mushroom below it || claudius || push
+217 || a portrait of Attila the Hun in a frame, a wine goblet below the frame, portrait centered || attila || push
+218 || a portrait of King Henry I in a frame, a small eel-like lamprey fish on a plate below, portrait centered || henry || push
+219 || a portrait of Pope Paul II in a frame, half a melon beneath it, portrait centered || paul || push
+220 || a portrait of Emperor Charles VI in a frame, a small bowl of mushrooms beneath it, portrait centered || charles || push
+221 || a portrait of King Adolf Frederick in a frame, a cream bun beneath it, portrait centered || adolf || push
+222 || a portrait of President Taylor in a frame, a glass of milk beneath it, portrait centered || taylor || push
+223 || a big balance scale with a feast on one side and a thick history book on the other, scale centered, plain parchment background || || pull;mark=check@0.7,0.55,0.15
+224 || a feast table with a large roast and goblets, a big question mark hanging above the table, table centered, hall behind || || push;sfx=x_sting
+225 || a goblet with a tiny dagger lying beside it on a dark table, goblet centered, candle on the left || || punch;mark=circle@0.5,0.5,0.15
+226 || a wine goblet and a wine jug on a wooden table with a spilled drop, goblet centered, warm light || || push
+227 || a silhouette of a human head with a little lightning bolt inside, silhouette centered, soft background || || pop
+228 || a rusty bucket of dirty water beside an old doctor's leather bag and a jar of leeches, items centered on a wooden floor || || drift_down
+229 || an old shelf with dusty medicine bottles and an empty mortar, shelf centered, window light || || panr;mark=circle@0.4,0.5,0.17
+230 || the chef host thinking with a hand on his chin and a thought bubble with a cream bun inside, chef centered || chef || push
+231 || a plain dinner plate on the left and a tangled medical scroll with diagrams on the right, split composition, table below || || panl
+232 || a thick closed medical file on the left and an open colorful storybook on the right, both on a table, split composition || || panr;mark=circle@0.75,0.5,0.17
+233 || a crowd of listeners leaning in around a storyteller at a table with a tower of buns on it, storyteller centered || || push
+234 || the chef host with a raised finger and a knowing smile, chef centered, one cream bun on a plate beside him || chef || punch
+235 || a golden crown on a tall pedestal with rays of light, crown centered, small silhouettes of people looking up || || pull
+236 || a crowd of silhouettes whispering and pointing toward a crown, crowd on the left, crown on the right || || panr
+237 || a balance scale with a golden crown on one side and a small cream bun on the other, the crown side tipping, scale centered || || push;sfx=x_record_scratch
+238 || the chef host looking straight at the viewer with a warm smile and an open hand, chef centered, a feast table behind him || chef || push;sfx=x_ding
+239 || seven small portraits in frames each with a tiny question mark above, row centered, a magnifier hanging in front || claudius, attila, henry, paul, charles, adolf, taylor || pull;mark=circle@0.5,0.5,0.2
+240 || a long feast table with a king's empty chair on the left and a chef's chair on the right, table centered, warm candlelight || || panl
+241 || the chef host sitting at a long feast table across from King Adolf Frederick, both with plates and goblets, table centered || chef, adolf || push
+242 || the chef host pointing downward at an empty speech bubble drawn below him, chef centered, warm background || chef || punch;mark=arrow@0.5,0.8,0.15,90
+243 || the chef host holding a big magnifying glass over an old book on a table and looking at the viewer, chef on the left, book centered || chef || push;mark=circle@0.5,0.6,0.18
+244 || the chef host smiling and waving goodbye to the viewer with a feast table behind him and an hourglass on the side, chef centered || chef || pull;sfx=x_tada

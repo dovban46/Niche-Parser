@@ -1,0 +1,82 @@
+001 || seven empty thrones of different eras in a row in a vast shadowy hall, wide shot, thrones receding into the distance, crowns resting on the seats || || push keep=1;sfx=x_sting
+002 || a Roman emperor, a Hunnic warlord, a medieval king and a Baroque emperor standing shoulder to shoulder in a group, centered, dramatic low angle, armies of soldiers behind them || claudius,attila,henry,charles || pull keep=1
+003 || a row of palace physicians and food tasters lined up in front of a royal table, wide shot, tasters holding small cups, doctor on the left || doctor,taster || panr keep=1
+004 || a single empty royal dinner plate with a silver cloche, overhead view, centered on a dark wooden table, candle beside it || || punch keep=1;mark=circle@0.5,0.5,0.18
+005 || a lone brown forest mushroom growing on moss, close-up, centered, soft forest light || || push keep=1;mark=circle@0.5,0.5,0.15
+006 || a map of Europe with a red thread of war lines spreading outward from one point in the center, overhead, parchment map || || pull keep=1;note=8 років;noteat=0.5,0.12
+007 || a small sweet bun with cream on a plate, centered, a tiny gold crown balanced on top of it || || pop keep=1
+008 || a royal crowned king silhouette surrounded by laughing townspeople pointing at him, wide shot, medieval-looking street at dusk || adolf || pull keep=1;note=250 років;noteat=0.5,0.12
+009 || an American president in a frock coat seen from behind standing under a blazing summer sun, wide shot, flags in the distance || taylor || drift_up keep=1
+010 || a bowl of red cherries beside a tall glass of cold milk on a wooden table, close-up, centered || || punch keep=1;mark=circle@0.5,0.55,0.18
+011 || the chef host holding a big magnifying glass and looking at the viewer with one raised eyebrow, centered, cream background || chef || push keep=1;sfx=x_ding
+012 || a stack of old chronicles and history books with one torn page falling apart, centered, crumbling edges, dust in the air || || pop keep=1
+013 || a close-up of a magnifying glass over an old parchment with blurry unreadable scribbles, centered || || push keep=1;mark=circle@0.5,0.5,0.2
+014 || seven small tables each with a different dish, arranged in a row, overhead view, a mushroom plate on the left and a cherry bowl on the right || || panr keep=1
+015 || a scale of justice with a heap of facts on one side and a heap of legends on the other, object only, centered || || push keep=1;mark=arrow@0.35,0.55,0.15,45
+016 || a wooden signpost with two arrows pointing opposite ways, one toward a stone tablet and the other toward a cloud of smoke, wide shot, country road || || pull keep=1
+017 || a tall dark Roman palace corridor with torches and an open door at the end, viewed from a distance, silhouette of a figure walking away || || push keep=1
+018 || a close-up of a plate of boiled mushrooms in a Roman silver dish, centered, steam rising, Roman villa dining room behind || || push keep=1;ch=Клавдій;note=13.10.54 р.;noteat=0.5,0.12
+019 || Emperor Claudius lying propped on a couch in a dim Roman bedroom, pale and exhausted, an oil lamp beside him, wide shot from the foot of the bed || claudius || pull keep=1
+020 || a hand with age spots resting on a purple-striped bedcover, close-up, a laurel wreath lying beside it on the pillow || claudius || drift_down keep=1
+021 || Agrippina whispering into the ear of a senator in a shadowy colonnade, Roman forum background, whispers drawn as small curls || agrippina || panl
+022 || young Nero standing next to a golden empty throne looking up at it, centered, throne room in Rome || nero || push;mark=circle@0.3,0.55,0.15
+023 || the historian Tacitus as a bearded Roman with a scroll writing at a desk, oil lamp and ink pot, three-quarter view || monk || punch
+024 || a Roman palace kitchen with a slave tasting a dish from a silver spoon while a cook watches, wide shot, taster on the left || taster || pull
+025 || a plate of mushrooms on a Roman dining table with the taster standing back holding a cup, centered, soft candlelight || taster || push;mark=circle@0.5,0.55,0.16;sfx=x_gasp
+026 || Emperor Claudius clutching his stomach on a couch, a worried servant at his side, shot from slightly above || claudius,taster || drift_down
+027 || a Roman physician bending over the emperor with a feather in his hand, close-up of the feather above Claudius's open mouth, rumor mood || doctor,claudius || punch
+028 || a long bird feather lying beside a small clay bottle with a drop on it, object only, centered on a marble table || || push;mark=circle@0.5,0.5,0.15
+029 || the chef host wearing a detective hat holding a magnifying glass over a Roman scroll, centered || chef || pop;sfx=x_ding
+030 || the historian Suetonius at a desk with two scrolls side by side, hesitating with a quill raised, centered || monk || push
+031 || two Roman scrolls side by side pulling in opposite directions, overhead, with a thin red thread between them, object only || || pull;mark=cross@0.5,0.5,0.15
+032 || a group of Roman citizens whispering in a circle in the forum, each with a small speech bubble containing a drawn question mark, wide shot || || panr
+033 || four different speech bubbles floating above a Roman crowd, one with a mushroom, one with a cup, one with a feather, one with a dagger, wide shot || || panl
+034 || a large drawn question mark in a speech bubble above a pile of different mushrooms on a table, centered close-up || || pop
+035 || an old yellowed scroll with a blank space and a single drawn question mark in the middle, centered, unrolled on a desk || || push;mark=circle@0.5,0.5,0.18
+036 || a table with three different mushrooms, one fat and golden, one pale with a ring around the stem, one brown and plain, overhead view, evenly spaced || || panr;mark=arrow@0.5,0.5,0.15,200
+037 || a golden orange Caesar's mushroom on the left and a pale deadly mushroom on the right, split composition, hand pointing at each || || pull;mark=circle@0.25,0.5,0.15
+038 || a fat deathly pale mushroom with a drawn skull-shaped shadow beneath it, close-up, forest floor, centered || || punch;sfx=x_sting
+039 || an old heavy emperor clutching his chest peacefully in an armchair in a garden, soft sunlight, wide shot || claudius || drift_up
+040 || a courtroom with a judge's bench and a small mushroom lying on the bench like evidence, centered, wide shot || || pull
+041 || a scale with a mushroom on one side and a thick scroll on the other, the scroll lighter, centered, object only || || push;mark=check@0.5,0.5,0.15
+042 || a big empty evidence box with a question mark drawn on it, centered close-up || || pop
+043 || young Nero sitting on a golden throne with a laurel wreath, smug face, throne room wide shot || nero || push
+044 || the city of Rome from above with the Colosseum area and the forum in smoky yellow light, wide aerial view || || drift_up;note=54 р.;noteat=0.5,0.12
+045 || a dark cloud over Rome with an emperor's silhouette, wide, orange sunset sky || nero || pull
+046 || young Nero lifting a plate of mushrooms with a smirk and a half-joking pose, centered, banquet hall || nero || pop;mark=circle@0.5,0.7,0.15
+047 || a platform of gods in clouds with a tiny mushroom on a plate placed on an altar, centered, golden light || || push
+048 || a statue of Emperor Claudius on a temple pedestal with a golden halo, columns around, centered, wide shot, incense smoke || claudius || pull;mark=circle@0.5,0.2,0.14
+049 || a vast Hunnic camp of round tents at dusk with fire pits and horses, wide shot || || panr;ch=Аттіла;note=453 р.;noteat=0.5,0.12;sfx=amb_camp
+050 || Attila the Hun standing before his tent holding a drinking horn, centered, hordes of horsemen silhouetted behind him || attila || push
+051 || Attila and a veiled young bride standing side by side at a wedding feast outside the tent, wide shot || attila,ildico || pull
+052 || Ildico in a veil seated alone on a cushioned bench, shy, centered close-up, jewelry shining || ildico || punch
+053 || a long wooden banquet table piled with meat and goblets of wine, overhead, a horn lying on its side, Hunnic tent interior || attila || drift_down
+054 || a closed tent entrance flap with servants waiting outside in the early morning mist, wide shot, silhouettes || || push
+055 || three nervous servants standing in front of a big tent, one raising a fist to knock and hesitating, centered || || punch;sfx=x_gulp
+056 || a heavy wooden door broken open with splinters flying, view from inside the dim room, light pouring in || || pop;sfx=x_thud
+057 || a large bed with fur covers and a pale hand hanging over the edge, dim light, nothing else shown, centered || attila || push
+058 || a single dark red stain on a white fur pillow, close-up, centered || || punch;mark=circle@0.5,0.5,0.15
+059 || the historian Jordanes as a bearded man with a scroll copying an older text by candlelight, three-quarter view || monk || push
+060 || a sleeping figure on a bed on his back, face covered by a fur blanket, a drinking horn on the floor, centered, dark tent || attila || drift_down
+061 || a close-up of a drop of blood on a fur cloth next to a goblet of wine, centered, object only || || push;mark=circle@0.5,0.5,0.14
+062 || a dark tent interior with a silhouette of a man lying still and a single candle burning down, wide shot || attila || pull
+063 || the chef host standing in front of a banquet table shrugging, centered || chef || pop
+064 || a banquet table full of food crossed out with a big red X mark symbolic in the corner, overhead || || pull;mark=cross@0.5,0.5,0.2
+065 || a goblet of red wine and a roasted meat platter on a wooden table, close-up, centered || || push;mark=circle@0.3,0.5,0.15
+066 || a pale wedding wreath on a table next to a drinking horn, centered, feast ending, candlelight || || punch
+067 || a mighty warlord's sword lying on the ground unused, rusted shield beside it, centered, dusty steppe, wide shot || attila || pull
+068 || a wedding veil lying on a bed with a man's still hand next to it, centered, close-up, dim || ildico || drift_down
+069 || a scroll with three small drawn icons: a blood vessel, a wine goblet and a brain, centered, object only || || push;mark=circle@0.5,0.5,0.2
+070 || a medical sketch of a human brain with a small drawn red spot, centered, parchment style || || pop;mark=circle@0.55,0.45,0.14
+071 || a wine goblet and a bloody vessel drawn in anatomical style, centered, desk with scrolls || || push
+072 || a woman in a veil whispering to a servant, rumor mood, speech bubble with a dagger inside, dim tent || ildico || panl
+073 || a group of historians around a table arguing, one shaking his head, wide shot, scrolls everywhere || monk || panr;mark=cross@0.5,0.4,0.15
+074 || a wide steppe at night with three coffins placed in a row on a hill, one golden, one silver, one iron, moonlight || || pull;sfx=distant_bell
+075 || three nested coffins drawn in cross-section: gold on the outside, silver in the middle, iron inside, object only, overhead || || push;mark=circle@0.5,0.5,0.18
+076 || a gold coffin, a silver coffin and an iron coffin lined up side by side on a hill, centered, wide shot || || panr
+077 || a river valley with a pit being dug by tiny silhouettes of workers at night, wide shot, torches || || push
+078 || a hidden grave on a steppe covered with grass, a lone wind-blown bush, a vague map with an X nearby, wide shot || || drift_up;mark=cross@0.5,0.6,0.12
+079 || a map of England and Normandy across the Channel with two small crowns, overhead parchment map || || pull;ch=Генріх I;note=1135 р.;noteat=0.5,0.12
+080 || King Henry I on horseback hunting in a Norman forest, hounds running ahead, wide shot || henry || panr
+081 || King Henry lying ill in a canopy bed in a castle room, tired face, candle beside him, wide shot from the foot of the bed || henry || push
+082 || a calendar page drawn as a parchment leaf with a heavy red circle on one day, a candle melting beside it, object only || || punch;note=1 грудня;noteat=0.5,0.12;mark=circle@0.5,0.5,0.15

@@ -1,0 +1,82 @@
+083 || a medieval monk chronicler writing with a quill at a slanted desk by a small arched window in an English monastery scriptorium, monk centered, candle beside him || monk || push
+084 || close-up of a blank parchment sheet with a quill and an ink pot on a wooden desk, a monk's hand entering from the right, desk filling the frame || monk || drift_down
+085 || overhead view of a large silver platter piled with cooked lampreys in sauce, platter centered, wooden table, bread and a goblet at the edges || || pull;mark=circle@0.5,0.5,0.2
+086 || close-up of a single long jawless lamprey with a round sucker mouth lying on a plate, fish centered, dark plain background || || punch;sfx=x_pop
+087 || a lamprey on the left side and a coiled snake on the right side facing each other, similar long shapes, meadow ground || || panr;mark=arrow@0.3,0.5,0.15,90
+088 || an old physician raising a palm in a firm stop gesture over a steaming dish of lampreys on a table, doctor on the left, dish centered, stone hall || doctor || push
+089 || a stout medieval king in a Norman hall happily eating from a platter of lampreys while ignoring a gesture of a doctor in the background, king centered, torches on stone walls || henry, doctor || pop
+090 || a feast table in a Norman castle hall with a king alone at the head, long table, hounds under it, one lit candle, wide shot || henry || pull
+091 || split composition: on the left a victorious king on a battlefield with a sword raised and banners, on the right a small plate with a fish dinner on a table || henry || panr
+092 || a doctor shaking his head with a raised finger, a plate of lampreys held out before him, doctor centered, dim candlelit room || doctor || punch;sfx=x_record_scratch
+093 || the chef host holding a big magnifying glass over a lamprey on a plate, chef on the left, plate on the right, kitchen shelf || chef || push;mark=circle@0.7,0.6,0.15
+094 || a balance scale with a small lamprey on one pan and a heavy royal crown with a question mark cloud on the other, scale centered, plain background || || drift_up;mark=circle@0.3,0.65,0.15
+095 || a scientist at a lab bench looking into a microscope, a petri dish with tiny rod-shaped bacteria beside it, scientist on the left, laboratory shelves || scientist || push
+096 || extreme close-up in a round magnifier circle of tiny rod-shaped bacteria floating around a bit of food, circle centered, plain background || || pop;mark=circle@0.5,0.5,0.18
+097 || a scientist shrugging with a drawn question mark in a thought bubble above his head, scientist centered, a test tube in hand, plain lab wall || scientist || pull;note=лише здогад;noteat=0.5,0.14
+098 || an old map of England and Normandy with the sea between them, a crown on the English side and a small skull-free cross at Normandy, map filling the frame || || panl;note=01.12.1135;noteat=0.5,0.14
+099 || an empty royal cradle standing alone in a stone castle chamber next to an empty throne, cradle centered, a single candle || || push;sfx=distant_bell
+100 || a nephew in chain mail and a crown seizing a throne on the left and a determined noblewoman in a dark gown claiming it from the right, two figures facing each other, throne between them || || punch
+101 || two armies facing each other across a muddy field with a small castle on a hill in the background, banners of two colors, wide shot || || panr;sfx=war_horn
+102 || silhouettes of knights riding past a burning village at dusk, a castle on the horizon, dark orange sky, wide shot || || drift_up
+103 || a broken crown lying on the ground near a ruined castle wall, grass and muddy soil, crown centered, low angle || || pull;mark=circle@0.5,0.6,0.15
+104 || a wall calendar with many torn-off pages drifting down like leaves, calendar centered, dark background || || drift_down;note=~20 років;noteat=0.5,0.14
+105 || Renaissance Rome, a heavy pope at an open window of a palace overlooking a sunny city with a dome and tiled roofs, pope in the window centered || paul || push;ch=Папа Павло II;note=26.07.1471;noteat=0.5,0.14
+106 || an empty papal throne chair in a quiet hall with a single candle burning and a tiara resting on a cushion, chair centered, tall arched window || || pull;sfx=distant_bell
+107 || a portrait close-up of an older heavy pope with a round face in white and red robes, a candle beside him, face centered || paul || punch;note=54 роки;noteat=0.5,0.14
+108 || a crowd of Roman townspeople whispering to each other in a market street with speech bubbles that contain a drawn melon, people on both sides, wide shot || || panl;mark=circle@0.5,0.25,0.12
+109 || a heavy pope sitting at a table with two huge melons on a silver platter in a Renaissance dining room, pope on the left, melons centered || paul || push;mark=circle@0.55,0.6,0.18
+110 || an old physician pointing at a cut melon with water drops flying out, doctor on the left, a speech bubble with water drops, a study room with shelves || doctor || punch
+111 || close-up of a sliced juicy melon with dripping juice and seeds on a plate, melon centered, dark plain background || || pop;sfx=x_gulp
+112 || the chef host raising a finger as if saying 'but wait', chef centered, a small melon in his other hand, plain wall || chef || pull;sfx=x_ding
+113 || a pope seated in a dim palace room, dark hooded silhouettes of enemies gathered whispering behind him, pope in the foreground || paul || push
+114 || a humanist scholar in a dark stone prison cell with a small barred window, sitting on straw and gazing at the light, scholar centered || || drift_up
+115 || a thick dark-covered book on a desk with a quill and an ink pot, a heavy book lying closed, book centered, candle beside it || || punch;sfx=book_thud
+116 || people whispering behind their hands in a corridor of a palace, speech bubbles with question marks, figures on both sides || || panr
+117 || a stack of old scrolls tied with black cords, a red cross drawn over them, stack centered on a wooden desk || || pull;mark=cross@0.5,0.5,0.2
+118 || a scientist historian at a desk with old books, a magnifying glass and a notebook, scientist on the left, books piled on the right || scientist || push
+119 || a drawn human heart and a human brain lying side by side on a plain cloth table, a small question mark above, objects centered || || drift_down;mark=circle@0.5,0.5,0.18
+120 || a single melon on a plate with a big finger pointing at it from above, plate centered, plain background || || punch;mark=arrow@0.5,0.4,0.15,90
+121 || a quiet papal bedchamber with a bed under a covered figure, a pale hand hanging out, a candle on a small table, bed centered || || pull
+122 || a crowd of people turning their backs and walking away from a pope's palace gate, people on the left, an empty gate on the right || || panr
+123 || an open history book with a tiny melon doodle drawn in the margin, book centered, quill beside it, close-up || || drift_up;sfx=page_turn
+124 || the chef host holding a big golden star above his head and pointing to the viewer, chef centered, curtain background || chef || pop;ch=Карл VI;sfx=x_tada
+125 || Vienna palace in 1740, a wide baroque imperial palace with a courtyard and carriages, sky with clouds || || pull;note=1740;noteat=0.5,0.14
+126 || a baroque emperor on a throne in a grand hall with golden columns, wearing an ermine-trimmed coat, emperor centered || charles || push
+127 || an emperor on a horse riding through an autumn forest with hounds running ahead and a few riders behind, emperor in the center || charles || panr
+128 || a cold gray forest with frost on branches and the breath of horses showing as mist, riders in silhouette, wide shot || || drift_down
+129 || an emperor at a long table in a palace dining room looking at a steaming dish of cooked mushrooms in a bowl, emperor on the left, bowl centered || charles || push;mark=circle@0.55,0.55,0.16
+130 || a wall calendar page for an autumn day with a single burning candle next to it, calendar centered, dark room || || pull;note=20.10.1740;noteat=0.5,0.14;sfx=distant_bell
+131 || a witty old Frenchman in a powdered wig writing with a quill at a candle-lit desk, a scroll on the table, writer centered || voltaire || push
+132 || a simple drawn stomach with swirling lines of discomfort next to a bowl of mushrooms, both centered, plain background || || punch;mark=circle@0.35,0.5,0.15
+133 || a group of whispering courtiers with speech bubbles that contain a drawn mushroom, people on both sides, a palace hall || || panl
+134 || close-up of a pale death cap mushroom with a skull-free cap and a ring on the stem, mushroom centered, dark forest soil || || pop;mark=circle@0.5,0.4,0.18
+135 || the chef host holding a magnifying glass over a mushroom, shaking his head, with a big red cross drawn on empty air beside him, chef on the left, mushroom on a table || chef || pull;mark=cross@0.75,0.5,0.15
+136 || an emperor wrapped in a heavy cloak shivering by a window with snow outside, a mug in his hands, emperor centered || charles || push
+137 || a map of Europe seen from above with several arrows pointing toward a central country, map filling the frame || || pull;sfx=x_whoosh
+138 || a balance scale with a small bowl of mushrooms on one pan and a whole map of Europe on the other, the map side lower, scale centered || || drift_up;mark=circle@0.7,0.7,0.15
+139 || a baroque emperor sitting alone in a library, a small toy horse and an empty cradle near him, with his young daughter standing beside him, emperor centered || charles, theresa || punch
+140 || a hand signing a thick document with a quill, a wax seal being pressed nearby, desk close-up, a candle beside || || push;sfx=wax_seal
+141 || a young archduchess in a gown with lace holding a rolled document in front of her chest, determined face, centered, palace window behind || theresa || pull;mark=circle@0.5,0.55,0.15
+142 || a group of neighboring rulers in wigs gathered around a table leaning over a map and whispering with sly smiles, rulers around the table, one in a dark blue coat || frederick || panr
+143 || a crumpled torn document lying on a marble palace floor, document centered, a small crown near it || || drift_down;mark=cross@0.5,0.5,0.15
+144 || a tiny young woman in a gown standing alone in a huge empty palace hall with no soldiers, a long carpet, wide shot, figure small in the center || theresa || pull
+145 || an open treasure chest that is empty except for a single coin, chest centered, stone vault floor || || punch;mark=circle@0.5,0.6,0.15
+146 || a wall calendar page with a winter scene drawn on it and snow outside a window, calendar centered || || drift_up;note=грудень 1740;noteat=0.5,0.14
+147 || a young king in a dark blue coat on a horse leading marching soldiers across a border post in the snow, king in the center, soldiers behind || frederick || panr;sfx=war_drums
+148 || a map of Silesia region with the area highlighted in yellow wash and a border line, map filling the frame || || push;mark=circle@0.5,0.5,0.2
+149 || wide battlefield with clouds of cannon smoke and cavalry charging, silhouettes of soldiers, battle flags || || panl;sfx=x_boom
+150 || eight torn calendar pages falling in a line, a hourglass beside them || || drift_down;note=8 років;noteat=0.5,0.14
+151 || a witty old Frenchman in a powdered wig with a sly smile speaking, a speech bubble above him with a drawn mushroom, centered || voltaire || punch
+152 || the Frenchman pointing with a quill to a map of Europe with a drawn mushroom on top of it, Frenchman on the left, map on the right || voltaire || panr;mark=circle@0.7,0.4,0.15
+153 || the Frenchman writing in fog with a quill, words fading into mist and a question mark floating above, figure centered || voltaire || pull
+154 || a torn scroll with blurred smudged lines of ink, scroll centered on a desk, magnifying glass above it || || push;mark=circle@0.5,0.5,0.18
+155 || a single plate with a steaming mushroom dish on a table and a long line of soldiers marching out of the steam in silhouette, plate centered || || pull
+156 || a baroque emperor sneezing under a blanket by a snowy window, a bowl of mushrooms untouched on the table, emperor centered || charles || punch
+157 || the chef host shrugging with a big question mark above his head, chef centered, plain background || chef || pop;sfx=x_ding
+158 || a map of Scandinavia with Sweden highlighted and a small crown on Stockholm, map filling the frame || || push;ch=Адольф Фредрік
+159 || snowy old Stockholm in winter with gabled houses, a frozen harbor and a palace, evening light, wide shot || || panr;note=12.02.1771;noteat=0.5,0.14
+160 || a table with a stack of cream buns, a church bell tower seen through a frosty window behind it, buns centered || || drift_down;note=жирний вівторок;noteat=0.5,0.14;sfx=distant_bell
+161 || a plump king in a powdered wig seated at a table in a palace, a hand pressed to his chest and a dropped fork on the floor, king centered || adolf || punch
+162 || portrait close-up of a plump friendly king with gray hair under a powdered wig, a candle beside him, face centered || adolf || push;note=60 років;noteat=0.5,0.14
+163 || a crowd of Swedes in a cozy tavern laughing and raising mugs, a baker among them holding a tray of buns, crowd centered || baker || pull
+164 || a Swedish baker smiling with a mischievous grin and a tray of cream buns held out, baker centered, bakery shelves behind || baker || punch;mark=circle@0.5,0.6,0.16
