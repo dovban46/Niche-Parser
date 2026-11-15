@@ -1,0 +1,86 @@
+001 || wide shot of a tired passenger bus in a long line of cars at a Polish border crossing, striped barrier and booth ahead, grey sky, passengers' faces pressed to the windows || || push keep=1
+002 || a road map of Eastern Europe on a paper sheet, overhead view, a dotted route running from Ukraine across a border line into Poland, a small toy bus on the line || || drift_down keep=1
+003 || extreme close-up of a thick sandwich with pale slices of sala on rye bread wrapped half in paper, centered, soft light, crumbs on the table || || punch keep=1;mark=circle@0.5,0.5,0.15
+004 || medium shot of pani Halya on a bus seat hugging a huge checkered plaid bag on her knees, a sandwich corner peeking out, window with fields behind || galya || pull keep=1
+005 || low angle view of a bus door opening at the border, stairs and a dark waiting silhouette of uniformed legs outside, cold light || || tilt keep=1
+006 || a border guard with a flashlight leaning over an open plaid bag in a bus aisle, tense medium shot from behind a seat || guard || snap keep=1
+007 || close-up of a hand dropping a wrapped sandwich into a grey trash bin beside a border booth, bin lid flipped open || guard || hand keep=1;sfx=x_sting
+008 || wide shot of a border parking lot, a guard standing firm with arms crossed next to a bin, a passenger bus and small queue of people watching in shock || guard || panr keep=1
+009 || a big heavy official book lying open on a desk with a blue flag with a circle of stars standing next to it, close-up, dusty light || || push keep=1
+010 || wide shot of a packed travel suitcase and sacks on a long inspection table at a border, a green customs scale at one end || customs || panl keep=1
+011 || overhead view of a table with a suitcase, a pile of sausage rings, ham and bacon sorted in one corner, a stern hand pointing away || customs || drift_up keep=1
+012 || split scene close-up of a cheese wedge and a milk jug sitting next to a meat plate on a customs table, both crossed by a heavy wooden barrier || || rack keep=1
+013 || close-up of a golden glass jar of honey with a wooden dipper on a table, warm glowing light, honeycomb beside it || || pop keep=1;note=2 кг меду;noteat=0.5,0.12
+014 || a fisherman's market table with a pile of silver fish on ice and a hand weighing them on a hanging scale, wide low angle || || crane keep=1;note=20 кг риби;noteat=0.5,0.12
+015 || seven small food items lined up in a row on a wooden board: sausage, cheese, milk bottle, honey jar, fish, mushroom, egg, wide overhead shot || || drift_down keep=1
+016 || a large bus loading luggage at a station with bags and boxes stacked by the door, travellers with heavy bags walking up, wide view || || panr keep=1
+017 || the chef in his tall white hat standing beside a big border sign post pointing with one hand, a worried look at the camera, simple background || chef || push keep=1
+018 || two big stamps, one with a tick and one crossed, lying on a customs desk next to each other, close-up from above || || snap keep=1
+019 || portrait of pani Halya in a floral headscarf smiling warmly at the camera, plaid bag on her shoulder, a bus stop behind her || galya || pull keep=1
+020 || medium shot of pani Halya holding a phone with a photo of her daughter, a train station platform behind, a gentle smile || galya || hand keep=1
+021 || wide view of a small Polish town street with brick houses and a window with a waiting daughter silhouette, soft evening light || || crane keep=1
+022 || pani Halya struggling to lift an enormous checkered plaid bag stuffed to the brim with jars and bundles, three-quarter view, bus station behind || galya || push keep=1;mark=circle@0.5,0.55,0.16
+023 || overhead view of the open plaid bag showing its contents arranged in layers: jars, wrapped parcels, towels and a loaf of bread || galya || drift_down keep=1
+024 || close-up of a customs officer's strict eye behind a rubber stamp raised high, a flashlight glow, dramatic angle || customs || punch keep=1
+025 || overhead view of a wooden cutting board covered with a pile of sala slices, a sausage ring, ham and a pork chop, bright and appetizing || || drift_down keep=1;ch=Сало
+026 || wide shot of a border checkpoint with a barrier in the shape of a big blue flag and a lorry waiting, a sausage on a plate in the front || guard || panl keep=1
+027 || a hand holding a sausage ring at a customs table, a stamp with a cross hovering over it, medium close-up || customs || snap keep=1
+028 || a mountain of pork products stacked high on a table: sausages, sala, ham, and bacon, with a person very small beside it, low angle || || tilt keep=1
+029 || close-up of a single ham sandwich on a white plate with a pickle, steam of flavor, a stamp cross shadow on it || || punch keep=1
+030 || a menacing cartoon virus shaped like a spiky ball with a grim face floating above a pig, dark ink wash background || || pop keep=1;sfx=x_sting
+031 || a happy person next to a sad sick pig lying in a barn, the pig with a thermometer in its mouth, person safe behind a glass wall || vet || pull keep=1
+032 || wide shot of a large pig farm at dawn with fences and rows of pens, empty feeding troughs, grey mist, a vet at the gate || vet || crane keep=1
+033 || close-up of a smoked ham hanging in a cellar with spice and a calendar of cobwebs around, the virus ball tiny on its surface || || drift_up keep=1
+034 || the chef in his white hat leaning toward the camera with a finger raised and a sly smile, a plate of food in his other hand || chef || push keep=1
+035 || medium shot of a customs officer explaining to a group of travellers by pointing at a poster board with a pig drawing || customs || panl keep=1
+036 || wide shot of a roadside parking lot at the forest edge, wild boars sniffing around a discarded sandwich lying on the asphalt, trees behind || boar || push keep=1;mark=circle@0.5,0.72,0.14
+037 || close-up of a wild boar snout with tusks sniffing a half-eaten bread and sala sandwich on the ground, shallow focus || boar || punch keep=1
+038 || wide view of a dark forest with a family of boars walking among the trees, a small cartoon virus ball glowing above them || boar || drift_up keep=1
+039 || overhead view of a customs table with two different meat items side by side, packed store sausage and a homemade sala in a cloth || customs || rack keep=1
+040 || close-up of a shop sausage in plastic packaging with a plain label, a hand holding it, clean light || || hand keep=1
+041 || close-up of a bundle of homemade sala wrapped in a checkered cloth with garlic cloves beside it, warm kitchen light || || pull keep=1
+042 || a pair of old-fashioned scales with a sausage on one plate and a sandwich on the other balancing perfectly, centered || || pop keep=1
+043 || a big white page with a single large empty box drawn on a clipboard held by a customs officer, close-up || customs || snap keep=1
+044 || medium shot of a newsroom desk with newspapers and a typewriter, a clipping of a map region marked in soft color || || panr keep=1
+045 || a map of eastern Poland with a region shaded in blue near the Ukrainian border, a small calendar page beside it, overhead || || drift_down keep=1;note=2016;noteat=0.5,0.12
+046 || huge pile of confiscated sandwiches, sausages and bread loaves heaped in a warehouse, a tiny person on a ladder beside it, wide low angle || customs || crane keep=1;sfx=x_ding;note=100 тонн;noteat=0.5,0.12;mark=circle@0.5,0.55,0.18
+047 || close-up of plain bread and cheese sandwiches stacked in a plastic crate, neat and ordinary, overhead || || drift_down keep=1
+048 || a customs officer's hand holding a sealed plastic bag of seized food, gloved fingers, office background || customs || hand keep=1
+049 || wide shot of an industrial waste container with a stream of seized food falling in, workers in gloves and masks looking on || vet || tilt keep=1
+050 || a stack of official papers with a stamp coming down on a desk, officer at the corner with a stern expression, medium shot || guard || snap keep=1
+051 || a judge's gavel lying next to a fine paper on a desk, a worried traveller shrinking in the background, close-up || traveler || rack keep=1
+052 || a big question mark made of cloud shapes above a shrugging chef who holds up empty hands, simple background || chef || pop keep=1
+053 || a sketch of a tall stack of empty paper sheets with a magnifying glass over it, centered close-up || || punch keep=1
+054 || pani Halya at the table at home carefully wrapping a thick piece of sala in cloth, kitchen background with garlic strings || galya || push keep=1
+055 || overhead view of the plaid bag with a small package of sala wrapped in cloth lying at the top, a scale showing a half-kilo weight beside it || galya || drift_down keep=1
+056 || pani Halya watching sadly as a hand lifts away a wrapped sala package from her plaid bag at a border table, wide shot || galya,customs || pull keep=1;sfx=x_sting
+057 || a lonely sad plaid bag standing on a bench at the border with a small sala piece missing, droopy mood, wide shot || galya || panr keep=1
+058 || a happy cow in a green meadow with a milk pail beside it, farm and hills behind, bright morning light, wide shot || farmer || crane keep=1;ch=Сир і сметана
+059 || overhead view of a rustic table with a cottage cheese bowl, a sour cream jar, a butter block and a yoghurt cup, linen cloth || || drift_down keep=1
+060 || a customs table with two identical boards, one with sausage and one with cheese, both with a big stamp hovering over them, close-up || customs || rack keep=1
+061 || medium shot of a traveller holding a bag of dairy products, a guard shaking his head and pointing at the exit || traveler,guard || snap keep=1
+062 || a shop shelf with sealed dairy packages in tidy rows, a hand picking up a sealed cottage cheese box, close-up || || hand keep=1
+063 || big close-up of a sealed sour cream jar with a plain label and a spoon on the side, cream swirl on top || || punch keep=1;mark=circle@0.5,0.5,0.15
+064 || a small paper label with a blue and yellow colored stripe stuck on a jar, a customs stamp crossing it, close-up || customs || tilt keep=1
+065 || wide view of a dairy shelf of cheese, milk and cream, with a long invisible-looking barrier line with a blue flag cutting across it || || panl keep=1
+066 || a glass of milk and a cheese wheel with scales weighing nothing, only a big crossed stamp in the corner, overhead || || drift_down keep=1
+067 || a puzzled traveller scratching his head in front of a cheese wedge on a table, a big question mark above || traveler || pop keep=1
+068 || close-up of a sad cow with a bandaged hoof lying in a barn, a vet with a thermometer beside it || vet,farmer || push keep=1
+069 || a cartoon split hoof of a cow, close-up, a tiny virus ball floating above the ground nearby, earth tones || || punch keep=1
+070 || milk dripping from a cheese wheel into a bowl, a tiny virus ball floating in the milk, overhead macro view || || drift_down keep=1
+071 || wide shot of a farmer standing sadly in an empty field beside an empty barn, a lone fence around a missing herd || farmer || pull keep=1
+072 || the chef in his white hat holding a jar and pointing at a small detail on the label with a magnifier, curious face || chef || push keep=1
+073 || a supermarket in Poland with cheese displays and a happy traveller buying a jar, then his bag with a heavy stamp pressed on it, medium shot || traveler || panr keep=1
+074 || a hand on a Polish shop receipt next to a jar of sour cream, close-up, shop counter behind || || hand keep=1
+075 || a courier van standing at a border barrier with a parcel in its hands, wide shot, guard checking the parcel || guard || crane keep=1
+076 || a cardboard parcel box with a customs stamp pressed on its side, a courier in uniform handing it forward, medium shot || customs || rack keep=1
+077 || medium shot of a traveller packing a jar of homemade cheese in a bag for his relatives, a warm kitchen background || traveler || push keep=1
+078 || a crate stamped with a bold cross, a hand throwing a wrapped cottage cheese package into it, close-up || customs || tilt keep=1;sfx=x_sting
+079 || a cheerful cheese wheel with a face looking sad in a bin, close-up of its worried eyes, overhead || || pop keep=1
+080 || two identical looking cheese jars on a shelf, one good and one bad, with a grey wall of rules between them, wide front view || || rack keep=1
+081 || a big scales with a cheese wheel on one side and a rule book on the other, the book heavier, close-up || || punch keep=1
+082 || a spoonful of sour cream melting into a pile of fresh vareniki on a plate, steam rising, close-up || || drift_down keep=1
+083 || pani Halya carrying a jar of sour cream in her arms and a bag of flour for vareniki at the border, hopeful face, medium shot || galya || pull keep=1
+084 || a Polish grocery shop aisle with pani Halya's daughter holding a jar of sour cream, shelves of dairy behind her, wide shot || galya || panl keep=1
+085 || a tiny sour cream jar on a small table with a worried pani Halya looking at it, simple background, a clock on the wall || galya || snap keep=1
+086 || close-up of pani Halya with sulky puffed cheeks and crossed arms looking out of a bus window, passing fields blurred, evening light || galya || push keep=1

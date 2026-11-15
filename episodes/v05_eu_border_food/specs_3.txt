@@ -1,0 +1,71 @@
+142 || the chef stands before a foggy grey zone sign-less crossroads with question marks drifting in the mist, wide shot, a potato and a jar peeking out of the fog || chef || pull keep=1;ch=Гриби й яйця
+143 || overhead view of a wooden table with potatoes, cucumbers, a basket of wild mushrooms, home-canned jars and a few brown eggs arranged in a loose circle || || drift_down keep=1
+144 || close-up of the chef's hand raised palm out in an honest shrug, a wobbly set of balance scales with two different stacks of papers behind it || chef || tilt keep=1
+145 || a sheet of official-looking paper with a ribbon seal lying on a pile of fresh green seedlings and roots, close-up, soil crumbs around || || push keep=1
+146 || a single big potato in the center of a tangled knot of crisscrossing question-shaped tangled strings, close-up, low angle on a plain table || || punch keep=1
+147 || a map of Europe with the Ukrainian border, one neighbouring country shaded with a stern closed gate drawing, overhead || || panr keep=1
+148 || the same map of Europe, another neighbouring country with an open friendly gate and a potato placed by it, overhead, tilted view || || panl keep=1
+149 || a village basket of eggs on a table beside a big empty official document frame with nothing inside it, close-up, soft light || || rack keep=1
+150 || a customs officer's hand holding a metal can of stewed meat up to the light, close-up, other hand on a clipboard || customs || pop keep=1
+151 || a tin can with a little sketch of a pig and a crossed stripe on its label picture only, centered, on a steel counter, close-up, no letters || || push keep=1
+152 || a jar of white lard with chunks of cured pork fat inside, glass catching the light, close-up, a folded checkered cloth lid beside it || || hand keep=1
+153 || a rusty can of stewed meat and a small jar of fat on a steel inspection table, a gloved hand reaching in from the side, overhead || vet || drift_up keep=1
+154 || two jars sitting side by side on a table, stew can and a lard jar, one with a sad stamped X-shaped shadow, medium shot, low angle || || rack keep=1
+155 || a bearded border guard's silhouette at a booth window with a radio in his hand, a bus queue behind, wide shot, dusk sky || guard || crane keep=1
+156 || a calendar page flipped to a new year with a small pin stuck in a map location, close-up, soft background, a wind-blown leaf || || snap keep=1
+157 || a huge pile of wild mushrooms confiscated in crates on a steel table at a border post, wide view, scale and a pair of rubber gloves in the corner || || pull keep=1;mark=circle@0.5,0.5,0.17;sfx=x_sting;note=34 кг;noteat=0.5,0.12
+158 || pani Halya placing a few jars of pickled cucumbers and marinated mushrooms into her checkered plaid bag, medium shot, kitchen shelf behind her || galya || panl keep=1
+159 || close-up of a glass jar of marinated mushrooms with dill and peppercorns floating in the brine, backlit by a window, centered || || push keep=1
+160 || a jar of pickled cucumbers with garlic standing on a kitchen table, low angle, a dish towel and a sprig of dill beside it || || tilt keep=1
+161 || pani Halya putting the jars back onto the kitchen shelf with a thoughtful little smile, medium shot from behind her shoulder || galya || pull keep=1
+162 || the chef holding up a finger with a wise worried face, in front of a large stack of rule-books with a magnifying glass, medium shot || chef || punch keep=1
+163 || a traveller's hand turning a doubtful jar over in the air, a small unsure shrug drawn in the posture, extreme close-up of the hands || || hand keep=1
+164 || a laptop screen glowing with a plain page of a customs website drawing, abstract blocks no text, seen from over the shoulder at a kitchen table || || drift_up keep=1
+165 || a gently open suitcase with only safe-looking things inside, a neat bag of bread, a stack of polite items, overhead, warm light || || drift_down keep=1
+166 || a table in dark ambient light, a single glass of golden liquid alone in a spotlight, dramatic close-up, steam of mystery behind it || || push keep=1;ch=Алкоголь
+167 || a boy and a wise old farmer eyeing each other across a table with a hidden bottle under a cloth, medium shot, rustic cottage || farmer || rack keep=1
+168 || a bottle of cognac and a cut-crystal glass with a gleam, low angle, shadows, a single glow behind them || || tilt keep=1
+169 || a single strong spirits bottle standing alone on a wooden counter, one litre sized, tall dark glass, centered, close-up, light behind it || || punch keep=1;note=1 літр;noteat=0.5,0.12
+170 || a thermometer-like gauge symbol drawn as a spirit bottle with a swirl of flames inside the liquid, close-up, dark background || || push keep=1
+171 || two bottles of medium-strength liqueur standing side by side on a velvet cloth, medium shot, slightly lower angle || || panr keep=1
+172 || bottles of strong spirits, wine bottles and beer cans arranged by size from small to large in a neat row, wide shot, soft shelf light || || pull keep=1;mark=circle@0.5,0.5,0.17;note=16 літрів;noteat=0.5,0.12
+173 || a juggler's hand mixing a bottle of spirits, a wine bottle and a beer can in a balanced stack, medium shot, fun playful composition || || pop keep=1
+174 || a customs officer's clipboard and a friendly stamp on a counter next to a pair of reading glasses, overhead, a bottle at the corner || customs || drift_down keep=1
+175 || a homemade unlabeled bottle of moonshine with a cork on a rough wooden table, warm lamp light, low angle, a cut of bread beside it || || crane keep=1
+176 || a blank page in a book with an empty line where a rule should be, extreme close-up with a pencil resting on it, soft light || || snap keep=1
+177 || a stern border guard looking at a clear bottle of moonshine with raised eyebrows and a flashlight beam through the liquid, medium shot || guard || push keep=1
+178 || a clear bottle with no label held up in a flashlight beam, the content unreadable, extreme close-up, glass reflections, dim background || || rack keep=1
+179 || a gift bottle with a shiny foil top and a bow standing on a factory conveyor belt, medium shot, other identical bottles behind it || || panl keep=1;sfx=x_sting
+180 || pani Halya kneeling by an open plaid bag, wrapping a bottle in a warm woolen scarf, medium shot, hallway and a coat rack behind || galya || pull keep=1
+181 || close-up of two cherry-colored homemade bottles in a plaid bag, bulging cloth around them, one has a stopper made from paper || || hand keep=1
+182 || two half-litre bottles with cherry liqueur and plain corks standing side by side beside a bunch of fruit, centered, close-up, warm kitchen light || || push keep=1;mark=circle@0.5,0.5,0.17;note=по пів літра;noteat=0.5,0.12
+183 || pani Halya holding two small bottles up with a hopeful but worried smile, plain unlabeled glass, close-up portrait, shoulders and plaid bag || galya || punch keep=1
+184 || overhead of a plaid bag with a loaf of bread, a bag of candies, a tin of tea leaves and a coffee pack nicely packed inside || || drift_down keep=1
+185 || a steaming cup of tea beside a bar of candies on a kitchen windowsill, low angle, morning light, a tablecloth edge || || tilt keep=1
+186 || a pile of round bread loaves in a basket, a small coffee grinder and a bundle of tea on the table, medium shot, panning view || || panr keep=1
+187 || the chef giving a calm reassuring thumbs-up in front of a shelf of non-animal goods, medium shot, a faint smile under his big mustache || chef || pull keep=1
+188 || a clean tidy customs table with a green stamp of approval ready and a tray of safe packaged goods, wide shot, officer smiling || customs || crane keep=1
+189 || a hand with a pen checking a list where every line looks checked, a warm table lamp glow, overhead close-up || || drift_up keep=1
+190 || the chef leaning toward the viewer with one curious eyebrow raised, behind him a tall bookshelf with giant rule-books, medium shot, intrigue || chef || push keep=1;ch=Чому так
+191 || a student desk covered in thick unreadable ancient papers and a candle, a tired traveller scratching her head, wide shot || galya || pull keep=1
+192 || a map of Europe with a big blue ring of the Union and Ukraine drawn outside it as a separate neighbour, overhead, tilted || || panr keep=1
+193 || a protective shield-shaped umbrella over a family of people on a map, close-up, but a small sandwich bounced off it, drawn as a symbol || || pop keep=1
+194 || a plain unchanged kitchen scale beside the shield with an official-looking stamp, close-up, nothing different about it, low angle || || tilt keep=1
+195 || sacks of grain stopped at a miniature border barrier, overhead, wide view of a long line of trucks and fields beyond || || drift_up keep=1
+196 || a close-up of one lonely sack of grain with a small ear of wheat on top, stopped by a tiny barrier gate, centered || || rack keep=1
+197 || a plain neat travel suitcase on a customs table, next to a separate cargo truck with a big crate, medium shot, split composition || || panl keep=1
+198 || a row of identical travellers' bags in a line passing through the same gate, all treated the same, wide shot, low angle || || crane keep=1;sfx=x_ding
+199 || a jar of honey with a dipper shining gold on a white table, a green tick-shaped light glow behind it, close-up || || push keep=1
+200 || a sausage on one plate and a dried river fish on another, side by side on a table, medium shot, fish smiling and sausage worried || || hand keep=1
+201 || a jar of fish roe-less simple fish and a wedge of cheese in a drawn balance, the cheese side sinking, close-up, rustic table || || snap keep=1
+202 || a sick cow with a thermometer in her mouth standing in a barn and a worried farmer beside her, wide shot, straw and hay on the floor, silhouettes of cows behind || farmer || pull keep=1;mark=circle@0.5,0.5,0.17
+203 || a tall pile of gold coins falling out of a farmer's empty pocket, extreme close-up, drifting coins, dark barn background || || punch keep=1;sfx=x_ding
+204 || a stack of rule papers shaped like a protective fence around a field of healthy cattle, wide low shot, blue sky behind || || panr keep=1
+205 || a microscope view with a tiny cartoon virus bubble with sharp spikes drifting in the dark, close-up, centered || || push keep=1
+206 || a tiny virus with a shocked face looking at a sandwich with bacon wrapped in cloth, close-up, funny scale || || rack keep=1
+207 || the chef pointing directly at the viewer with a friendly challenge, a speech bubble drawn empty beside him, medium shot || chef || punch keep=1
+208 || a dusty customs counter with a big heap of confiscated bags and parcels piled behind, a small sad paper bag in the foreground, low angle || customs || tilt keep=1
+209 || a traveller's pocket with a jar of golden honey peeking out, extreme close-up, light from behind giving a warm halo || traveler || snap keep=1
+210 || a hand writing in a notebook at a cafe table, a mug beside, overhead, a speech-bubble shape drawn faintly around the notebook || || drift_down keep=1
+211 || a border farmer's field at dusk with a small sandwich lying on the ground and a curious boar sniffing it, wide low shot || boar || crane keep=1
+212 || pani Halya hugging her daughter on a train station platform, the plaid bag now much lighter at her feet, warm sunset light, wide shot || galya || pull keep=1

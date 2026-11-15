@@ -1,0 +1,55 @@
+087 || the chef host holding a glass bottle of milk up to the light with a puzzled look, centered medium shot, cream background || chef || push keep=1;ch=Молоко й дитяче харчування
+088 || close-up of a liquid milk carton tipped over with milk spilling on a customs table, a heavy stamp hovering above, overhead || || punch keep=1;sfx=x_sting
+089 || a small door opening in a tall brick wall letting golden light through, low angle, wide shot, a signpost with a plain arrow-less post || || crane keep=1
+090 || overhead view of two generic infant formula tins and a small scoop on a clean table, soft light || || drift_down keep=1
+091 || extreme close-up of a sealed infant formula tin with a plain blue label and a little baby bottle icon, centered || || pop keep=1;mark=circle@0.5,0.5,0.15
+092 || a kitchen scale with two sealed formula tins on it, needle pointing to the middle mark, side view close-up, no digits || || snap keep=1;note=до 2 кг;noteat=0.5,0.12
+093 || a factory conveyor belt with identical sealed tins, wide low-angle shot, shiny foil lids || || panr keep=1
+094 || a crowd of silhouetted mothers with strollers at a border gate, one baby waving, wide shot from behind || || pull keep=1
+095 || a tired young mother hugging a baby while a border guard nods and waves her through, medium two-shot || guard || tilt keep=1
+096 || the young traveler happily packing a formula tin into a suitcase among stickers, high angle, tidy clothes around || traveler || hand keep=1
+097 || close-up of a thumb pressing on an intact foil seal of a formula tin, untouched silver lid, centered || || push keep=1;mark=circle@0.5,0.5,0.15
+098 || split composition of two shelves, left shelf with a baby formula tin glowing, right shelf with a big home-made cheese wheel in the shadow || || rack keep=1
+099 || a lonely jar of home-made milk on a kitchen windowsill, close-up, a tiny sad drop on the glass || || drift_up keep=1
+100 || a stern lawmaker silhouette at a desk with a heavy book, a small wooden gavel, dramatic side light || || panl keep=1
+101 || a tiny baby's hand reaching for a bottle, extreme close-up, soft warm light || || pop keep=1
+102 || pani Halya at her kitchen table smiling softly, photos of grown-up grandchildren on the wall behind her, medium shot || galya || pull keep=1
+103 || her checkered plaid bag open on a bed with no formula tin inside, only towels, overhead || galya || punch keep=1
+104 || a half-open gate with a crack of light, one wooden gate door ajar, wide shot, grass in front || || crane keep=1
+105 || the chef host spreading his arms apologetically next to a small gate marked by a tin icon, medium shot || chef || push keep=1
+106 || the chef host giving a thumbs up with a wide smile next to a big honey jar, centered, bright cream background || chef || push keep=1;ch=Мед
+107 || a thought bubble over a customs officer's head with a honey jar crossed by a big sketchy shape, medium close-up || customs || tilt keep=1
+108 || a honey jar sitting calmly on a wooden table, a bee circling it, centered close-up, warm golden light || || pop keep=1
+109 || a golden honey dipper dripping thick honey into a jar, extreme close-up, glowing amber || || drift_down keep=1;sfx=x_ding
+110 || a kitchen scale carrying two honey jars, needle at the middle mark, side view, no digits, bees nearby || || snap keep=1
+111 || overhead view of a honey jar, a jar of dried bee pollen and a wax candle, grouped neatly on a linen cloth || || drift_up keep=1
+112 || a small box with a little animal-like icon of a bee and a cow sitting side by side on a shelf, simple sketch, wide shot || || panr keep=1
+113 || the traveler holding a honey jar as a gift with a bow, smiling, close-up of hands and jar || traveler || hand keep=1
+114 || a beekeeper's hand lifting a honeycomb frame full of bees, close-up, golden light || || push keep=1;note=до 2 кг;noteat=0.5,0.12
+115 || a wall of myths: a big cracked speech bubble shape over a honey jar, low angle, sketchy cloud around || || crane keep=1
+116 || a border bin overflowing with honey jars, wide shot from above, a guard walking away in the back || guard || pull keep=1
+117 || a lonely honey jar being tossed in the trash bin, close-up from behind the bin, honey dripping || || tilt keep=1
+118 || a honey jar wrapped with a gift ribbon on a festive table next to a bunch of flowers, centered, warm light || || pop keep=1;mark=circle@0.5,0.5,0.15
+119 || a huge pile of honey buckets stacked in a warehouse, wide shot, stacked pallets, a bee flying in the foreground || || panl keep=1
+120 || a veterinary inspector stamping a long paper roll on a desk, hands and stamp close-up, overhead || vet || punch keep=1
+121 || pani Halya packing honey jars into her plaid bag, wrapped in a warm towel, medium close-up || galya || push keep=1
+122 || two honey jars side by side, small half-kilogram jars, on a scale in her kitchen, overhead || || drift_down keep=1
+123 || a scale with two small honey jars, needle well below the top mark, close-up, no digits || || snap keep=1
+124 || pani Halya raising a clenched fist in happy triumph while the customs officer nods, medium shot || galya,customs || rack keep=1
+125 || the chef host eyeing a huge fish on a plate, mustache curling with delight, centered || chef || push keep=1;ch=Риба
+126 || overhead view of four types of fish side by side on a table: fresh, salted, smoked and dried, no labels, ice crystals around || || punch keep=1
+127 || a customs officer calmly checking a fish, giving an okay sign, medium close-up || customs || tilt keep=1
+128 || a cold fish market stall with rows of fish on ice, wide low-angle shot, a scale hanging || || panr keep=1;note=до 20 кг;noteat=0.5,0.12;sfx=x_ding
+129 || a big scale with a huge heap of fish on it, needle near the very top, side view, no digits || || pull keep=1;mark=circle@0.5,0.5,0.15
+130 || a single giant fish lying on a long table, bigger than the table itself, wide side view, a tail hanging off || || crane keep=1
+131 || a fisherman carrying a giant fish over his shoulder through a customs gate, back view || guard || drift_up keep=1
+132 || a trophy cup shape made of fish bones on a podium with a golden light behind it, low angle, simple sketch || || pop keep=1
+133 || a dried vobla fish unfolded on a newspaper, close-up of scales and dried tail, centered || || hand keep=1
+134 || a train compartment with two passengers pinching their noses, wide shot, a dried fish string hanging on the hook || traveler || panl keep=1
+135 || pani Halya unwrapping a piece of home-dried fish on a newspaper, medium close-up, her smile proud || galya || push keep=1
+136 || the border guard sniffing and nodding calmly at a dried fish with a thumbs up, medium shot || guard || snap keep=1
+137 || a jar of black caviar on ice with a tiny silver spoon, extreme close-up, glow || || drift_down keep=1;sfx=x_sting
+138 || a graceful sturdy sturgeon swimming in clear water, wide side view, bubbles || || panr keep=1
+139 || a stack of rule books and a magnifying glass over a small fish figure, overhead, desk lamp light || || tilt keep=1
+140 || a rusty tick-box check list with a question mark over a caviar jar, centered close-up, no letters || || pop keep=1
+141 || the chef host holding a phone with a customs website, pointing at it with a stern finger, medium shot || chef || pull keep=1
