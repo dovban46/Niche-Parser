@@ -1,0 +1,64 @@
+001 || wide shot of a small tropical airport arrival hall in northern Australia, a traveler in a white t-shirt with a beach bag walking past palm trees visible through glass doors, sunny light || traveler || push keep=1;note=Липень 2022;noteat=0.5,0.12
+002 || overhead view of a paper map of Southeast Asia and Australia, a dotted flight route from the island of Bali up to the northern tip of Australia, a tiny toy plane on the line || || drift_down keep=1
+003 || close-up of a canvas beach bag on a metal inspection table, zipper half open, warm paper wrapping peeking out, shallow depth || || punch keep=1
+004 || extreme close-up of two fast-food breakfast sandwiches with sausage, egg and melted cheese in paper wrappers, steam rising, centered || || pop keep=1
+005 || low angle view of a golden ham croissant lying next to the two sandwiches on a table, crumbs scattered, soft morning light || || tilt keep=1;mark=circle@0.5,0.55,0.15
+006 || medium shot of the traveler eating a sandwich at a plastic airport table, relaxed and smiling, coffee cup and a palm outside the window || traveler || pull keep=1
+007 || wide shot of a beagle detector dog in a green vest trotting along a row of suitcases on the floor of the arrivals hall, nose down, sniffing || dog || panr keep=1
+008 || close-up of the beagle sitting calmly in front of the open beach bag, head raised, serious eyes, the worried traveler's legs in the background || dog,traveler || snap keep=1
+009 || extreme close-up of the beagle's serious face with a green vest collar, sitting perfectly still, proud eyes looking at the camera || dog || punch keep=1;sfx=x_ding
+010 || medium shot of an officer handing a printed fine slip to the shocked traveler across a counter, her clipboard under the arm || officer,traveler || hand keep=1;sfx=x_sting
+011 || close-up of a hand holding a fine slip with a stamp and a stack of cash notes on the counter, no readable writing || || drift_up keep=1;note=2664 $;noteat=0.5,0.12
+012 || medium shot of a politician in a suit behind a podium with microphones and flashing cameras in a press room, one finger raised || || panl keep=1
+013 || split composition: a tiny paper plane ticket on one side of a scale, a huge pile of money on the other side, the scale tipping down heavily || || rack keep=1
+014 || overhead view of seven small objects laid out in a row on a table: a sandwich, an apple, a honey jar, a wooden carving, muddy boot, a seed pouch, a feather || || drift_down keep=1
+015 || medium shot of an open suitcase on a bed with a passport and a folded jacket, a ticket resting on the lid, bright room || || pull keep=1
+016 || wide shot of a map of Oceania from above, Australia and New Zealand highlighted by soft watercolor green, a small plane drawn flying between them || || crane keep=1
+017 || close-up of a hand holding a wallet with empty pockets turned out, a few coins falling, a stack of tiny fine slips fluttering around || || pop keep=1
+018 || medium shot of Olena smiling with a boarding pass and a big backpack standing in front of an airport board, excited face || olena || push keep=1
+019 || wide shot of Olena kneeling on the floor of her bedroom packing a large suitcase for Sydney, clothes and snacks piled around, a toy kangaroo on the shelf || olena || panr keep=1
+020 || overhead view of an open suitcase with neatly packed items, Olena's hand pointing to the first row of things, bright flat light || olena || drift_down keep=1
+021 || close-up of a single innocent red apple lying on top of the clothes in the suitcase, light glinting on its skin, centered || || punch keep=1
+022 || overhead view of a plane seat tray table with a folded form, pen and a small cup, a cloud window in the corner, calm light || || tilt keep=1;ch=Як це працює
+023 || medium shot of a flight attendant handing a passenger card to Olena in an airplane aisle, window seats and sky behind || olena || hand keep=1
+024 || extreme close-up of a blank paper passenger card with check boxes and a pencil lying across it, no legible text || || punch keep=1
+025 || overhead collage-like scene of a bread loaf, a flower pot and a ham on one table, drawn as three neat objects in a row || || drift_up keep=1
+026 || medium shot of Olena ticking a box on the card with a smile, the passenger card held on her knees, a pen in her hand || olena || push keep=1;mark=circle@0.45,0.62,0.15
+027 || medium shot of a biosecurity officer examining an opened bag on a steel table, holding a small jar up to the light || officer || snap keep=1
+028 || overhead view of three arrows-free paths on a table: three trays labelled by pictures only, one with a green leaf, one with a steam cloud, one with a trash can || || panl keep=1
+029 || low angle view of a heavy stamp pressing down on a paper, an officer's hand above, ink splash, dramatic || officer || pop keep=1
+030 || close-up of Olena's face with a nervous sideways glance, finger hovering over the other box on the card || olena || rack keep=1
+031 || close-up of a red apple half hidden under a crumpled sweater inside an open bag, a customs table edge in the corner || || drift_down keep=1
+032 || medium shot of an officer holding up the apple in front of a shocked passenger, stern look, other travelers watching behind || officer || punch keep=1;sfx=x_sting
+033 || medium shot of the chef with a tall white hat shaking a finger in the air, a tiny apple floating above him, wide worried eyes || chef || push keep=1
+034 || close-up of a lie-detector-style paper strip with a jagged line, a pen scratching on it, a red stamp mark in the corner || || tilt keep=1
+035 || overhead view of a tangle of clothes and bags hiding a small snack, a hand pulling the fabric to cover it, comedic || || drift_up keep=1
+036 || wide shot of a busy baggage hall with a long row of luggage and a beagle detector dog in the middle sniffing along it, passengers watching || dog || panr keep=1;mark=circle@0.5,0.62,0.15
+037 || extreme close-up of a beagle nose with wiggling whiskers touching a canvas bag, steam of smell lines, centered || dog || punch keep=1
+038 || medium shot of the beagle sitting right next to a passenger's feet, the passenger frozen with a nervous smile, bag tucked behind legs || dog,traveler || pull keep=1
+039 || close-up of a bag with a slice of salami and a banana peeking out, little wavy scent lines rising from it || || pop keep=1
+040 || wide shot of the arrival hall in Darwin with palms and glass walls, a beagle in a vest sitting next to a bag, officer in the background || dog,officer || crane keep=1
+041 || overhead view of a table with a folded newspaper and a phone showing a blurred news picture, a coffee cup next to them || || drift_down keep=1
+042 || close-up of a fine slip pinned on a corkboard beside other slips, a hand tapping it || || hand keep=1
+043 || medium shot of a woman shocked with a plain ham sandwich in her hands, an officer pointing at it, airport counter behind || officer || snap keep=1
+044 || medium shot of the chef shrugging with arms spread and a worried face, a tiny sandwich in one hand, plain cream background || chef || rack keep=1
+045 || medium shot of Olena holding a single apple up to the camera, her big backpack behind her, thoughtful face || olena || push keep=1;ch=Яблуко
+046 || extreme close-up of one shiny red apple on a white surface, a single leaf attached, centered, clean shadow || || punch keep=1
+047 || overhead view of a half-packed backpack with the apple wedged beside a water bottle, a travel pillow nearby || || drift_down keep=1
+048 || wide shot of an Australian arrivals hall with fruit baskets and a big sign picture of a fruit with a tick, travelers in lines, officer at a counter || officer || panl keep=1;mark=circle@0.55,0.5,0.15
+049 || close-up of a hand holding the passenger card, a pencil circling nothing, a fruit drawing in the corner of the card || || tilt keep=1
+050 || medium shot of Olena sitting in the plane seat filling in the card with a pen, a cloud window behind, focused face || olena || pull keep=1
+051 || medium shot of Olena handing the card to a smiling officer, a green tick stamp drawn between them, relaxed mood || olena,officer || hand keep=1
+052 || close-up of an officer's hand taking the apple and dropping it into a green bin labelled by a leaf picture, bin lid open || officer || snap keep=1
+053 || low angle view of a serious officer with crossed arms looking down at a hidden apple on a table, shadows on her face || officer || tilt keep=1
+054 || close-up of a printed fine form with a stamp and a pile of crumpled fruit on the table, shallow depth, warm light || || push keep=1
+055 || overhead view of a pile of fresh fruit and vegetables on a table beside a small stack of six coin-like fine tokens || || drift_up keep=1;note=6 одиниць;noteat=0.5,0.12
+056 || close-up of a stack of banknotes held together by a rubber band, a calculator drawn beside it, no digits visible || || pop keep=1
+057 || medium shot of the chef leaning forward with a puzzled face, a big question mark cloud above his hat only as a soft cloud shape || chef || rack keep=1
+058 || extreme close-up of a tiny fruit fly with big eyes on a leaf, giant and detailed, centered, dramatic macro look || || punch keep=1;sfx=x_sting
+059 || medium shot of a single apple with a tiny fly crawling out of a hole, a dark swarm of dots behind it hinting at more pests || || pull keep=1;mark=circle@0.5,0.5,0.15
+060 || wide shot of an orchard with rows of fruit trees and a withered tree in the middle, a sad farmer in a straw hat holding rotten fruit || farmer || panr keep=1
+061 || wide shot of Australia drawn as a lone island in a blue ocean, a green forest and a kangaroo on the coast, soft watercolor || || crane keep=1
+062 || wide shot of New Zealand as green hills with sheep, a kiwi officer standing at a small harbour border post, ferry in the distance || kiwi || drift_down keep=1
+063 || medium shot of a kiwi officer handing a fine slip to a traveler right at the airport gate, no court table, hand-to-hand moment || kiwi,traveler || snap keep=1;note=400 NZ$;noteat=0.5,0.12
+064 || close-up of a hand pressing a payment card onto a small terminal on a counter, a green light on, officer's uniform sleeve in the corner || kiwi || hand keep=1

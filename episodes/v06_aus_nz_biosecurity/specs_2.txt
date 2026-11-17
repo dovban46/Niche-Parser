@@ -1,0 +1,55 @@
+065 || Olena at an airport customs table pulling a wrapped ham sandwich out of her backpack, medium shot, conveyor belt and suitcases behind her || olena || push keep=1;ch=Ковбаса
+066 || extreme close-up of a thick ham and sausage sandwich on a paper napkin, golden light, centered on cream background || || pop keep=1
+067 || overhead view of a customs table with a slab of raw meat, a block of butter and a milk carton lined up in a row || || drift_down keep=1
+068 || centered close-up of a ham sandwich on a plate with a heavy rubber stamp hovering above it, a few coins scattered nearby || || punch keep=1;mark=circle@0.5,0.5,0.15;note=12 одиниць;noteat=0.5,0.12
+069 || a big wall calendar page flipping over with a sunny Australian coastline painted behind it, wide shot, low angle || || crane keep=1
+070 || huge stack of golden coins and banknote bundles towering over a tiny sandwich, low angle, dramatic shadows || || tilt keep=1;sfx=x_sting
+071 || Olena staring in shock at a tiny sandwich on her palm next to a giant pile of coins on a scale, close-up on her wide eyes || olena || snap keep=1
+072 || a sad cow and a pig standing in a green paddock with little bandages and thermometers, wide shot, gloomy sky || || pull keep=1
+073 || close-up of a sick cow's head with a thermometer in its mouth and drooping ears, soft watercolor blush || || hand keep=1
+074 || wide view of an empty barn and fence, a lone bell hanging, hay scattered on the ground, no animals left || || panl keep=1
+075 || map of Indonesia with a tiny island of Bali under a magnifying lens, a sick cow icon beside it, overhead || || drift_up keep=1
+076 || a customs gate with a double row of officers and sniffer dogs checking passengers, wide symmetrical shot || officer,dog || rack keep=1;note=2022;noteat=0.5,0.12
+077 || chef host raising an eyebrow and holding a paper bag of fast food breakfast, medium shot, cream background || chef || push keep=1
+078 || close-up of an egg-and-sausage muffin sandwich in a paper wrapper sitting alone on a bin lid, overhead || || pop keep=1
+079 || tall bar chart of luggage items drawn as piles rising like skyscrapers, low angle looking up || || crane keep=1
+080 || wide view of a busy airport arrivals hall with long lines of passengers and trolleys heading to inspection desks || || panr keep=1
+081 || giant mound of confiscated items, fruit, sausages and cheese wheels, heaped in a big bin, close-up from low angle || || drift_up keep=1;mark=circle@0.5,0.5,0.15
+082 || a crowd of faceless tourists in a long line each holding a small paper fine slip, wide shot, soft pastel tones || || panl keep=1
+083 || hand of an officer tearing off a fine slip from a pad and holding it out, extreme close-up of hand and paper || || snap keep=1
+084 || a visa stamp page of a passport being ripped in half, overhead close-up, dramatic || || punch keep=1;sfx=x_sting;note=6 людей;noteat=0.5,0.12
+085 || traveler sitting on a suitcase with head in hands in an airport lounge, medium shot || traveler || pull keep=1
+086 || a one-way departure board silhouette and a plane taking off through a window, low angle, empty seats in foreground || || tilt keep=1
+087 || traveler walking away alone dragging a suitcase down a long empty terminal corridor, wide shot, small figure || traveler || push keep=1
+088 || chef host holding up a wedge of cheese with holes and a knife, centered medium shot, cream background || chef || rack keep=1;ch=Сир
+089 || Olena carefully wrapping a small round goat cheese in cloth and tucking it into her backpack, close-up on her hands and face || olena || hand keep=1
+090 || a little goat with a bell standing on a hill by a stone farmhouse, wide shot, warm sunlight || || drift_down keep=1
+091 || a drawn map of Australia with a pin on the western coast at Perth, overhead with a plane icon above it || || pop keep=1
+092 || a young Spanish tourist at a customs table with open bag showing a cured pork roll, cheese and cured meat, medium shot || traveler || push keep=1
+093 || close-up of a goat cheese wedge next to pancetta slices and pork on a wooden board, overhead || || drift_up keep=1
+094 || a long paper fine slip lying on a table with a pen and a pile of banknotes next to it, centered close-up || || punch keep=1;mark=circle@0.5,0.5,0.15
+095 || traveler's passport and boarding pass being pushed away across a desk by an officer's hand, tight crop || officer || snap keep=1
+096 || a plane flying away over a calendar with three big crossed-out years, low angle sky || || crane keep=1;sfx=x_sting;note=3 роки;noteat=0.5,0.12
+097 || a small figure standing first on a podium of boxes in an airport hall, spotlight from above, wide shot || traveler || pull keep=1
+098 || thick rulebook with a tight metal lock chain wrapped around it, close-up, dramatic light || || tilt keep=1
+099 || a wedge of goat cheese dropped into a green bin with a lid open, close-up from above || || drift_down keep=1
+100 || Olena frozen with worried face next to a stern officer holding a fine slip, medium two-shot || olena,officer || push keep=1
+101 || overhead table covered with items from animals: cheese, eggs, ham, milk, feathers neatly lined up || || panr keep=1
+102 || a huge heap of confiscated food in a bin with only a few items left outside it, low angle wide shot || || pull keep=1
+103 || extreme close-up of a glass jar of golden honey with a wooden dipper, centered, cream background || || pop keep=1;ch=Мед
+104 || chef host scratching his head with a questioning look next to a honey jar, medium shot || chef || push keep=1
+105 || crossed-out honey jar sign drawn as a plain jar behind a closed barrier arm, wide shot || || panl keep=1
+106 || Olena placing a honey jar on a customs counter and raising her hand, medium shot, officer waiting || olena,officer || rack keep=1
+107 || an officer's hands holding a honey jar up to the light and inspecting it, close-up || officer || hand keep=1
+108 || a map of Australia with several states in green and tiny honey jars floating over them, overhead || || drift_up keep=1
+109 || a lone western state on the map surrounded by a thick dotted border and a small gate, wide shot || || crane keep=1
+110 || sunny hills of New Zealand with a flock of sheep and a small beehive, wide landscape || || panr keep=1
+111 || a long neat list drawn as a scroll with little pictures of apples, honey jar and boots, close-up || || tilt keep=1
+112 || kiwi officer in a cap examining a honey jar with a friendly smile at a counter, medium shot || kiwi || push keep=1
+113 || a single glowing light bulb above a honey jar on a clean table, centered, low angle || || punch keep=1
+114 || a smiling traveler handing a banknote-free open backpack to an officer, an unused fine pad lying aside, medium shot || traveler,officer || pull keep=1
+115 || hand holding up an open jar of honey with a bee circling it, extreme close-up || || snap keep=1
+116 || a honey jar hidden deep under socks in a suitcase with a sniffing dog nose peeking in, close-up || dog || drift_down keep=1;mark=circle@0.5,0.5,0.15
+117 || Olena putting the honey jar on the counter with a hopeful smile, a bee on the lid, medium close-up || olena || push keep=1
+118 || officer's hand lifting a green approval stamp over a honey jar, close-up with golden glow || officer || pop keep=1
+119 || Olena exhaling with relief and a wide smile, eyes closed, a bee flying by, close-up || olena || tilt keep=1;sfx=x_ding

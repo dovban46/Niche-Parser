@@ -1,0 +1,84 @@
+120 || wide shot of a glittering pile of gold coins on an airport customs table, a small green seedling growing from the coins, dramatic warm light || || push keep=1;ch=Насіння й квіти
+121 || overhead view of scattered seeds, a pink flower and a green sprout laid out on a white tray, soft shadows, neat arrangement || || drift_down keep=1
+122 || wide airport arrivals hall in Brisbane with palm trees visible through tall windows, a crowd of travellers with suitcases, a sun-bright day || || panr keep=1;note=Брисбен 2023;noteat=0.5,0.12
+123 || close-up of a folded travel brochure on a steel table, a few tiny seeds spilling from between its pages, low angle || || tilt keep=1
+124 || close-up of a knitted baby sweater with tiny seeds hidden in the wool folds, a tissue beside it, officer's gloved fingers parting the knit || officer || punch keep=1;mark=circle@0.5,0.5,0.15
+125 || officer holding a thick fine sheet with a stern stamp over a small pile of confiscated seeds, medium shot, dramatic light || officer || pop keep=1;sfx=x_sting
+126 || overhead view of twenty small identical penalty tokens arranged in a neat grid on a desk, one stern stamp beside them || || drift_up keep=1
+127 || single gold star ribbon pinned on a heavy ledger page, low angle close-up, dust motes in the light || || snap keep=1
+128 || the chef stands at a travel desk with a pointer, a small drawn map of Australia behind him, Melbourne marked by a plain dot || chef || pull keep=1
+129 || dancer in a bright sari-style dress stepping off a plane stairway at sunrise, seen from behind, a woman with long dark hair || || panl keep=1
+130 || close-up of long dark hair with a white jasmine flower tucked in it, soft petals, warm golden light || || push keep=1
+131 || a stack of banknotes next to a big stern invoice slip on a counter, a single jasmine flower resting on top, close-up || || rack keep=1
+132 || tilted view of a small white flower on a table, dwarfed by a huge heavy wax stamp looming behind it || || tilt keep=1
+133 || close-up of a hand ticking a box on an arrival card, the pen hovering over the wrong choice, shallow focus || || hand keep=1
+134 || woman hand holding a pen over a blank form with a calm face reflected in a window, low angle || || pop keep=1
+135 || wide cartoon scene of a tropical beach vacation, palm tree and ocean, a flower floating in the water like a boat || || pull keep=1
+136 || the chef holds a price tag next to a jasmine flower on a pedestal, comic raised eyebrow, medium shot || chef || punch keep=1
+137 || dramatic wide of a boot and a dirty smear of mud on an airport tiled floor, low angle, moody light || || crane keep=1;ch=Взуття
+138 || close-up of a pair of heavily muddy boots on a doormat, clumps of soil falling off || || push keep=1
+139 || olena opens her backpack at a table, hiking boots sticking out, tired but cheerful, medium shot || olena || panr keep=1
+140 || extreme close-up of a boot sole packed with dried earth, tiny grass blades and a seed stuck in the grooves || || punch keep=1
+141 || macro view of a handful of soil with tiny seeds, a cartoon mushroom spore cloud and a curled leaf in it, overhead || || drift_down keep=1
+142 || cartoon microscope view of fuzzy fungus and bacteria shapes on a green leaf, bright colors, circular lens frame || || rack keep=1
+143 || wide view of an Australian outback road at sunset with a lone traveller's boots print trail leading to a gate || || panl keep=1
+144 || a signboard-free lantern-lit tent at a campsite in a forest, camping gear stacked outside, wide shot || || pull keep=1
+145 || overhead on a customs table: a large muddy boot, a tent roll and a trekking pole, officer's hand pointing to the boot || officer || drift_up keep=1;mark=circle@0.5,0.5,0.15
+146 || bucket of soapy water with a brush scrubbing a boot sole clean, bubbles and splashes, close-up || || hand keep=1
+147 || wide cartoon airport scene in New Zealand, a green hilly landscape visible through the window, a boot cleaning station in the foreground || || panr keep=1
+148 || close-up of a tent being shaken out and brushed, dust and grass bits flying, soft backlight || || snap keep=1
+149 || close-up of a clean pair of boots next to a neat tent bag, shiny and tidy, light sparkle || || pop keep=1
+150 || tiny wooden carved souvenirs on a market stall shelf, wide, warm light, many carved figures || || push keep=1;ch=Дерево
+151 || overhead of wooden souvenirs: a bowl, a carved bird, a flute and a small box, laid out on cloth || || drift_down keep=1
+152 || close-up of olena holding a plain wooden spoon with a gift ribbon, happy face, small suitcase beside her || olena || punch keep=1;mark=circle@0.5,0.5,0.15
+153 || the wooden spoon in a gift box on a luggage conveyor belt, wide low angle, unaware olena in the far background || olena || panl keep=1
+154 || officer holding a wooden spoon under a magnifying lamp at an inspection table, concerned frown, medium shot || officer || rack keep=1
+155 || wide map-less scene of a New Zealand forest with a small tree growing, plain wooden objects lined up in a row at the forest edge || || pull keep=1
+156 || macro close-up of a bark beetle on a wooden spoon, tiny holes with sawdust, bold bright colours || || tilt keep=1
+157 || cartoon macro of tiny beetles chewing on the inside of a tree trunk, cross section view, warm browns || || push keep=1
+158 || sweeping aerial view of dense green forests of a large island country, mist rising, sun rays || || crane keep=1
+159 || orchard rows of apple trees with a crumbling trunk in the foreground, a beetle shadow looming large over it || || drift_up keep=1
+160 || the chef sits on a suitcase and counts items on his fingers, humorous expression, a bag opened beside him || chef || hand keep=1
+161 || overhead of seven items on a table: apple, sausage, cheese, a honey jar, a seed packet, muddy boots, wooden spoon || || drift_down keep=1
+162 || olena looking over a laid-out row of seven items on a long table, slightly stunned, wide shot || olena || pull keep=1
+163 || seven price tags dangling in a row like heavy weights, each hanging above a different item, dramatic low angle || || snap keep=1;sfx=x_sting
+164 || wide aerial map-like view of two islands in the deep blue ocean, green hills, white clouds, tiny boat || || crane keep=1;ch=Нова Зеландія
+165 || close-up of a stern officer's hand placing a small paper slip on a table in New Zealand airport, green hills through a window || officer || push keep=1
+166 || pile of gold coins stacked into four towers on a counter, a small flag-less paper beside them, close-up || || punch keep=1;note=400 NZ$;noteat=0.5,0.12
+167 || quick receipt-like slip being handed over instantly, one hand passing it to another without a stamp, speed lines, medium shot || || snap keep=1
+168 || wide Auckland airport arrivals hall, sunny, a working dog in a vest sniffing luggage along a line of passengers || dog || panr keep=1
+169 || dog sophie sniffing a pilot's lunch bag, three pilots in uniform standing in a line behind with surprised faces || dog || pop keep=1;mark=circle@0.7,0.6,0.15
+170 || three pilots in uniform in a row, caps and dark jackets, each holding a sandwich in a small bag, medium shot || || rack keep=1
+171 || three hands each holding out coins to a counter, overhead view, three identical piles || || drift_down keep=1
+172 || close-up of a sad sandwich lying on a tray wrapped in clear plastic, a fork beside it, humour || || tilt keep=1
+173 || two stacks of coins, one small and one double its size, an arrow-free scale between them, overhead || || drift_up keep=1
+174 || thick bundle of paper sheets labelled as a draft, a pencil and eraser lying on it, a pen crossing out a number, close-up || || hand keep=1
+175 || a single clear stack of four coin towers on a solid desk, bright light, close-up || || push keep=1
+176 || the chef waves his hands in a reassuring shrug, a tiny cartoon gavel behind him, medium shot || chef || punch keep=1
+177 || wooden judge bench with a heavy gavel, side lighting, wide courtroom shot, empty seats || || pull keep=1
+178 || a locked box with suspicious shape handcuffs beside it on a table, dramatic light, close-up || || tilt keep=1
+179 || smiling tourist family walking past with suitcases, a quick slip being handed over to the father, wide shot || || panl keep=1
+180 || wide aerial shot of two island nations as green spots surrounded by endless sparkling ocean, tiny waves || || crane keep=1;ch=Чому так
+181 || a lonely island with a single palm and unique animals around it, wide view, bright blue sea || || pull keep=1
+182 || cartoon scene with a hopping kiwi bird and a small marsupial on lush green hills, sunset || kiwi || panr keep=1
+183 || wide harbour with cargo ships stacked with crates of fruit, wool and wine, bustling trade, sun rays || || panr keep=1
+184 || a huge wave of coins crashing over a quiet farm, tractor swamped, dramatic wide, mid-storm light || || punch keep=1
+185 || line of dogs in vests sitting proudly on a parade ground, a handler's hand rubbing a dog ear, wide shot || dog || panl keep=1;note=56 собак;noteat=0.5,0.12
+186 || close-up of a dog nose sniffing a bag, shallow focus, shiny nose, warm backlight || dog || push keep=1
+187 || enormous heap of confiscated items on a warehouse floor, fruit, wooden toys, seeds, sausage, tilted low angle || || crane keep=1;note=42 000+;noteat=0.5,0.12
+188 || the chef raises a finger in a eureka pose beside a bright light bulb, close-up || chef || pop keep=1
+189 || a clear open palm holding a simple paper form, close-up, glowing neat light || || rack keep=1
+190 || officer smiling at a traveller showing an apple on an open palm, friendly light, medium shot || officer,traveler || pull keep=1
+191 || a hand sliding an apple across a counter to the officer, close-up, soft light || || snap keep=1
+192 || an apple hidden inside a coat pocket with a worried face in reflection, close-up, dim light || || tilt keep=1
+193 || olena standing at the declaration desk with a happy face and raised bag, officer smiling, wide shot || olena,officer || panr keep=1
+194 || officer taking the apple and sausage into a bin, a jar of honey and a wooden spoon remaining on the table || officer || drift_down keep=1
+195 || close-up of olena's hands taking back a honey jar and wooden spoon from the table, relieved smile, warm light || olena || hand keep=1
+196 || olena walking out of airport glass doors into bright sunlight smiling, a light bag on her shoulder, wide shot || olena || crane keep=1;sfx=x_ding
+197 || olena's hand lightly holding a light bag, her warm heart-shaped chest glow, close-up, soft light || olena || push keep=1
+198 || the chef holds a big question mark balloon above the seven items on a table, medium shot, bright colours || chef || pull keep=1
+199 || seven items in a row: apple, sausage, cheese, honey, seeds, boots, spoon, each in its own spotlight, overhead || || drift_up keep=1
+200 || a lone apple in a traveller's open suitcase, a thoughtful look, close-up, warm light || traveler || punch keep=1
+201 || a pile of speech bubbles floating above a phone showing a comment box, close-up, bright colours || || tilt keep=1
+202 || wide green landscape of forest, fields and animals under a bright sky, a plain unnamed gate in the foreground || || panl keep=1
+203 || olena and the chef waving goodbye at an airport window, sun setting behind planes, warm closing scene || olena,chef || pull keep=1
