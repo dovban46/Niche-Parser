@@ -1,0 +1,80 @@
+001 || close-up of a hand pointing at a big glowing question mark made of cardboard, bright quiz-show lights behind, a game buzzer in the corner || || punch keep=1
+002 || wide shot of an intercity bus driving along a Polish-Ukrainian border road at dusk, headlights on, poplar trees and a distant border barrier with lamps || || push keep=1
+003 || medium shot of Olena sitting by a bus window with a big backpack on her lap, looking worried, blurred dusk fields outside || olena || panl keep=1
+004 || overhead view of an open travel bag on a table with a fat smoked sausage ring and a bundle of euro bills tucked beside it || || drift_down keep=1
+005 || extreme close-up of a small pill box with a few pills spilling onto a tabletop, shallow depth, soft light || || pop keep=1
+006 || low angle shot of a brand-new smartphone standing in its open box, shiny screen glowing, tissue paper around it || || tilt keep=1;sfx=x_sting
+007 || tight close-up of Olena's wide worried eyes and raised eyebrows, one hand covering her mouth || olena || snap keep=1
+008 || close-up of a sausage ring on a wooden board with a big sketched cross-out feeling, a surprised fly hovering above, centered || || punch keep=1
+009 || wide shot of a gift box with a ribbon and a surprise spring popping out of it on a table, cheerful || || pop keep=1
+010 || medium shot of a hand turning a page of an old notebook labelled with a sketched bookmark, a pencil resting on it || || hand keep=1
+011 || medium shot of the chef host holding seven fingers up, grinning nervously, a suitcase behind him || chef || push keep=1
+012 || wide view of a long row of packed suitcases, bags and boxes lined up on a platform, a tiny bus in the distance || || panr keep=1
+013 || three road signs in a row, a green tick, a red cross and a yellow sign with a small scroll, standing on a roadside || || panl keep=1
+014 || close-up of three stamps on a table: a green approved one, a red rejected one and a yellow conditional one, hand hovering above || || drift_up keep=1
+015 || overhead view of a pile of coins and bills spilling from a torn pocket onto a floor, scattering || || pull keep=1
+016 || medium shot of a frightened man watching a tall pile of money dissolve into dust in a glass jar, dramatic shadows || || crane keep=1;mark=circle@0.5,0.55,0.15
+017 || a mysterious dark box with a big question mark lid and a keyhole, a single spotlight above it, rest in shadow || || rack keep=1
+018 || close-up of an index finger raised in front of a pencil sketch of a stop sign, attentive pose, plain background || || snap keep=1
+019 || a big speech bubble shaped like a stamped document hovering over a customs counter, soft light || || push keep=1
+020 || close-up of a traveler's mouth saying hello while a hand lifts a bag onto a customs counter, officer's blurred uniform behind || officer || hand keep=1
+021 || three small scenes in a row on a table: an open mouth, a hand pointing at a bag, a hand writing on a paper form || || panr keep=1
+022 || close-up of a coin with a zero on it lying flat on a spotless white customs counter, pen beside it || || pop keep=1
+023 || medium shot of the customs officer in a peaked cap lowering a pair of glasses and frowning at a double-bottom suitcase || officer || tilt keep=1
+024 || wide shot of a bus pulling away at a lit border crossing at night, the chef pointing ahead toward a sausage shop sign without letters || chef || pull keep=1
+025 || close-up of a smoked sausage ring hanging on a hook in a Polish deli window, warm light, steam on the glass || || push keep=1;ch=Ковбаса
+026 || wide shot of a Polish market stall with rows of sausages, cheeses and bread, a shopper holding a basket || || panl keep=1
+027 || close-up of a hand holding a sausage over a big sketched barrier gate at a border, uncertain || || snap keep=1
+028 || close-up of a cracked piece of paper stamped with a ghost-like false label, being torn in half || || punch keep=1;sfx=x_ding
+029 || wide map view of Europe with a one-way arrow-like road from Ukraine to Poland drawn as a glowing dashed path, a meat package on it || || drift_down keep=1
+030 || medium shot of a border barrier with a pork cut and a milk bottle stopped behind it on the Ukrainian side, a guard watching || guard || panr keep=1
+031 || medium shot of the chef host spreading both arms and smiling, a sausage in one hand, a road behind him pointing the other way || chef || pull keep=1
+032 || overhead view of a picnic blanket with bread, cheese, sausage, jam and chocolate neatly arranged, a basket beside it || || drift_up keep=1
+033 || overhead view of a shopping basket full of groceries over an old balance scale, coins placed at the other end || || tilt keep=1;note=200 євро;noteat=0.5,0.12;mark=circle@0.45,0.5,0.15
+034 || close-up of a hand counting products: two fingers raised beside a stack of identical sausage rings, tidy shelf || || pop keep=1
+035 || close-up of a kitchen scale with a two-kilogram weight on one side and a pack of cheese on the other, metal shine || || punch keep=1
+036 || medium shot of Olena opening her backpack in front of a customs counter, sausage in hand, officer smiling beyond the glass || olena,officer || hand keep=1
+037 || wide shot of a farm field with a warning sign, the silhouette of a fenced-in pig pen and a stern vet at its gate || vet || push keep=1
+038 || close-up of a sick pig with a thermometer in a barn, a worried vet kneeling beside it || vet || tilt keep=1
+039 || extreme close-up of a magnified virus drawn like a spiky ball on a petri dish, green glow, scientific light || || rack keep=1
+040 || map of Ukraine with one region coloured dark and covered by a big padlock, others open and bright || || crane keep=1
+041 || medium shot of a traveler at a hotel desk looking at a laptop screen, cup of coffee, suitcase waiting at the door || traveler || pull keep=1
+042 || close-up of a laptop screen showing a stylized website with a food safety shield logo and a bright list of items, hands on keys || || drift_down keep=1
+043 || wide shot of a closed border crossing with a barrier, empty lanes, long queue of trucks, grey sky || || panl keep=1
+044 || close-up of a heavy rubber stamp slamming onto a sheet of paper, ink splash, dramatic angle || || snap keep=1
+045 || a big wall calendar with one page torn out and flying away, an old date vibe without readable numbers || || pop keep=1
+046 || map of central Europe with Hungary highlighted and a barrier wall across its border, sausage and cheese blocked || || drift_up keep=1
+047 || medium shot of the chef host holding a clipboard checklist and wagging a finger, a sausage ring peeking from his pocket || chef || push keep=1
+048 || close-up of a hand scrolling a long list on a phone screen, a tiny pig emoji-like drawing beside each row, soft glow || || hand keep=1
+049 || overhead view of a block of aged cheese and a slab of cured meat on a cutting board, a magnifying glass above them || || tilt keep=1
+050 || medium shot of the customs officer nodding and stamping approval beside Olena who holds her sausage with a relieved smile || olena,officer || panr keep=1
+051 || wide shot of a scoreboard with a happy sausage on one side and a big empty goal on the other, stadium lights, no numbers || || crane keep=1
+052 || extreme close-up of a thick stack of euro bills tied with a rubber band, centered, shiny edges, shallow depth || || punch keep=1;ch=Гроші
+053 || close-up of an open wallet with bills fanning out like cards, hand reaching in || || snap keep=1
+054 || wide shot of a mountain of cash filling a small room, a person standing in the doorway with open hands, comical || || pull keep=1
+055 || medium shot of a heavy bank vault door slightly open with a bundle of bills inside and a tiny measuring ruler beside it || || tilt keep=1;note=10 000 євро;noteat=0.5,0.12
+056 || overhead view of a customs counter with a written declaration form, a bank statement and a stack of bills spread neatly out, pen beside || || drift_down keep=1;mark=circle@0.5,0.5,0.15
+057 || close-up of a bank statement paper held up to a light, tick-like line patterns without letters, a hand holding it || || hand keep=1
+058 || close-up of a smiling bundle of money wearing a tiny clean green tick-shaped badge, stage light || || pop keep=1
+059 || close-up of a bundle of bills hiding behind a curtain with eyes peeking out, suspicious, dim light || || rack keep=1;sfx=x_sting
+060 || wide shot of a single person standing on a scale-like platform with a money bag, one ring of light around only them || || push keep=1
+061 || medium shot of a family of four at a table with their grandmother handing an envelope of cash across it, cosy kitchen || || panl keep=1
+062 || medium shot of the chef host holding four separate envelopes and four papers, looking puzzled, lined up on a table || chef || pull keep=1
+063 || medium shot of Olena holding a small modest stack of bills in front of a customs counter, confident smile || olena || snap keep=1
+064 || close-up of a hand placing a small stack of bills beside a tiny wooden ruler marking a limit line far above it || || drift_up keep=1
+065 || wide shot of the scoreboard with two golden sausage and money icons lit up, confetti falling, crowd silhouettes || || crane keep=1
+066 || close-up of a bottle of red wine and a pack of cigarettes standing side by side on a counter, moody light || || push keep=1;ch=Алкоголь і тютюн
+067 || wide shot of a TV news studio desk with a presenter silhouette and a screen showing a bottle and a cigarette pack icon || || panr keep=1
+068 || overhead view of a travel bag packed with bottles wrapped in towels and a glass sealed bag of cigarettes, tidy || || tilt keep=1
+069 || row of five beer bottles lined up on a wooden table, frothy caps, low angle || || punch keep=1;note=5 літрів;noteat=0.5,0.12
+070 || a bottle of wine, a smaller tall bottle of strong liquor with a golden label, standing together near a measuring jug, soft shelf light || || drift_down keep=1;mark=circle@0.5,0.5,0.15
+071 || close-up of a stack of cigarette packs forming one neat block, a hand holding it up, simple background || || pop keep=1
+072 || medium shot of a measuring line drawn across a suitcase full of bottles, the top bottles rising above it || || tilt keep=1
+073 || close-up of a customs officer's hand sliding a payment card across a counter toward a traveler, calculator beside || officer || hand keep=1
+074 || medium shot of a teenager with a backpack at a counter, a stern officer with raised palm in front of him, bottle shelf behind || officer || snap keep=1
+075 || close-up of a big heavy no-entry sign in front of a bottle of beer, hand pulling it away, dramatic shadow || || punch keep=1;sfx=x_sting
+076 || split-view table with two choices: a few bottles under a limit line and a pile of coins next to them, hand deciding between || || panl keep=1
+077 || close-up of a hand putting a bottle back onto a store shelf, shop lights glowing, reluctant || || pull keep=1
+078 || medium shot of the chef host at a doorway holding a wooden crate of whisky bottles, friends waiting behind him, sweating || chef || push keep=1
+079 || close-up of a grumpy cat looking at a big crate of whisky, ironic, soft light || cat || rack keep=1
+080 || medium shot of Olena at a laptop with a customs website opening, her finger at a screen, tea cup nearby || olena || drift_up keep=1

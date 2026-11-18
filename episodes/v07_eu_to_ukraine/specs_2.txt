@@ -1,0 +1,59 @@
+081 || Olena at a customs table unzipping her backpack and pulling out a small box of pills, medium shot, suitcases and benches behind her || olena || push keep=1;ch=Ліки
+082 || chef in his white hat holding up a flat hand with a serious face, a bright pill blister pack floating beside him, cream background || chef || pop keep=1
+083 || overhead view of a tidy table with a few ordinary medicine boxes, a bandage roll and a thermometer laid out neatly, soft light || || drift_down keep=1
+084 || wide low-angle shot of three identical medicine boxes stacked in a neat tower next to a single box of another kind, warm light || || crane keep=1
+085 || close-up of a sealed bag of strong white tablets held up to the light by a gloved hand, dramatic shadows, dark background || || snap keep=1
+086 || officer pointing her pen at a doctor's prescription paper lying on the counter beside an orange pill bottle, medium shot || officer || push keep=1
+087 || wide courthouse-style border station building with columns and flags, a long queue of cars in front, cloudy sky, low angle || || tilt keep=1
+088 || big wall calendar with five pages fanned out like flipping leaves, one page highlighted, dusty office background || || panl keep=1
+089 || towering stack of thick case folders piled on a desk like a skyscraper, dramatic low angle, a lamp glowing || || push keep=1;note=540 випадків;noteat=0.5,0.12
+090 || sketch map of Europe with the Polish and Moldovan borders drawn as thick dark lines, tiny trucks crowded along them, overhead view || || pull keep=1
+091 || wide shot of a border fence with a queue of cars on the Polish side and a few sniffer-dog silhouettes, evening light || || panr keep=1
+092 || calendar page showing two months with a small pile of confiscated pill bags beside it, centered close-up, cream background || || punch keep=1
+093 || stack of case folders half as tall as before, next to a stamp and a coffee mug, overhead view of an office desk || || drift_down keep=1
+094 || close-up of a heavy industrial scale with bulky sealed bags of powder piled on it, needle swinging far right || || pop keep=1
+095 || wide shot of the Rava-Ruska checkpoint booth with a barrier arm, a lonely man at the window, fog drifting || || pull keep=1
+096 || close-up of a man's jacket opened, thick strips of pill blisters sewn inside the lining, shock lighting, centered || || snap keep=1;mark=circle@0.5,0.5,0.15;sfx=x_sting
+097 || two dark-suited agents leading a handcuffed man past a table of seized pill bottles, medium shot || guard || panl keep=1
+098 || calendar page for October with a falling autumn leaf, a quiet mountain road beyond a window, low angle || || crane keep=1
+099 || wide night shot of a mountain road in Transcarpathia with a border stop, a car pulled over under flashing lights || || tilt keep=1
+100 || cardboard boxes marked with a charity cross sliced open to reveal hidden bags of pills underneath, dramatic close-up || || punch keep=1
+101 || overhead view of a plain charity box with a tidy layer of bandages on top and a hidden layer of pill bags below, cutaway || || drift_down keep=1
+102 || Olena packing a few medicine boxes into her backpack and holding up a paper, medium shot, bedroom background || olena || push keep=1
+103 || overhead close-up of a prescription paper, a medicine box with its original packaging flap, and a pen, neatly arranged || || rack keep=1
+104 || cartoon shield protecting a small medicine box from a swinging heavy courthouse gavel, wide shot, bright rim light || || tilt keep=1
+105 || Olena at an airport counter clutching a brand-new smartphone box, big eyes, medium shot, luggage behind her || olena || push keep=1;ch=Айфон
+106 || brand-new smartphone and a laptop standing on a big shiny weighing scale, centered, studio light || || pop keep=1;mark=circle@0.5,0.5,0.15;note=1000 євро;noteat=0.5,0.12
+107 || airplane flying over clouds with a glowing golden stack of coins hanging beneath it, wide shot, soft blue sky || || panl keep=1
+108 || car and bus on a road with a heavy sack of coins on the roof and a pile of boxes, wide shot, green fields stretched out || || panr keep=1
+109 || officer holding a pocket calculator with a faint smile, close-up of her and the glowing display, cream background || officer || snap keep=1
+110 || overhead view of a table with a smartphone box and a growing pile of coins, a small piece of a pie cut away beside it || || drift_down keep=1
+111 || heavy tax slips floating above a smartphone box, two big slices cut from a round pie, dramatic low angle || || crane keep=1
+112 || row of brand-new smartphone boxes forming a small wall, a customs form sheet lying on top, close-up || || punch keep=1
+113 || stack of report folders spread like a fan on a border-station desk, one folder with a phone sketch on it, wide shot || || pull keep=1;sfx=x_ding
+114 || Olena handing coins to the officer across the counter with a resigned smile, medium shot, calculator on the counter || olena || hand keep=1
+115 || balanced scale with a single coin pile on one plate and a tied score of tally marks on the other, overhead || || rack keep=1
+116 || chef raising a finger with a worried look, a big iron trap hidden under a mat at his feet, wide shot || chef || pop keep=1;sfx=x_sting
+117 || one smartphone sitting neatly alone on the scale, needle still green, comforting light, close-up || || push keep=1
+118 || suitcase bursting with a laptop, sneakers and a phone box stacked on the scale, needle swinging, comedic close-up || || snap keep=1
+119 || Olena standing among a pile of shoes, a laptop and a phone box, biting her lip, wide shot of a customs hall || olena || tilt keep=1;mark=circle@0.5,0.5,0.15
+120 || street scene of a post office with a long line and a conveyor of parcels, warm lights, low angle || || push keep=1;ch=Посилки
+121 || close-up of a single brown parcel with a ribbon sitting alone on a counter, centered, cream background || || pop keep=1
+122 || overhead view of a postal scale with a small parcel and a coin stack hovering above it like a limit line || || drift_down keep=1
+123 || wall calendar page flipping dramatically with a whirl of paper leaves, dusty office background || || crane keep=1;note=150 євро;noteat=0.5,0.12
+124 || president's desk with a fountain pen signing a thick pile of laws, medium shot, flags in the background || || panl keep=1
+125 || close-up of a signature on a stack of folders with a tax stamp pressed in beside, sharp light || || punch keep=1
+126 || chef holding up a hand with a serious expression as a bright exclamation-shaped glow shines behind him, no text || chef || snap keep=1
+127 || old clock frozen halfway, a calm road stretching ahead behind a half-opened gate, low angle wide shot || || pull keep=1
+128 || wall calendar page for July with a sunny glow and a few parcels stacked in the foreground, wide shot || || panr keep=1
+129 || parcels with delivery tape hovering above a small shop map pin, a calendar peeking from behind, overhead view || || rack keep=1
+130 || close-up of a shop parcel box beside a coin stack and a calculator showing a modest total, centered, warm light || || push keep=1;mark=circle@0.5,0.5,0.15
+131 || two relatives exchanging a small gift box across a kitchen table, hands only, warm lamp light, overhead view || || drift_down keep=1
+132 || tiny box being squeezed between two walls of a narrow corridor by a hand, close-up, tension light || || tilt keep=1;note=45 євро;noteat=0.5,0.12
+133 || Olena at her laptop checking a delivery tracker, tea mug beside her, medium shot, cozy room || olena || hand keep=1
+134 || a window slowly closing on a wall, light narrowing from the glass, dramatic wide shot || || pull keep=1;sfx=x_sting
+135 || chef with a notebook and pencil gesturing a cheerful tip, wide shot of a kitchen counter || chef || pop keep=1
+136 || exterior of a Polish web shop sketched as a small cottage with a delivery van parked outside, wide shot, evening light || || panl keep=1
+137 || calculator under a hand with a parcel box beside it, bright display, centered close-up, shock lighting || || punch keep=1
+138 || postwoman handing a parcel across a counter to an elderly woman in a kerchief, medium shot, gentle light || || panr keep=1
+139 || small box on a scale with the needle lower than before, a thin ruler line marking a smaller allowed zone, close-up || || push keep=1

@@ -1,0 +1,51 @@
+140 || chef in front of a big wooden table covered with a cloth, hand raised in a surprised gesture, a shadowy pile of mystery items behind him, wide shot, warm light || chef || push keep=1;ch=Вейпи й дрони
+141 || extreme close-up of a sleek vape pen lying on a white table, vapor curling up from the tip, dramatic side light || || snap keep=1;sfx=x_sting
+142 || wide view of a small border customs post in Chernivtsi at dawn, a long truck lane and customs officers in blue approaching a van, mist || officer || panl keep=1;note=1400+ картриджів;noteat=0.5,0.12
+143 || overhead view of an open cardboard box packed tight with rows of small vape cartridges and a few vape devices, gloved hands lifting one || || drift_down keep=1;mark=circle@0.5,0.5,0.15
+144 || wide map sketch of Europe with a dotted route running from Great Britain across the sea to Ukraine, little parcel icons along the way || || panr keep=1
+145 || close-up of an open rulebook with a blank page, a magnifying glass hovering over it and finding nothing, low angle || || tilt keep=1
+146 || chef wagging his finger at the viewer in a warning pose, behind him a tall stack of vape boxes tied with tape, medium shot || chef || pop keep=1
+147 || medium shot of a table with a small drone and a thermal imager next to a roll of cables, soft light from a window || || pull keep=1
+148 || close-up of a rubber stamp hovering over a blank permit form with a paperclip, a pen lying nearby, dramatic shadow || || punch keep=1
+149 || officer opening a parcel at a sorting counter, a small drone peeking out of the packing foam, other parcels on a conveyor belt behind || officer || rack keep=1
+150 || low angle shot of a conveyor belt at a post office with a row of boxes, one box with a thermal imager lens sticking out || || crane keep=1
+151 || chef standing beside a calendar page with a cheerful face, holding up one finger, a sparkle in the air, medium shot || chef || push keep=1;ch=Тварини
+152 || close-up of a fluffy grey cat and a friendly dog side by side looking at the viewer with big eyes || cat || snap keep=1
+153 || close-up of a vet scanning the neck of a cat with a handheld microchip scanner, tiny glowing dot, cat in a carrier, soft clinic light || vet,cat || punch keep=1
+154 || overhead view of a vaccination booklet open on a table with stickers and a syringe beside it, a rabies vial, tidy arrangement || vet || drift_down keep=1
+155 || wall calendar with twenty-one days crossed off in a neat grid, a small cat paw print beside it, close-up || || tilt keep=1;note=21 день;noteat=0.5,0.12
+156 || flat lay of four documents on a desk, a blood sample tube, a passport booklet, a chip card and a stamped certificate, overhead || || pull keep=1;mark=circle@0.5,0.5,0.15
+157 || olena at a desk with a pile of papers, a stack of folders and a pen in her hand, a laptop open, determined look, medium shot || olena || panl keep=1
+158 || vet in a lab drawing blood from a calm cat, a rack of sample tubes and a microscope behind, side angle || vet,cat || rack keep=1
+159 || wall calendar with a big gap of months and a flipping page, a small suitcase waiting beside it, wide shot || || panr keep=1
+160 || olena looking at a calendar with a confused face, a travel cat carrier at her feet, clock hands spinning above her head || olena,cat || pop keep=1
+161 || border barrier with a closed red-white bar at a checkpoint, a guard holding up a palm in a stop gesture, wide low angle || guard || punch keep=1;sfx=x_sting
+162 || cat in a carrier sitting alone on the road between two border posts, grey fog, two flags far apart on each side, wide shot || cat || pull keep=1
+163 || driver standing beside his hatchback at the border, scratching his head, a cat carrier on the roof, long queue behind, medium shot || driver,cat || hand keep=1
+164 || chef pointing at a big treasure chest with a lock, coins glittering, medium shot, dramatic light || chef || push keep=1;ch=Підсумок
+165 || close-up of a hand writing a promise on a notepad with a pencil, a checkmark beside it, shallow depth || || tilt keep=1
+166 || wide view of a table with a wallet, a pile of coins and a bag of dollars slipping toward the edge, warm light || || panl keep=1
+167 || a neat suitcase with packed goods sitting calmly, a clean tick stamp glowing on its lid, close-up || || snap keep=1;sfx=x_ding
+168 || close-up of a hand sliding a small package under a coat lining, a half-open suitcase with a hidden pocket, tense shadows || traveler || drift_up keep=1
+169 || officer holding a stamped fine document and shaking her head, a suitcase unpacked in front of her, wide shot || officer || rack keep=1
+170 || overhead view of a table with a sealed fine form, a phone and a stack of banknotes with a big seizure tag on top || || punch keep=1
+171 || close-up of a smartphone with a price tag hanging on it, a stack of banknotes next to it, softly lit table || || pull keep=1;mark=circle@0.5,0.5,0.15
+172 || traveler with his phone hidden behind his back at a customs desk, an officer with a clipboard watching him, medium shot || traveler,officer || push keep=1
+173 || low angle of a customs counter where a phone and a pile of banknotes both vanish into a box with a lid, dramatic light || || crane keep=1
+174 || huge wall calendar with a golden year number sign and a mountain of case folders on desks in a customs office, wide shot || officer || panl keep=1;note=2025 рік;noteat=0.5,0.12
+175 || tall stack of papers growing toward the ceiling of an office, a tiny customs officer climbing a ladder beside it, wide || officer || drift_up keep=1
+176 || close-up of coins dropping into a metal bowl on a desk, a handshake in the blurred background, warm tones || || tilt keep=1;mark=circle@0.5,0.5,0.15
+177 || traveler paying at a counter, a wallet open and a receipt printing, officer behind the desk ticking a box, medium shot || traveler,officer || hand keep=1
+178 || wide crowd of ordinary travellers with suitcases and strollers waiting in an arrivals hall, everyone looks normal and friendly || || panr keep=1
+179 || close-up of a smiling grandmother holding a jar of jam and a basket of apples, confused face, soft light || || snap keep=1
+180 || young family at the customs desk, mother holding a baby, father with a puzzled shrug, a rulebook lying unread on the counter || traveler || pull keep=1
+181 || olena at the declaration counter filling in a form with a pen, backpack at her feet, calm confident smile, medium shot || olena || push keep=1
+182 || overhead view of a table with a new iPhone box and a receipt, fingers placing coins beside it, neat arrangement || olena || drift_down keep=1
+183 || close-up of a bank statement and a doctor's prescription held together in olena's hand, officer nodding in the background || olena,officer || punch keep=1
+184 || wide shot of olena walking out of the customs hall doors with her backpack and bags, sunshine outside, smiling, officer waving behind her || olena,officer || pull keep=1;sfx=x_ding
+185 || chef with a hand to his ear leaning toward the viewer, a floating comment bubble with a question mark shape, medium shot || chef || pop keep=1
+186 || wide scene of a packed bus window with a suitcase on a seat, Europe's night lights outside, thoughtful traveler looking at the glass || traveler || panl keep=1
+187 || close-up of a hand holding a mysterious wrapped package with a question mark shaped tag, uncertain face blurred behind || || tilt keep=1
+188 || phone screen close-up with a comment box open and a thumbs-up icon floating up, finger about to type, warm light || || push keep=1
+189 || a blank declaration form with a pen and a big green smiling checkmark stamp, tidy desk, overhead view || || drift_down keep=1
+190 || warm closing scene, olena and chef standing together outside the customs building at sunset, chef holding a wooden spoon like a toast, olena smiling with her backpack || olena,chef || pull keep=1
