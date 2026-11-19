@@ -43,7 +43,15 @@ def build_items(slug: str) -> list[dict]:
     for i, b in enumerate(beats):
         keys = [k for k in b.get("cast", []) if k in cast]
         looks = (" Character looks (draw exactly): " + "; ".join(f"{k} = {cast[k]}" for k in keys) + ".") if keys else ""
-        it = {"id": i, "file": fname(i), "prompt": f"{style}{looks} Scene: {b['img']}", "edits": []}
+        img, st = b["img"], style
+        if img.startswith("[TEXT]"):    # з 2026-11-19: текст малює Flow прямо в кадрі (дозволений лише точний текст у лапках), рендер його не накладає
+            img = img[6:].strip()
+            st = st.replace("no text, no letters, no numbers, no logos", "hand-lettered Ukrainian words and numbers exactly as quoted in the scene, clean readable ink handwriting lettering, no other text, no logos", 1)
+        if img.startswith("[MARK]") or "[MARK]" in img[:12]:    # обведення/стрілка теж малює Flow (червоним олівцем) у кадрі
+            img = img.replace("[MARK]", "", 1).strip()
+        if "hand-drawn red" in img:
+            st = st.replace(", no red circles or arrows", "").replace("no red circles or arrows", "")
+        it = {"id": i, "file": fname(i), "prompt": f"{st}{looks} Scene: {img}", "edits": []}
         an = b.get("anim")
         if an:
             for k, pose in enumerate(an["poses"], start=2):
