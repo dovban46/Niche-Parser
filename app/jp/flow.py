@@ -31,6 +31,8 @@ def build_items(slug: str) -> list[dict]:
     cast = plan.load_cast(slug)
     era_f = core.job_dir(slug) / "era.txt"     # епоха відео (необов'язково), напр. "early 18th century (Edo period)"
     style_f = core.job_dir(slug) / "style.txt"   # необов'язково (2026-11-13): свій стиль відео замість FLOW_STYLE (v02: насичений, як у конкурента Why Not Eat)
+    if not style_f.exists():   # запасний: episodes/<slug>/style.txt (інакше v12 вийшов у FLOW_STYLE замість олівець+акварель)
+        style_f = Path(__file__).resolve().parents[2] / "episodes" / slug / "style.txt"
     base_style = style_f.read_text(encoding="utf-8").strip() if style_f.exists() else FLOW_STYLE
     style = base_style.format(era=(era_f.read_text(encoding="utf-8").strip() + "; ") if era_f.exists() else "")
     faces_f = core.job_dir(slug) / "faces.txt"   # необов'язково: інший опис облич (з v18: велика міміка, як у хітів ніші)

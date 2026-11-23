@@ -26,4 +26,6 @@ for k, t in frags.items():
     out.append(f"{t} || {img} || {cast} || {cam}")
 job = Path(f"storage/jp_jobs/{slug}"); job.mkdir(parents=True, exist_ok=True)
 (job / "beats_src.txt").write_text("\n".join(out) + "\n", encoding="utf-8")
+if (ep / "style.txt").exists():
+    import shutil; shutil.copy2(ep / "style.txt", job / "style.txt")
 print(len(out), "бітів")
